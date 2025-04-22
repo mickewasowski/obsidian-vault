@@ -4,21 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "75f0b53d27a36650",
+        "id": "020f11cc29eb9c76",
         "type": "tabs",
         "children": [
           {
-            "id": "b6f3be7d76642d61",
+            "id": "48a93236d0fd9848",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Tasks.md",
-                "mode": "preview",
+                "file": "nodes/Nest Controllers.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "_Tasks"
+              "title": "Nest Controllers"
+            }
+          },
+          {
+            "id": "d77dd8c4e4581db8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Transpilation.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Transpilation"
+            }
+          },
+          {
+            "id": "2f3c2030685efef9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/RxJS.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "RxJS"
             }
           }
         ]
@@ -157,8 +185,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6f3be7d76642d61",
+  "active": "48a93236d0fd9848",
   "lastOpenFiles": [
+    "nodes/Transpilation.md",
+    "nodes/Nest Controllers.md",
+    "nodes/RxJS.md",
+    "_Tasks.md",
     "nodes/RAD tool.md",
     "nodes/vim commands.md",
     "nodes/Windows.md",
@@ -172,7 +204,6 @@
     "nodes/grep.md",
     "nodes/sed.md",
     "nodes/curl.md",
-    "_Tasks.md",
     "nodes/Untitled.md",
     "obsidian-vault/README.md",
     "obsidian-vault",
@@ -184,9 +215,6 @@
     "nodes/Remix.md",
     "nodes/VCS (Version Control Systems).md",
     "nodes/Box Model.md",
-    "nodes/Ubuntu.md",
-    "nodes/Javascript.md",
-    "nodes/Animal.md",
     "Work.7z",
     "Work.7z.tmp",
     "canvas",
