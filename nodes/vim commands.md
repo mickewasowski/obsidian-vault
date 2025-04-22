@@ -58,7 +58,7 @@ then hit Esc and it will type go
 > P => paste before the cursor
 > u => undo
 > Ctrl + r => redo
-> r<char> => replace character under cursor
+> r\<char> => replace character under cursor (the \ is escaping the symbol in obsidian)
 > cw => change word (delete word, then go into insert mode)
 > C => change to end of line (c$)
 > . => repeats the previous command

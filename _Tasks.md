@@ -1,4 +1,3 @@
-- [ ] check how to implement scroll to where the user was last on after a refresh
 - [ ] big wins video filters - filter by game name, buy bonus, by date (asc/desc), by amount won (asc/desc)
 <br>
 

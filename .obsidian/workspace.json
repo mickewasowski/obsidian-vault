@@ -20,37 +20,8 @@
               "icon": "lucide-file",
               "title": "_Tasks"
             }
-          },
-          {
-            "id": "15f227f0150b650f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/vim commands.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "vim commands"
-            }
-          },
-          {
-            "id": "1ad1956240e838ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/NestJs.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "NestJs"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,18 +157,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "15f227f0150b650f",
+  "active": "b6f3be7d76642d61",
   "lastOpenFiles": [
+    "nodes/RAD tool.md",
+    "nodes/vim commands.md",
+    "nodes/Windows.md",
+    "nodes/Linux.md",
+    "nodes/Operating Systems.md",
+    "nodes/Cron.md",
+    "nodes/Docker.md",
+    "nodes/NestJs.md",
+    "nodes/WSL.md",
+    "nodes/awk.md",
+    "nodes/grep.md",
+    "nodes/sed.md",
+    "nodes/curl.md",
+    "_Tasks.md",
+    "nodes/Untitled.md",
     "obsidian-vault/README.md",
     "obsidian-vault",
-    "nodes/NestJs.md",
-    "nodes/vim commands.md",
-    "_Tasks.md",
     "_ChrisTasks.md",
     "nodes/Git Commands.md",
     "nodes/Git cherry pick.md",
     "resources/Pasted image 20250311145037.png",
-    "nodes/RAD tool.md",
     "nodes/Ubuntu commands.md",
     "nodes/Remix.md",
     "nodes/VCS (Version Control Systems).md",
@@ -205,18 +187,8 @@
     "nodes/Ubuntu.md",
     "nodes/Javascript.md",
     "nodes/Animal.md",
-    "nodes/Dog.md",
-    "nodes/Parrot.md",
     "Work.7z",
     "Work.7z.tmp",
-    "nodes/Ant.md",
-    "nodes/Cat.md",
-    "nodes/Mammal.md",
-    "nodes/Two.md",
-    "nodes/Three.md",
-    "nodes/One.md",
-    "templates/_Template.md",
-    "Welcome.md",
     "canvas",
     "templates",
     "resources",
