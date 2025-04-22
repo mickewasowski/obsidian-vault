@@ -1,0 +1,13 @@
+{
+  "defaultViewMode": "preview",
+  "livePreview": false,
+  "autoConvertHtml": false,
+  "autoPairMarkdown": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "nodes",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "resources",
+  "showInlineTitle": false,
+  "vimMode": true
+}

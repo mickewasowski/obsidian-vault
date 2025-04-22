@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "7035b5b39e6b3315",
+    "type": "split",
+    "children": [
+      {
+        "id": "75f0b53d27a36650",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6f3be7d76642d61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_Tasks.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "_Tasks"
+            }
+          },
+          {
+            "id": "15f227f0150b650f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/vim commands.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "vim commands"
+            }
+          },
+          {
+            "id": "1ad1956240e838ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/NestJs.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "NestJs"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5004bd1d2e00d2ec",
+    "type": "split",
+    "children": [
+      {
+        "id": "736fa1936f087248",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f01f1dda9ced0b26",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "64496aa70cf742b1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f54e6885df059b31",
+    "type": "split",
+    "children": [
+      {
+        "id": "2f7198dea37a72c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d531aaef750c08ee",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "nodes/Javascript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Javascript"
+            }
+          },
+          {
+            "id": "33068368d9b35057",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "nodes/Javascript.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Javascript"
+            }
+          },
+          {
+            "id": "7c89e210076a4a23",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "acbb5e36805d6406",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "nodes/Javascript.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Javascript"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "15f227f0150b650f",
+  "lastOpenFiles": [
+    "obsidian-vault/README.md",
+    "obsidian-vault",
+    "nodes/NestJs.md",
+    "nodes/vim commands.md",
+    "_Tasks.md",
+    "_ChrisTasks.md",
+    "nodes/Git Commands.md",
+    "nodes/Git cherry pick.md",
+    "resources/Pasted image 20250311145037.png",
+    "nodes/RAD tool.md",
+    "nodes/Ubuntu commands.md",
+    "nodes/Remix.md",
+    "nodes/VCS (Version Control Systems).md",
+    "nodes/Box Model.md",
+    "nodes/Ubuntu.md",
+    "nodes/Javascript.md",
+    "nodes/Animal.md",
+    "nodes/Dog.md",
+    "nodes/Parrot.md",
+    "Work.7z",
+    "Work.7z.tmp",
+    "nodes/Ant.md",
+    "nodes/Cat.md",
+    "nodes/Mammal.md",
+    "nodes/Two.md",
+    "nodes/Three.md",
+    "nodes/One.md",
+    "templates/_Template.md",
+    "Welcome.md",
+    "canvas",
+    "templates",
+    "resources",
+    "nodes"
+  ]
+}
