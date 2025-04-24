@@ -1,0 +1,8 @@
+- [ ] add exclusive games collection or array like the buyBonuses
+- [ ] bigWins player name is not masked
+- [ ] add languages config => translation for supported language per country
+- [ ] add the games data for filtering
+- [ ] ask Chris to add the bonus_cancel event or to emit bonus_remove when the bonus was manually cancelled
+- [ ] don't forget to ask Chris to merge the RGS change for the jackpot history request from the lobby
+- [ ] ask Chris to send more replay videos (more than 20, ideally all available videos)
+- [ ] change the collection object - it should contain the icon prop
