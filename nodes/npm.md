@@ -35,3 +35,4 @@ The above can be applied if the package.json and package-lock.json *are* in sync
 | ---------- | ----------|
 | you're actively developing and want to add/update packages | you want clean reproducible installs |
 | you don't mind updates of the package-lock.json | you're installing dependencies in a fresh environment |
+

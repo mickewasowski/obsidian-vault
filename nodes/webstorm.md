@@ -1,6 +1,7 @@
 ---
 aliases:
 context:
+- "[[IDE]]"
 ---
 
 #wip
