@@ -41,15 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/RxJS.md",
+                "file": "nodes/npm.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "npm"
+            }
+          },
+          {
+            "id": "9c0dfe9a22842928",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/webstorm.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "RxJS"
+              "title": "webstorm"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,16 +200,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48a93236d0fd9848",
+  "active": "2f3c2030685efef9",
   "lastOpenFiles": [
+    "nodes/webstorm.md",
+    "nodes/npm.md",
     "nodes/Transpilation.md",
     "nodes/Nest Controllers.md",
     "nodes/RxJS.md",
+    "nodes/Linux.md",
     "_Tasks.md",
     "nodes/RAD tool.md",
     "nodes/vim commands.md",
     "nodes/Windows.md",
-    "nodes/Linux.md",
     "nodes/Operating Systems.md",
     "nodes/Cron.md",
     "nodes/Docker.md",
@@ -213,8 +230,6 @@
     "resources/Pasted image 20250311145037.png",
     "nodes/Ubuntu commands.md",
     "nodes/Remix.md",
-    "nodes/VCS (Version Control Systems).md",
-    "nodes/Box Model.md",
     "Work.7z",
     "Work.7z.tmp",
     "canvas",
