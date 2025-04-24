@@ -1,22 +1,30 @@
 {
   "main": {
     "id": "ea626d8f804e75f2",
+    "id": "ea626d8f804e75f2",
     "type": "split",
     "children": [
       {
+        "id": "47672f248e06a943",
         "id": "47672f248e06a943",
         "type": "tabs",
         "children": [
           {
             "id": "7d604df6164aa26f",
+            "id": "7d604df6164aa26f",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
               "title": "New tab"
             }
+              "title": "New tab"
+            }
           }
+        ]
         ]
       }
     ],
@@ -24,13 +32,16 @@
   },
   "left": {
     "id": "d985be763d2dbb1d",
+    "id": "d985be763d2dbb1d",
     "type": "split",
     "children": [
       {
         "id": "fbdbdd36d35814bd",
+        "id": "fbdbdd36d35814bd",
         "type": "tabs",
         "children": [
           {
+            "id": "3bcec71bd496e5d1",
             "id": "3bcec71bd496e5d1",
             "type": "leaf",
             "state": {
@@ -45,10 +56,12 @@
           },
           {
             "id": "5a887beabcad9b49",
+            "id": "5a887beabcad9b49",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
+                "query": "",
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
@@ -68,13 +81,16 @@
   },
   "right": {
     "id": "dc27152b35040545",
+    "id": "dc27152b35040545",
     "type": "split",
     "children": [
       {
         "id": "a60ebbd9939ad8f8",
+        "id": "a60ebbd9939ad8f8",
         "type": "tabs",
         "children": [
           {
+            "id": "a0a69af31d4f9d1e",
             "id": "a0a69af31d4f9d1e",
             "type": "leaf",
             "state": {
@@ -87,12 +103,15 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
+              "title": "Backlinks"
               "title": "Backlinks"
             }
           },
           {
+            "id": "e8bb43ed98324a48",
             "id": "e8bb43ed98324a48",
             "type": "leaf",
             "state": {
@@ -103,9 +122,11 @@
               },
               "icon": "links-going-out",
               "title": "Outgoing links"
+              "title": "Outgoing links"
             }
           },
           {
+            "id": "5203ae10491003c8",
             "id": "5203ae10491003c8",
             "type": "leaf",
             "state": {
@@ -122,6 +143,7 @@
           },
           {
             "id": "18e34e970ec255bf",
+            "id": "18e34e970ec255bf",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -131,6 +153,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
+              "title": "Outline"
               "title": "Outline"
             }
           }
@@ -150,6 +173,7 @@
       "command-palette:Open command palette": false
     }
   },
+  "active": "7d604df6164aa26f",
   "active": "7d604df6164aa26f",
   "lastOpenFiles": [
     "nodes/Git Commands.md"
