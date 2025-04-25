@@ -43,7 +43,8 @@ context:
 | web | 
 | shift web| 
 | c | deletes and enters insert mode |
-
+| shift + zz | save & exit |
+| shift + zq | exit |
 
 ### Modes
 
