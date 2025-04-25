@@ -45,6 +45,12 @@ context:
 | c | deletes and enters insert mode |
 | shift + zz | save & exit |
 | shift + zq | exit |
+| ctrl + d | scroll down |
+| ctrl + u | scroll up |
+| r + letter | replaces the letter below the cursor with the letter |
+| > | in visual mode indent text right |
+| < | in visual mode indent text left |
+| ctrl + r | redo |
 
 ### Modes
 

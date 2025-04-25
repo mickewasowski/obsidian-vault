@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "nodes/neovim.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "neovim"
+            }
+          },
+          {
+            "id": "df55601acc6ea5a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "nodes/Vim.md",
                 "mode": "source",
                 "source": true
@@ -157,11 +171,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "237841f633fb7f18",
+  "active": "9435c84a90e19950",
   "lastOpenFiles": [
+    "nodes/Vim.md",
+    "nodes/neovim.md",
+    "nodes/Untitled 1.md",
+    "_Tasks.md",
     "4913",
     "nodes/Git Commands.md",
-    "nodes/neovim.md",
     "nodes/NestJs.md"
   ]
 }

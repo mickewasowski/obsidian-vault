@@ -10,6 +10,8 @@ context:
 ad
 
 ---
+## Initial setup (video 1):
+
 ### Setup
 
 1.  Install neovim (for the respective OS)
@@ -94,6 +96,8 @@ vim.cmd.colorscheme "catppuccin"
 Now we again need to reopen the init.lua file.
 
 5. Now we need to add fuzzy find (telescope)
+*This is used to search words in files, and many more other functionalities*
+`You can see all it's functionalities by typing :Telescope`
 Simply add the Telescope tupple to the plugins (as for the catppuccin)
 ```
 	{
@@ -107,10 +111,10 @@ Now we need to initialize it by creating a local variable below the require for 
 local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 ```
-Now ctrl + p will open the fuzzy search.
-
+Now *ctrl + p* will open the fuzzy search.
 
 6. Now we need to set live grep
+*This is used to search files by name*
 Add the keymap below the telescope keymap:
 `vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 And also add below the vim.cmd commands the following:
@@ -119,12 +123,33 @@ And also add below the vim.cmd commands the following:
 Now to open live grep you type space + fg
 
 7. Now we add a package for highlighting and indenting (treesitter)
+Add the bellow to the plugins object:
+``` vim
+{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
+```
 
+You can run `:TSUpdate` to update all your packages. 
+
+Add the below after the keymap for live_grep:
+``` vim
+local config = require("nvim-treesitter.configs")
+config.setup({
+  ensure_installed = {"lua", "javascript"},
+  highlight = { enable = true },
+  indent = { enable = true },
+})
+```
 
 
 
 ### Final init.lua file:
 ``` vim
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+vim.g.mapleader = " "
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -151,16 +176,117 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
-	    'nvim-telescope/telescope.nvim', tag = '0.1.8',
-	      dependencies = { 'nvim-lua/plenary.nvim' }
-	}
+   'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+	},
+  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }
 }
 local opts = {}
 
 require("lazy").setup(plugins, opts)
-local builtin = require("telescope.builtin")
-
 require("catppuccin").setup()
 vim.cmd.colorscheme "catppuccin"
+local builtin = require("telescope.builtin")
+vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+
+local config = require("nvim-treesitter.configs")
+config.setup({
+  ensure_installed = {"lua", "javascript"},
+  highlight = { enable = true },
+  indent = { enable = true },
+})
 ```
+
+
+
+#### Setup TODO:
+- [x] install neovim
+- [x] create init.lua file
+- [x] setup the tab spacing
+- [x] provide the Lazy configuration
+- [x] add catppuccin
+- [x] add telescope for fuzzy find
+- [x] add livegrep
+- [x] add treesitter
+
+
+
+
+## Follow-up setup (video 2):
+
+1. Neotree (file explorer)
+Add the below to the plugins object in init.lua:
+```
+{
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+    },
+    lazy = false,
+}
+```
+
+Also add keymap:
+``` vim
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
+```
+
+Now we can open the filesystem with `Ctrl + n` and then press `a` to add a file.
+We need to create a folder lua with a *plugins.lua* file
+Then we paste these contents (the contents of the plugins variable)
+``` vim
+return {
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{
+   'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+	},
+  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+    },
+    lazy = false,
+  }
+}
+```
+
+Then we change the init.lua requirement for lazy like so:
+`require("lazy").setup("plugins")`
+
+Then we create a new `plugins` folder in the `lua` folder
+There we cut and paste the catppuccin plugin configuration:
+
+``` vim
+	return {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin"
+    end
+  }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
