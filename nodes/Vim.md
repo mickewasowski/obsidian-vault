@@ -40,6 +40,9 @@ context:
 | :reg | lists the last things you have copied or deleted, it also provides a code on how to get it, something like a clipboard |
 | "0 | this is an example code from the above command, then you click p and it will paste it |
 | q + letter | when you press q and then any other letter you start recording a macro, then to use the macro simply type @ + the letter you chose |
+| web | 
+| shift web| 
+| c | deletes and enters insert mode |
 
 
 ### Modes

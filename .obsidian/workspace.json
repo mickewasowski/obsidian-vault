@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/neovim.md",
+                "file": "nodes/Vim.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "neovim"
+              "title": "Vim"
             }
           }
         ]
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodes/neovim.md",
+                "file": "nodes/Vim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for neovim"
+              "title": "Backlinks for Vim"
             }
           },
           {
@@ -103,12 +103,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodes/neovim.md",
+                "file": "nodes/Vim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from neovim"
+              "title": "Outgoing links from Vim"
             }
           },
           {
@@ -132,13 +132,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodes/neovim.md",
+                "file": "nodes/Vim.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of neovim"
+              "title": "Outline of Vim"
             }
           }
         ]
@@ -157,8 +157,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9435c84a90e19950",
+  "active": "237841f633fb7f18",
   "lastOpenFiles": [
+    "4913",
+    "nodes/Git Commands.md",
+    "nodes/neovim.md",
     "nodes/NestJs.md"
   ]
 }
