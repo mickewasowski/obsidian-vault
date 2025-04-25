@@ -1,48 +1,41 @@
 {
   "main": {
-    "id": "ea626d8f804e75f2",
-    "id": "ea626d8f804e75f2",
+    "id": "f943851b71126f2e",
     "type": "split",
     "children": [
       {
-        "id": "47672f248e06a943",
-        "id": "47672f248e06a943",
+        "id": "f59690d2c732d6ff",
         "type": "tabs",
         "children": [
           {
-            "id": "7d604df6164aa26f",
-            "id": "7d604df6164aa26f",
+            "id": "9435c84a90e19950",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "nodes/neovim.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
-            }
-              "title": "New tab"
+              "title": "neovim"
             }
           }
-        ]
         ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d985be763d2dbb1d",
-    "id": "d985be763d2dbb1d",
+    "id": "dbdba3dfab85c862",
     "type": "split",
     "children": [
       {
-        "id": "fbdbdd36d35814bd",
-        "id": "fbdbdd36d35814bd",
+        "id": "e44fd2cebc2368db",
         "type": "tabs",
         "children": [
           {
-            "id": "3bcec71bd496e5d1",
-            "id": "3bcec71bd496e5d1",
+            "id": "237841f633fb7f18",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,13 +48,11 @@
             }
           },
           {
-            "id": "5a887beabcad9b49",
-            "id": "5a887beabcad9b49",
+            "id": "9239e63e2a947027",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
                 "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
@@ -80,22 +71,20 @@
     "width": 300
   },
   "right": {
-    "id": "dc27152b35040545",
-    "id": "dc27152b35040545",
+    "id": "26db3a05cfafe382",
     "type": "split",
     "children": [
       {
-        "id": "a60ebbd9939ad8f8",
-        "id": "a60ebbd9939ad8f8",
+        "id": "88458a0f51bdbdd7",
         "type": "tabs",
         "children": [
           {
-            "id": "a0a69af31d4f9d1e",
-            "id": "a0a69af31d4f9d1e",
+            "id": "f2195767612777c5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "nodes/neovim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,31 +92,27 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
-              "title": "Backlinks"
+              "title": "Backlinks for neovim"
             }
           },
           {
-            "id": "e8bb43ed98324a48",
-            "id": "e8bb43ed98324a48",
+            "id": "a9cb17994c51b2e2",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "nodes/neovim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
-              "title": "Outgoing links"
+              "title": "Outgoing links from neovim"
             }
           },
           {
-            "id": "5203ae10491003c8",
-            "id": "5203ae10491003c8",
+            "id": "2ded1282464422c9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,19 +127,18 @@
             }
           },
           {
-            "id": "18e34e970ec255bf",
-            "id": "18e34e970ec255bf",
+            "id": "f1e5fd96e8ed3346",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "nodes/neovim.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
-              "title": "Outline"
+              "title": "Outline of neovim"
             }
           }
         ]
@@ -173,9 +157,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d604df6164aa26f",
-  "active": "7d604df6164aa26f",
+  "active": "9435c84a90e19950",
   "lastOpenFiles": [
-    "nodes/Git Commands.md"
+    "nodes/NestJs.md"
   ]
 }
