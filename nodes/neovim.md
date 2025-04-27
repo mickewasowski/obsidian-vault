@@ -22,6 +22,9 @@ ad
 We put the init.lua in the below directory:
 `~/.config/nvim/init.lua`
 
+> [!warning] If you get an error `can't open file for writing: no such file or directory` then you first need to create the directory as follows:
+> `mkdir -p ~/.config/nvim`
+
 `nvim ~/.config/nvim/init.lua` this is how we open the file
 and then we write the file with `:w`
 
@@ -96,6 +99,8 @@ vim.cmd.colorscheme "catppuccin"
 Now we again need to reopen the init.lua file.
 
 5. Now we need to add fuzzy find (telescope)
+> [!warning] Prerequisites for this are packages `ripgrep` and `fd-find`
+
 *This is used to search words in files, and many more other functionalities*
 `You can see all it's functionalities by typing :Telescope`
 Simply add the Telescope tupple to the plugins (as for the catppuccin)
@@ -264,7 +269,7 @@ Then we change the init.lua requirement for lazy like so:
 
 Then we create a new `plugins` folder in the `lua` folder
 There we cut and paste the catppuccin plugin configuration:
-
+ and we also remove the require and coloscheme for catppuccin from the init.lua file
 ``` vim
 	return {
     "catppuccin/nvim",
@@ -277,16 +282,4 @@ There we cut and paste the catppuccin plugin configuration:
   }
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Next step is to extract the telescope configuration from the plugins into a separate file as for catppuccin. Also we need to move all the telescope configuration from the init.lua file to our new file.

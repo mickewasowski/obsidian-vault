@@ -1,0 +1,13 @@
+.cm-content {
+  counter-reset: line;
+}
+
+.cm-line::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 2em;
+  margin-right: 1em;
+  color: #888;
+  text-align: right;
+}

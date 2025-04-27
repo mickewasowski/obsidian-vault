@@ -46,7 +46,7 @@ context:
 | shift + zz | save & exit |
 | shift + zq | exit |
 | ctrl + d | scroll down |
-| ctrl + u | scroll up |
+| ctrl + u | scroll up (hold the ctrl) |
 | r + letter | replaces the letter below the cursor with the letter |
 | > | in visual mode indent text right |
 | < | in visual mode indent text left |
