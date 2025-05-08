@@ -283,3 +283,19 @@ There we cut and paste the catppuccin plugin configuration:
 ```
 
 Next step is to extract the telescope configuration from the plugins into a separate file as for catppuccin. Also we need to move all the telescope configuration from the init.lua file to our new file.
+We extract the rest of the plugins (neo tree and treesitter) into separate lua plugin files.
+We also install lualine for the below piece of art:
+![[Pasted image 20250429160835.png]]
+
+#### How to install and setup Nerd fonts for WSL
+1. Go to Nerd fonts website and download the desired font
+2. Unzip the downloaded folder and then select all font files
+3. Right click on the selected files and click Install
+4. Go to the CMD and `ctrl + ,` to open the settings
+5. Select the Ubuntu (wsl), scroll down to appearance
+6. Click on the Font face dropdown and selected the installed font of choice
+
+
+### Configure LSP
+1. install "williamboman/mason.nvim" => create a lsp-config.lua in plugins
+2. 

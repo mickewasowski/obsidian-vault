@@ -13,16 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/neovim.md",
+                "file": "nodes/Linux commands.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "neovim"
+              "title": "Linux commands"
             }
           },
           {
-            "id": "df55601acc6ea5a6",
+            "id": "5b2efca41823a242",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,8 +34,23 @@
               "icon": "lucide-file",
               "title": "Vim"
             }
+          },
+          {
+            "id": "df55601acc6ea5a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/neovim.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "neovim"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -171,11 +186,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9435c84a90e19950",
+  "active": "df55601acc6ea5a6",
   "lastOpenFiles": [
-    "nodes/Vim.md",
-    "nodes/vim commands.md",
+    "nodes/Untitled 2.md",
     "nodes/neovim.md",
+    "nodes/Vim.md",
+    "nodes/Linux commands.md",
+    "resources/Pasted image 20250429160835.png",
+    "nodes/vim commands.md",
+    "nodes/webstorm.md",
+    "nodes/Windows commands.md",
     "nodes/Untitled 1.md",
     "_Tasks.md",
     "4913",
