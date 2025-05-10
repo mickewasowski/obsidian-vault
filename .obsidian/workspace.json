@@ -13,16 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Linux commands.md",
+                "file": "nodes/Git Commands.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Linux commands"
+              "title": "Git Commands"
             }
           },
           {
-            "id": "5b2efca41823a242",
+            "id": "acc23638b0fb4df7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Git Stash Commands.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Git Stash Commands"
+            }
+          },
+          {
+            "id": "df55601acc6ea5a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,23 +48,9 @@
               "icon": "lucide-file",
               "title": "Vim"
             }
-          },
-          {
-            "id": "df55601acc6ea5a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/neovim.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "neovim"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,20 +186,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df55601acc6ea5a6",
+  "active": "acc23638b0fb4df7",
   "lastOpenFiles": [
-    "nodes/Untitled 2.md",
-    "nodes/neovim.md",
-    "nodes/Vim.md",
-    "nodes/Linux commands.md",
-    "resources/Pasted image 20250429160835.png",
-    "nodes/vim commands.md",
-    "nodes/webstorm.md",
-    "nodes/Windows commands.md",
-    "nodes/Untitled 1.md",
-    "_Tasks.md",
-    "4913",
     "nodes/Git Commands.md",
+    "nodes/Git Stash Commands.md",
+    "nodes/neovim.md",
+    "resources/Pasted image 20250429160835.png",
+    "nodes/Windows commands.md",
+    "nodes/Untitled 2.md",
+    "nodes/Linux commands.md",
+    "_Tasks.md",
+    "_ChrisTasks.md",
+    "nodes/Vim.md",
+    "nodes/vim commands.md",
+    "nodes/Untitled 1.md",
+    "4913",
     "nodes/NestJs.md"
   ]
 }

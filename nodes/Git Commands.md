@@ -46,3 +46,13 @@ The above creates a local branch from the remote one and tracks it. Any commits 
 
 
 ### How to setup two separate Git configurations locally
+
+
+
+
+
+
+
+
+
+
