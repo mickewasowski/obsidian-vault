@@ -33,3 +33,14 @@ We can think of it as like refreshing the App Store page to see what new updates
 - it keeps the existing software versions compatible - it doesn't remove or install new packages unless necessary
 - sometimes it asks you if you want to continue
 The analogy is after you've refreshed the App Store page now you click "Update All" to actually install the new versions.
+
+
+#### swap caps with ctrl
+steps:
+```
+sudo vi /etc/default/keyboard
+
+XKBOPTIONS="ctrl:swapcaps" or XKBOPTIONS="ctrl:nocaps"
+
+sudo dpkg-reconfigure keyboard-configuration
+```

@@ -51,6 +51,8 @@ context:
 | > | in visual mode indent text right |
 | < | in visual mode indent text left |
 | ctrl + r | redo |
+| gc | comments the selected text |
+|  
 
 ### Modes
 
