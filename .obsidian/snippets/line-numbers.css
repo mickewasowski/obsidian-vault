@@ -1,13 +1,22 @@
 .cm-content {
   counter-reset: line;
+  padding-left: 2.5em !important; /* Reduce space on the left */
+}
+
+.cm-line {
+  position: relative; /* Needed for absolute positioning inside */
 }
 
 .cm-line::before {
   counter-increment: line;
   content: counter(line);
-  display: inline-block;
+  position: absolute;
+  left: -2.5em; /* Align to match padding */
   width: 2em;
-  margin-right: 1em;
-  color: #888;
   text-align: right;
+  padding-right: 0.5em;
+  color: #888;
+  font-size: 0.8em;
+  pointer-events: none;
 }
+

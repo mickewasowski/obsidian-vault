@@ -1,7 +1,7 @@
 ---
 aliases:
 context:
--"[[neovim]]"
+- "[[neovim]]"
 ---
 
 #wip
