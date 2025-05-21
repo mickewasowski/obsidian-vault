@@ -1,9 +1,9 @@
 ---
-aliases:
+aliases: 
 context:
-- "[[command prompt]]"
-- "[[powershell]]"
-- "[[vim]]"
+  - "[[command prompt]]"
+  - "[[powershell]]"
+  - "[[Vim-commands]]"
 ---
 
 # Terminal commands

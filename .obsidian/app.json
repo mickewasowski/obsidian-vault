@@ -9,5 +9,7 @@
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "resources",
   "showInlineTitle": false,
-  "vimMode": true
+  "vimMode": true,
+  "readableLineLength": false,
+  "showLineNumber": true
 }

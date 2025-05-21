@@ -1,6 +1,8 @@
 {
-  "cssTheme": "Tokyo Night",
-  "enabledCssSnippets": [
-    "line-numbers"
-  ]
+  "cssTheme": "Obuntu",
+  "enabledCssSnippets": [],
+  "nativeMenus": false,
+  "showRibbon": true,
+  "showViewHeader": true,
+  "baseFontSizeAction": false
 }
