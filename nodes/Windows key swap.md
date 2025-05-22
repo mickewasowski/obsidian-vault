@@ -1,6 +1,7 @@
 ---
 aliases:
 context:
+- "[[Windows commands]]"
 ---
 
 #wip

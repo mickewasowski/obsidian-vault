@@ -1,6 +1,7 @@
 ---
 aliases:
 context:
+- "[[Git Commands]]"
 ---
 
 #wip

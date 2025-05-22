@@ -1,7 +1,8 @@
 ---
 aliases:
 context:
-- "[[Operating Systems]]"
+- "[[Linux]]"
+- "[[Linux-distros]]"
 ---
 
 # Ubuntu

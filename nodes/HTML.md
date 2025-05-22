@@ -1,6 +1,7 @@
 ---
 aliases:
 context:
+- "[[Web Development]]"
 ---
 
 #wip

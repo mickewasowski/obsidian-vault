@@ -1,6 +1,9 @@
 ---
 aliases:
 context:
+- "[[Vim]]"
+- "[[Vim-commands]]"
+- "[[Text Editor]]"
 ---
 
 # neovim

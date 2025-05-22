@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c93d0e0a82edc5e9",
+        "id": "acd9850676f7f73a",
         "type": "tabs",
         "children": [
           {
-            "id": "5282369a0828fa52",
+            "id": "f630f32f1f696147",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Accessibility"
             }
+          },
+          {
+            "id": "71502847603582c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/SEO.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "SEO"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -157,17 +172,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5282369a0828fa52",
+  "active": "237841f633fb7f18",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "nodes/SEO.md",
     "nodes/Accessibility.md",
+    "nodes/Screen Readers.md",
+    "nodes/Focus and Controlling focus.md",
+    "nodes/Polyfill.md",
     "nodes/HTML.md",
+    "Untitled 1.canvas",
+    "nodes/lsp.md",
+    "nodes/Neotree.md",
+    "nodes/Git cherry pick.md",
+    "nodes/Windows key swap.md",
+    "nodes/Ubuntu.md",
+    "nodes/neovim.md",
+    "nodes/Vim-commands.md",
     "nodes/Form validation.md",
     "nodes/Git Commands.md",
     "nodes/Git Stash Commands.md",
-    "nodes/Windows key swap.md",
-    "nodes/Vim-commands.md",
     "nodes/Browser commands.md",
-    "nodes/neovim.md",
     "resources/Pasted image 20250429160835.png",
     "nodes/Windows commands.md",
     "nodes/Untitled 2.md",
@@ -177,7 +202,6 @@
     "nodes/Vim.md",
     "nodes/vim commands.md",
     "nodes/Untitled 1.md",
-    "4913",
-    "nodes/NestJs.md"
+    "4913"
   ]
 }

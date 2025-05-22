@@ -87,12 +87,6 @@ context:
 > X => delete the character to the left of the cursor
 > r => replace the character under your cursor
 
-``` vim
-in normal mode type
-30igo
-then hit Esc and it will type go 
-```
-
 ### Insert mode
 
 > Esc => normal mode / exit insert mode
