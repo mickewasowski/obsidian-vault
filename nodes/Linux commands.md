@@ -4,8 +4,6 @@ context:
 - "[[Linux]]"
 ---
 
-#wip
-
 # Linux commands
 
 Here you can find the commands I have needed and didn't know.
@@ -44,3 +42,21 @@ XKBOPTIONS="ctrl:swapcaps" or XKBOPTIONS="ctrl:nocaps"
 
 sudo dpkg-reconfigure keyboard-configuration
 ```
+
+#### chown
+used to change ownership of files and directories
+``` bash
+// syntax
+chown [OPTIONS] NEW_OWNER[:NEW_GROUP] FILE...
+```
+
+``` bash
+// example
+chown john:developers myfile.txt
+```
+
+Common use cases:
+- change only the owner
+- change only the group
+- change recursive (for directories and contents)
+Only the **root** can use this command.

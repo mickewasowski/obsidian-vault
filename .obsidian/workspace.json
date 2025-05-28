@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "382462fc4005facc",
+        "id": "9ae0d552a612c973",
         "type": "tabs",
         "children": [
           {
-            "id": "0595aaab5c62c6d8",
+            "id": "bddcda6282a4f7d3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -153,8 +153,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0595aaab5c62c6d8",
+  "active": "bddcda6282a4f7d3",
   "lastOpenFiles": [
+    "nodes/Linux commands.md",
     "nodes/SQL.md",
     "nodes/Non-Relational Database.md",
     "nodes/Database types.md",
@@ -181,7 +182,6 @@
     "nodes/Screen Readers.md",
     "nodes/Focus and Controlling focus.md",
     "nodes/Polyfill.md",
-    "nodes/HTML.md",
     "Untitled 1.canvas",
     "resources/Pasted image 20250429160835.png",
     "4913"
