@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9ae0d552a612c973",
+        "id": "c93d0e0a82edc5e9",
         "type": "tabs",
         "children": [
           {
-            "id": "bddcda6282a4f7d3",
+            "id": "5282369a0828fa52",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Canvas HTML.md",
+                "file": "nodes/Accessibility.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Accessibility"
+            }
+          },
+          {
+            "id": "8e50f654ee9b3034",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Git.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Canvas HTML"
+              "title": "Git"
             }
           }
         ]
@@ -53,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "stash pop",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,7 +78,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -157,36 +172,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bddcda6282a4f7d3",
+  "active": "5282369a0828fa52",
   "lastOpenFiles": [
-    "nodes/Canvas HTML.md",
-    "nodes/Linux commands.md",
-    "nodes/SQL.md",
-    "nodes/Non-Relational Database.md",
-    "nodes/Database types.md",
-    "nodes/NoSQL.md",
-    "nodes/Relational Database.md",
-    "nodes/Heuristic.md",
-    "nodes/JavaScript.md",
-    "nodes/Imperative programming style.md",
-    "nodes/Interpreted language.md",
-    "nodes/Hoisting.md",
-    "nodes/Garbage collection (Javascript).md",
-    "nodes/Heuristics.md",
-    "nodes/heuristics.md",
-    "nodes/JS Engine.md",
-    "nodes/Browsers.md",
-    "nodes/Rendering Engine.md",
+    "nodes/Git.md",
+    "nodes/Accessibility.md",
+    "nodes/Untitled.md",
+    "nodes/Git Stash Commands.md",
+    "nodes/Form validation.md",
     "nodes/WebKit.md",
+    "nodes/Screen Readers.md",
+    "nodes/SQL.md",
+    "nodes/SEO.md",
+    "nodes/Rendering Engine.md",
+    "nodes/Relational Database.md",
+    "nodes/Polyfill.md",
+    "nodes/Non-Relational Database.md",
+    "nodes/NoSQL.md",
+    "nodes/JS Engine.md",
+    "nodes/Interpreted language.md",
+    "nodes/Imperative programming style.md",
+    "nodes/Heuristic.md",
     "nodes/Gecko Engine.md",
+    "nodes/Garbage collection (Javascript).md",
+    "nodes/Focus and Controlling focus.md",
+    "nodes/Database types.md",
     "nodes/Chromium.md",
     "nodes/Chrome.md",
-    "nodes/Accessibility.md",
-    "nodes/SEO.md",
-    "Untitled.canvas",
-    "nodes/Screen Readers.md",
-    "nodes/Focus and Controlling focus.md",
-    "Untitled 1.canvas",
+    "nodes/Canvas HTML.md",
+    "nodes/Browsers.md",
     "resources/Pasted image 20250429160835.png",
     "4913"
   ]
