@@ -4,38 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "c93d0e0a82edc5e9",
+        "id": "7dc59d356669d6a8",
         "type": "tabs",
         "children": [
           {
-            "id": "5282369a0828fa52",
+            "id": "14487204492a9bd5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Accessibility.md",
+                "file": "nodes/Temporal Dead Zone.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Accessibility"
+              "title": "Temporal Dead Zone"
             }
           },
           {
-            "id": "8e50f654ee9b3034",
+            "id": "0969c7059960bddb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Git.md",
-                "mode": "preview",
+                "file": "nodes/Function Expression.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Git"
+              "title": "Function Expression"
+            }
+          },
+          {
+            "id": "2af80b007a2d5a26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Type coercion.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Type coercion"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -172,34 +187,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5282369a0828fa52",
+  "active": "2af80b007a2d5a26",
   "lastOpenFiles": [
-    "nodes/Git.md",
+    "nodes/map.md",
+    "nodes/Type coercion.md",
+    "nodes/Polyfill.md",
+    "nodes/Global Execution Context.md",
+    "nodes/Function Expression.md",
+    "resources/Pasted image 20250604214441.png",
+    "nodes/forEach.md",
+    "nodes/Splice.md",
+    "nodes/Slice.md",
+    "nodes/Object.assign.md",
+    "nodes/Deep copy.md",
+    "nodes/Shallow copy.md",
+    "nodes/Function.md",
+    "nodes/Temporal Dead Zone.md",
+    "nodes/Hoisting.md",
+    "nodes/hwb().md",
+    "nodes/Hue.md",
+    "nodes/inputmode.md",
+    "nodes/will-change.md",
+    "nodes/Pointer Events.md",
     "nodes/Accessibility.md",
-    "nodes/Untitled.md",
+    "nodes/Git.md",
     "nodes/Git Stash Commands.md",
     "nodes/Form validation.md",
     "nodes/WebKit.md",
     "nodes/Screen Readers.md",
     "nodes/SQL.md",
-    "nodes/SEO.md",
-    "nodes/Rendering Engine.md",
-    "nodes/Relational Database.md",
-    "nodes/Polyfill.md",
-    "nodes/Non-Relational Database.md",
-    "nodes/NoSQL.md",
-    "nodes/JS Engine.md",
-    "nodes/Interpreted language.md",
-    "nodes/Imperative programming style.md",
-    "nodes/Heuristic.md",
-    "nodes/Gecko Engine.md",
-    "nodes/Garbage collection (Javascript).md",
-    "nodes/Focus and Controlling focus.md",
-    "nodes/Database types.md",
-    "nodes/Chromium.md",
-    "nodes/Chrome.md",
-    "nodes/Canvas HTML.md",
-    "nodes/Browsers.md",
     "resources/Pasted image 20250429160835.png",
     "4913"
   ]
