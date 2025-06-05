@@ -52,7 +52,7 @@ context:
 | < | in visual mode indent text left |
 | ctrl + r | redo |
 | gc | comments the selected text |
-|  
+| gcc | comments the row where the cursor is | 
 
 ### Modes
 
@@ -132,7 +132,14 @@ context:
 ### Split and tabs
 
 > :vsp file => vertical split
+> ctrl-w + v => vertical split
 > :sp file => horizontal split
 > Ctrl-w + h/j/k/l => move between splits
 > :tabnew file => open new tab
 > gt / gT => next/previous tab
+
+
+### Misc
+> ctrl+z => minimize vim
+> fg => maximize vim
+> jobs => lists all minimized vims

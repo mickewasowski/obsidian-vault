@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Type coercion.md",
-                "mode": "source",
+                "file": "nodes/Vim-commands.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Type coercion"
+              "title": "Vim-commands"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stash pop",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -189,8 +189,8 @@
   },
   "active": "2af80b007a2d5a26",
   "lastOpenFiles": [
-    "nodes/map.md",
     "nodes/Type coercion.md",
+    "nodes/map.md",
     "nodes/Polyfill.md",
     "nodes/Global Execution Context.md",
     "nodes/Function Expression.md",
