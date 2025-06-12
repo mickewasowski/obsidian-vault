@@ -174,6 +174,7 @@
   },
   "active": "7e825a52104ca01e",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "resources/Pasted image 20250604214441.png",
     "nodes/will-change.md",
     "nodes/map.md",
@@ -192,6 +193,8 @@
     "nodes/Function Expression.md",
     "nodes/Form validation.md",
     "nodes/Deep copy.md",
+=======
+>>>>>>> Stashed changes
     "nodes/DOM Manipulation.md",
     "nodes/JavaScript.md",
     "nodes/Git Stash Commands.md",
@@ -200,6 +203,27 @@
     "nodes/SQL.md",
     "nodes/Non-Relational Database.md",
     "nodes/Database types.md",
+<<<<<<< Updated upstream
+=======
+    "nodes/NoSQL.md",
+    "nodes/Relational Database.md",
+    "nodes/Heuristic.md",
+    "nodes/Imperative programming style.md",
+    "nodes/Interpreted language.md",
+    "nodes/Hoisting.md",
+    "nodes/Garbage collection (Javascript).md",
+    "nodes/Heuristics.md",
+    "nodes/heuristics.md",
+    "nodes/JS Engine.md",
+    "nodes/Browsers.md",
+    "nodes/Rendering Engine.md",
+    "nodes/WebKit.md",
+    "nodes/Gecko Engine.md",
+    "nodes/Chromium.md",
+    "nodes/Chrome.md",
+    "nodes/Accessibility.md",
+    "nodes/SEO.md",
+>>>>>>> Stashed changes
     "Untitled.canvas",
     "Untitled 1.canvas",
     "resources/Pasted image 20250429160835.png",
