@@ -4,53 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "7dc59d356669d6a8",
+        "id": "9a141fce478d5058",
         "type": "tabs",
         "children": [
           {
-            "id": "14487204492a9bd5",
+            "id": "7e825a52104ca01e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Temporal Dead Zone.md",
+                "file": "nodes/JavaScript.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Temporal Dead Zone"
+              "title": "JavaScript"
             }
           },
           {
-            "id": "0969c7059960bddb",
+            "id": "45a79012cb730bc3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Function Expression.md",
+                "file": "nodes/DOM Manipulation.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Function Expression"
-            }
-          },
-          {
-            "id": "2af80b007a2d5a26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Vim-commands.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Vim-commands"
+              "title": "DOM Manipulation"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "stash",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,35 +172,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2af80b007a2d5a26",
+  "active": "7e825a52104ca01e",
   "lastOpenFiles": [
-    "nodes/Type coercion.md",
-    "nodes/map.md",
-    "nodes/Polyfill.md",
-    "nodes/Global Execution Context.md",
-    "nodes/Function Expression.md",
     "resources/Pasted image 20250604214441.png",
+    "nodes/will-change.md",
+    "nodes/map.md",
+    "nodes/inputmode.md",
+    "nodes/hwb().md",
     "nodes/forEach.md",
+    "nodes/Type coercion.md",
     "nodes/Splice.md",
     "nodes/Slice.md",
-    "nodes/Object.assign.md",
-    "nodes/Deep copy.md",
     "nodes/Shallow copy.md",
-    "nodes/Function.md",
-    "nodes/Temporal Dead Zone.md",
-    "nodes/Hoisting.md",
-    "nodes/hwb().md",
-    "nodes/Hue.md",
-    "nodes/inputmode.md",
-    "nodes/will-change.md",
     "nodes/Pointer Events.md",
-    "nodes/Accessibility.md",
-    "nodes/Git.md",
-    "nodes/Git Stash Commands.md",
+    "nodes/Object.assign.md",
+    "nodes/Hue.md",
+    "nodes/Global Execution Context.md",
+    "nodes/Function.md",
+    "nodes/Function Expression.md",
     "nodes/Form validation.md",
-    "nodes/WebKit.md",
-    "nodes/Screen Readers.md",
+    "nodes/Deep copy.md",
+    "nodes/DOM Manipulation.md",
+    "nodes/JavaScript.md",
+    "nodes/Git Stash Commands.md",
+    "nodes/Canvas HTML.md",
+    "nodes/Linux commands.md",
     "nodes/SQL.md",
+    "nodes/Non-Relational Database.md",
+    "nodes/Database types.md",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
     "resources/Pasted image 20250429160835.png",
     "4913"
   ]
