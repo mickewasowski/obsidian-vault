@@ -4,8 +4,6 @@ context:
 - "[[SQL]]"
 ---
 
-#wip
-
 # Aggregate
 
 Aggregates are functions used to perform calculations and return a single value.

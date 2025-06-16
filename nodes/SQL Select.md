@@ -4,8 +4,6 @@ context:
 - "[[SQL]]"
 ---
 
-#wip
-
 # SQL Select
 
 Retrieve information from table/tables.
@@ -29,7 +27,6 @@ SELECT column1, column2, column3 FROM table_name;
 ``` sql
 SELECT DISTINCT column1 FROM table_name;
 ```
-
 
 ### WHERE - used to filter information
 
@@ -79,6 +76,3 @@ SELECT * FROM table_name ORDER BY column1;
 ``` sql
 SELECT * FROM table_name ORDER BY column1 DESC;
 ```
-
-
-
