@@ -25,21 +25,21 @@ SELECT COUNT(*) FROM table_name;
 ```
 
 
-### MIN
+### MIN - can be used with numeric, date, or string data types
 
 > select the min value in a column
 ``` SQL
 SELECT MIN(column1) FROM table_name;
 ```
 
-### MAX
+### MAX - can be used with numeric, date, or string data types
 
 > select the max value in a column
 ``` SQL
 SELECT column1, MAX(column2) FROM table_name;
 ```
 
-### SUM
+### SUM - mainly used with numeric values. Ignores NULL values.
 
 > sum of a column
 ``` SQL
