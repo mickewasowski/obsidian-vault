@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Navbar.md",
+                "file": "nodes/Git Commands.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Navbar"
+              "title": "Git Commands"
             }
           }
         ],
@@ -202,9 +202,10 @@
   },
   "active": "9d88b9b7fed4bc8e",
   "lastOpenFiles": [
+    "nodes/Git.md",
+    "nodes/Navbar.md",
     "nodes/Untitled 1.md",
     "nodes/Untitled.md",
-    "nodes/Navbar.md",
     "nodes/Ribbon shapes.md",
     "nodes/clip-path.md",
     "nodes/SQL Select.md",
@@ -216,7 +217,6 @@
     "nodes/Ubuntu setup.md",
     "nodes/Terminal commands.md",
     "nodes/neovim.md",
-    "nodes/Git.md",
     "nodes/lsp.md",
     "nodes/Mason.md",
     "nodes/Neotree.md",
