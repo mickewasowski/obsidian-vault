@@ -34,9 +34,37 @@
               "icon": "lucide-file",
               "title": "clip-path"
             }
+          },
+          {
+            "id": "575cfa9e48cbedb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Ribbon shapes.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Ribbon shapes"
+            }
+          },
+          {
+            "id": "9d88b9b7fed4bc8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Navbar.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Navbar"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -172,8 +200,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6750e4ce843e870",
+  "active": "9d88b9b7fed4bc8e",
   "lastOpenFiles": [
+    "nodes/Untitled 1.md",
+    "nodes/Untitled.md",
+    "nodes/Navbar.md",
+    "nodes/Ribbon shapes.md",
     "nodes/clip-path.md",
     "nodes/SQL Select.md",
     "nodes/SQL.md",
@@ -197,10 +229,6 @@
     "nodes/forEach.md",
     "nodes/Type coercion.md",
     "nodes/Splice.md",
-    "nodes/Slice.md",
-    "nodes/Shallow copy.md",
-    "nodes/Pointer Events.md",
-    "nodes/Object.assign.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "resources/Pasted image 20250429160835.png",
