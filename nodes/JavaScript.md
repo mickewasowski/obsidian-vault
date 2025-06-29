@@ -14,3 +14,9 @@ JS is a high-level [[Interpreted language]]  that is the core technology of the 
 1. Object-oriented
 2. [[Imperative programming style]]
 3. Functional
+
+### JS in different envs
+Web - JavaScript
+Servers - Node.js
+
+
