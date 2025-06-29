@@ -14,14 +14,43 @@
               "type": "markdown",
               "state": {
                 "file": "nodes/Canvas HTML.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
               "title": "Canvas HTML"
             }
+          },
+          {
+            "id": "a6469746f6bac5ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Vector.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Vector"
+            }
+          },
+          {
+            "id": "7260e5e17a272349",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Velocity.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Velocity"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -157,8 +186,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bddcda6282a4f7d3",
+  "active": "7260e5e17a272349",
   "lastOpenFiles": [
+    "nodes/Velocity.md",
+    "nodes/Vector.md",
     "nodes/Canvas HTML.md",
     "nodes/Linux commands.md",
     "nodes/SQL.md",
@@ -184,8 +215,6 @@
     "nodes/Accessibility.md",
     "nodes/SEO.md",
     "Untitled.canvas",
-    "nodes/Screen Readers.md",
-    "nodes/Focus and Controlling focus.md",
     "Untitled 1.canvas",
     "resources/Pasted image 20250429160835.png",
     "4913"
