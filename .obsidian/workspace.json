@@ -1,23 +1,36 @@
 {
   "main": {
-    "id": "f943851b71126f2e",
+    "id": "4df65fc49ecec937",
     "type": "split",
     "children": [
       {
+<<<<<<< Updated upstream
         "id": "b3db107be9d724d5",
         "type": "tabs",
         "children": [
           {
             "id": "57ba0f701d09cb58",
+=======
+        "id": "48e28f6a07449b0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8bb1bcf498251002",
+>>>>>>> Stashed changes
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< Updated upstream
                 "file": "nodes/Git Stash Commands.md",
+=======
+                "file": "nodes/Ajazz ak650.md",
+>>>>>>> Stashed changes
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
+<<<<<<< Updated upstream
               "title": "Git Stash Commands"
             }
           },
@@ -37,20 +50,26 @@
           }
         ],
         "currentTab": 1
+=======
+              "title": "Ajazz ak650"
+            }
+          }
+        ]
+>>>>>>> Stashed changes
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "dbdba3dfab85c862",
+    "id": "8e660deec87bc036",
     "type": "split",
     "children": [
       {
-        "id": "e44fd2cebc2368db",
+        "id": "9c03da988cbfdfd1",
         "type": "tabs",
         "children": [
           {
-            "id": "237841f633fb7f18",
+            "id": "8eb029b807d75872",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,12 +82,12 @@
             }
           },
           {
-            "id": "9239e63e2a947027",
+            "id": "14c496179abcb0b1",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "vim",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,20 +105,20 @@
     "width": 300
   },
   "right": {
-    "id": "26db3a05cfafe382",
+    "id": "713d2831d9864c87",
     "type": "split",
     "children": [
       {
-        "id": "88458a0f51bdbdd7",
+        "id": "419d6c0b7ed430d8",
         "type": "tabs",
         "children": [
           {
-            "id": "f2195767612777c5",
+            "id": "217babdaf5160484",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodes/Vim.md",
+                "file": "nodes/Ajazz ak650.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,25 +128,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Vim"
+              "title": "Backlinks for Ajazz ak650"
             }
           },
           {
-            "id": "a9cb17994c51b2e2",
+            "id": "34f471779b596c56",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodes/Vim.md",
+                "file": "nodes/Ajazz ak650.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Vim"
+              "title": "Outgoing links from Ajazz ak650"
             }
           },
           {
-            "id": "2ded1282464422c9",
+            "id": "ef20371c23227844",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,18 +161,18 @@
             }
           },
           {
-            "id": "f1e5fd96e8ed3346",
+            "id": "7d5c6fbe97c54924",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodes/Vim.md",
+                "file": "nodes/Ajazz ak650.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Vim"
+              "title": "Outline of Ajazz ak650"
             }
           }
         ]
@@ -172,6 +191,7 @@
       "command-palette:Open command palette": false
     }
   },
+<<<<<<< Updated upstream
   "active": "9855f8a7a29b7ee9",
   "lastOpenFiles": [
     "nodes/Git Stash Commands.md",
@@ -205,5 +225,10 @@
     "Untitled 1.canvas",
     "resources/Pasted image 20250429160835.png",
     "4913"
+=======
+  "active": "8bb1bcf498251002",
+  "lastOpenFiles": [
+    "nodes/Ajazz ak650.md"
+>>>>>>> Stashed changes
   ]
 }
