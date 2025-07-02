@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "JavaScript"
             }
+          },
+          {
+            "id": "eb5352675e5fce88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/JavaScript Shits.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "JavaScript Shits"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -68,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vim",
+                "query": "??",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +93,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -172,8 +187,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9855f8a7a29b7ee9",
+  "active": "eb5352675e5fce88",
   "lastOpenFiles": [
+    "nodes/Useful functions.md",
+    "nodes/JavaScript.md",
     "nodes/Git Stash Commands.md",
     "nodes/Velocity.md",
     "nodes/Vector.md",
@@ -181,14 +198,12 @@
     "nodes/JS variables.md",
     "nodes/JS Data types.md",
     "nodes/Git Commands.md",
-    "nodes/JavaScript.md",
     "nodes/SQL Select.md",
     "nodes/clip-path.md",
     "nodes/Ribbon shapes.md",
     "nodes/Git.md",
     "nodes/Navbar.md",
     "nodes/Untitled 1.md",
-    "nodes/Untitled.md",
     "nodes/SQL.md",
     "nodes/DOM Manipulation.md",
     "nodes/Vim-commands.md",
