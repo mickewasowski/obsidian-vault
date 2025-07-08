@@ -143,3 +143,7 @@ context:
 > ctrl+z => minimize vim
 > fg => maximize vim
 > jobs => lists all minimized vims
+
+
+### Folding
+z + c C o O R M
