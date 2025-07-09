@@ -54,3 +54,4 @@ Unique and immutable introduced in ES6.
 Often used to create unique property keys for objects, ensuring no property key collisions occur.
 Each Symbol value is distinct, even when multiple are created with the same description.
 Their primary use case is to add hidden or special properties to objects that won't interfere with other properties or methods.
+
