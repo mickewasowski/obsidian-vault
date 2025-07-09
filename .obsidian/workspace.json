@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "JavaScript Shits"
             }
+          },
+          {
+            "id": "95a487f204e89ada",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Chrome debugging.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Chrome debugging"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -187,8 +201,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb5352675e5fce88",
+  "active": "95a487f204e89ada",
   "lastOpenFiles": [
+    "nodes/Chrome debugging.md",
+    "nodes/JavaScript Shits.md",
     "nodes/Useful functions.md",
     "nodes/JavaScript.md",
     "nodes/Git Stash Commands.md",
@@ -213,8 +229,6 @@
     "nodes/neovim.md",
     "nodes/lsp.md",
     "nodes/Mason.md",
-    "nodes/Neotree.md",
-    "nodes/Font resizing.md",
     "resources/Pasted image 20250604214441.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
