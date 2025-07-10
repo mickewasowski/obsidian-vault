@@ -1,74 +1,41 @@
 {
   "main": {
-    "id": "4df65fc49ecec937",
+    "id": "4540d3a72a69f241",
     "type": "split",
     "children": [
       {
-        "id": "521fc4d29f3b1bdd",
+        "id": "fe863d7c08ff982c",
         "type": "tabs",
         "children": [
           {
-            "id": "9a5965ec4ea86446",
+            "id": "54e9c8b347a6c1c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/JS Data types.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "JS Data types"
-            }
-          },
-          {
-            "id": "eb5352675e5fce88",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/JavaScript Shits.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "JavaScript Shits"
-            }
-          },
-          {
-            "id": "95a487f204e89ada",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Chrome debugging.md",
+                "file": "nodes/GSAP.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Chrome debugging"
+              "title": "GSAP"
             }
           }
-<<<<<<< HEAD
-        ],
-        "currentTab": 3
-=======
         ]
->>>>>>> c350bb3dc47ece3420ad41ebb0227f256ddc5fff
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "8e660deec87bc036",
+    "id": "34643c8641dbf031",
     "type": "split",
     "children": [
       {
-        "id": "9c03da988cbfdfd1",
+        "id": "cf1debcd945ee411",
         "type": "tabs",
         "children": [
           {
-            "id": "8eb029b807d75872",
+            "id": "fa9082088aa3bb4a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -81,16 +48,12 @@
             }
           },
           {
-            "id": "14c496179abcb0b1",
+            "id": "256f43155f13fb14",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-<<<<<<< HEAD
-                "query": "??",
-=======
                 "query": "",
->>>>>>> c350bb3dc47ece3420ad41ebb0227f256ddc5fff
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,28 +64,27 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "713d2831d9864c87",
+    "id": "5c1b6ff667fb8965",
     "type": "split",
     "children": [
       {
-        "id": "419d6c0b7ed430d8",
+        "id": "1a29fdedb5cc142c",
         "type": "tabs",
         "children": [
           {
-            "id": "217babdaf5160484",
+            "id": "97cdb8ff62cc812b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodes/Ajazz ak650.md",
+                "file": "nodes/GSAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,25 +94,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ajazz ak650"
+              "title": "Backlinks for GSAP"
             }
           },
           {
-            "id": "34f471779b596c56",
+            "id": "2e1552bc3253c66c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodes/Ajazz ak650.md",
+                "file": "nodes/GSAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Ajazz ak650"
+              "title": "Outgoing links from GSAP"
             }
           },
           {
-            "id": "ef20371c23227844",
+            "id": "84207f9c87365cce",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -165,18 +127,18 @@
             }
           },
           {
-            "id": "7d5c6fbe97c54924",
+            "id": "dfb8119f5c60cc61",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodes/Ajazz ak650.md",
+                "file": "nodes/GSAP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Ajazz ak650"
+              "title": "Outline of GSAP"
             }
           }
         ]
@@ -195,44 +157,8 @@
       "command-palette:Open command palette": false
     }
   },
-<<<<<<< HEAD
-  "active": "95a487f204e89ada",
+  "active": "54e9c8b347a6c1c8",
   "lastOpenFiles": [
-    "nodes/Chrome debugging.md",
-    "nodes/JavaScript Shits.md",
-    "nodes/Useful functions.md",
-    "nodes/JavaScript.md",
-    "nodes/Git Stash Commands.md",
-    "nodes/Velocity.md",
-    "nodes/Vector.md",
-    "nodes/REPL.md",
-    "nodes/JS variables.md",
-    "nodes/JS Data types.md",
-    "nodes/Git Commands.md",
-    "nodes/SQL Select.md",
-    "nodes/clip-path.md",
-    "nodes/Ribbon shapes.md",
-    "nodes/Git.md",
-    "nodes/Navbar.md",
-    "nodes/Untitled 1.md",
-    "nodes/SQL.md",
-    "nodes/DOM Manipulation.md",
-    "nodes/Vim-commands.md",
-    "nodes/Accessibility.md",
-    "nodes/Ubuntu setup.md",
-    "nodes/Terminal commands.md",
-    "nodes/neovim.md",
-    "nodes/lsp.md",
-    "nodes/Mason.md",
-    "resources/Pasted image 20250604214441.png",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "resources/Pasted image 20250429160835.png",
-    "4913"
-=======
-  "active": "9a5965ec4ea86446",
-  "lastOpenFiles": [
-    "nodes/Ajazz ak650.md"
->>>>>>> c350bb3dc47ece3420ad41ebb0227f256ddc5fff
+    "nodes/GSAP.md"
   ]
 }
