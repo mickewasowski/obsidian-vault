@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/JS Data types.md",
-                "mode": "preview",
+                "file": "nodes/Extension Manager.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JS Data types"
+              "title": "Extension Manager"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "exten",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,7 +64,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -159,6 +160,10 @@
   },
   "active": "9a5965ec4ea86446",
   "lastOpenFiles": [
+    "resources/Pasted image 20250712122143.png",
+    "resources/Pasted image 20250712120712.png",
+    "resources/Pasted image 20250712120657.png",
+    "nodes/JS Data types.md",
     "nodes/Ajazz ak650.md"
   ]
 }

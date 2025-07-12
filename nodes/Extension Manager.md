@@ -1,4 +1,3 @@
-# Extensions Manager
 ---
 aliases:
 context:
@@ -8,7 +7,7 @@ context:
 
 #wip
 
-# Extensions Manager
+# Extension Manager
 
 Used in Ubuntu for advanced keymaps.
 Installed from the App Center.
@@ -42,3 +41,9 @@ Installed from the App Center.
 | Win + h/j/k/l | tap once to attach the bone, tap again the same to start resizing |
 | Alt + h/j/k/l | edge tiling positions |
 
+### Enable advanced options
+![[Pasted image 20250712120657.png]]
+![[Pasted image 20250712120712.png]]
+
+### Setup centering of a window
+![[Pasted image 20250712122143.png]]
