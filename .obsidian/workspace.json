@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fe863d7c08ff982c",
+        "id": "22c9fc1b22961083",
         "type": "tabs",
         "children": [
           {
-            "id": "54e9c8b347a6c1c8",
+            "id": "9668dcbfaef73d23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Extension Manager.md",
-                "mode": "source",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Extension Manager"
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "exten",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,8 +60,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -158,8 +153,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54e9c8b347a6c1c8",
+  "active": "9668dcbfaef73d23",
   "lastOpenFiles": [
+    "nodes/Ubuntu.md",
+    "nodes/Untitled 1.md",
+    "nodes/Untitled.md",
+    "nodes/Extension Manager.md",
     "resources/Pasted image 20250712122143.png",
     "resources/Pasted image 20250712120712.png",
     "resources/Pasted image 20250712120657.png",
