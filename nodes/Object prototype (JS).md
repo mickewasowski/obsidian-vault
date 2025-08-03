@@ -315,7 +315,3 @@ Tests your understanding of inheritance, memory efficiency (shared methods), and
 Common questions:
 - How would you implement inheritance without class?
 - What happens when you call new?
-
-
-
-
