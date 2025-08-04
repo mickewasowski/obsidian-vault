@@ -174,3 +174,12 @@ class LinkedList<T> {
     }
 }
 ```
+
+### Recursion
+//TODO:
+
+### Binary tree algorithm  
+//TODO:
+
+### Graphs
+//TODO: 
