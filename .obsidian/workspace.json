@@ -4,37 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "3371aa74aae18fa5",
+        "id": "7b2a5e5131ebb651",
         "type": "tabs",
         "children": [
           {
-            "id": "6d646aa0cdf82e66",
+            "id": "ea74721dd1d70e43",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Equality comparisons.md",
+                "file": "nodes/Loops and Iterations.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Equality comparisons"
+              "title": "Loops and Iterations"
             }
           },
           {
-            "id": "29a3fbc0b8c4f8fa",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "resources/Pasted image 20250805115552.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250805115552"
-            }
-          },
-          {
-            "id": "be23e6094d467b16",
+            "id": "c6521b972b5a4cbf",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,8 +35,7 @@
               "title": "JavaScript Shits"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "shits",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +78,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,12 +172,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "29a3fbc0b8c4f8fa",
+  "active": "ea74721dd1d70e43",
   "lastOpenFiles": [
-    "nodes/Loops and Iterations.md",
     "nodes/JavaScript Shits.md",
-    "resources/Pasted image 20250805115552.png",
+    "nodes/Loops and Iterations.md",
     "nodes/Equality comparisons.md",
+    "resources/Pasted image 20250805115552.png",
     "resources/Pasted image 20250712122143.png",
     "resources/Pasted image 20250712120712.png",
     "resources/Pasted image 20250712120657.png",
@@ -217,7 +205,6 @@
     "nodes/Type casting.md",
     "nodes/Splice.md",
     "nodes/Slice.md",
-    "nodes/Shallow copy.md",
     "4913"
   ]
 }

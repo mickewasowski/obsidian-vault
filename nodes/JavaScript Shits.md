@@ -52,3 +52,20 @@ If the string begins with text character => returns `NaN`
 	parseInt('px42');     // → NaN ❌
 	Number('42px');       // → NaN ❌
 ```
+
+### for..in loop
+> The keys are ordered in a "special fashion": integer properties are sorted, others appear in creation order.
+Example:
+``` js
+	let codes = {
+	  "49": "Germany",
+	  "41": "Switzerland",
+	  "44": "Great Britain",
+	  // ..,
+	  "1": "USA"
+	};
+	
+	for (let code in codes) {
+	  alert(code); // 1, 41, 44, 49
+	}
+```
