@@ -43,3 +43,12 @@ Why did I experience this behavior:
 | performs a bitwise operation | just picks the first defined value |
 | returns a number | returns the value of the variable how it received it |
 
+### parseInt
+When parsing a string which contains both numbers and text, `parseInt` will try to parse the provided string up until it reaches a text character.
+If the string begins with a number => returns the parsed number up until the text
+If the string begins with text character => returns `NaN`
+``` js
+	parseInt('42px');     // → 42 ✅
+	parseInt('px42');     // → NaN ❌
+	Number('42px');       // → NaN ❌
+```

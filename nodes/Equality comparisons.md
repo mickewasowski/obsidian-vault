@@ -64,3 +64,57 @@ Examples:
     console.log(Object.is(obj, {}));
     // Expected output: false
 ```
+
+
+##  Equality Algorithms
+
+#### `isLooselyEqual` - underlies the `==` (loose equality) operator in JS
+Checks whether its two operands  are equal, returning a `Boolean` result. It attempts to convert and compare operands that are of different types.
+1. checks for the same type - if yes, use strict equality (`===`)
+2. is types differ, applies *type coercion* rules:
+   - `null == undefined` => true
+   - if one is number and one is a string => convert string to number
+   - if one is boolean => convert to number
+   - if one is object and other is primitive => convert object to primitive
+3. repeats comparison after coercion
+
+> `IsLooselyEqual` enables type coercion to determine equality - unlike `IsStrictlyEqual` (`===`), which requires both type and value to match.
+
+####  `IsStrictlyEqual` - checks whether its two operands are equal, returning a `Boolean` result.
+ This is the internal algorithm behind the `===` operator in JavaScript (strict equality).
+ It returns `true` only if:
+1. types are the same, and
+2. values are the same (by specific type of rules)
+
+> Type-specific behavior:
+- Primitives:
+   - same type, same value => true
+   - `NaN === NaN` => false (special case)
+   - `+0 === -0` => true
+- Objects:
+   - only `true` if they reference the **exact same object**
+
+> `IsStrictlyEqual` checks for **strict equality**: no type coercion, and values must be identical in type and content/reference. It is more predictable and recommended over `==` in most cases.
+
+#### SameValueZero
+This algorithm is used in places like `Array.prototype.includes()` and `Map`/`Set`, and `TypedArray.prototype.includes()` comparisons.
+It is like `===` (strict equality), but with one difference:
+- `NaN` is considered equal to `NaN`
+- `+0` and `-0` are considered equal (same as `===`)
+
+> `SameValueZero` is like strict equality (`===`), but treats `NaN` as equal to `NaN` - which `===` does not. It's commonly used in equality checks where `NaN` should be treated as equal.
+Used in:
+- `Array.prototype.includes()`
+- `Map`/`Set`
+- `TypedArray.prototype.includes()`
+
+
+#### SameValue
+this internal algorithm is `stricter than ===`, and is used in specific JS operations (e.g. `Object.is()`).
+It is **identical to `===`, except**:
+- `NaN === NaN` => **false**, but `SameValue(NaN, NaN)` => true
+- `+0 === -0` => true, but `SameValue(+0, -0)` => `false`
+
+Used in:
+- `Object.is()`
+- specification-level equality in some internal mechanics (e.g. module registry, record identity)
