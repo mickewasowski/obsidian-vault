@@ -48,6 +48,20 @@
               "icon": "lucide-file",
               "title": "CSS Modules"
             }
+          },
+          {
+            "id": "1b9d55e78049320d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/SCSS Modules.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "SCSS Modules"
+            }
           }
         ],
         "currentTab": 2
@@ -188,6 +202,7 @@
   },
   "active": "faa9f19cadbf6001",
   "lastOpenFiles": [
+    "nodes/SCSS Modules.md",
     "nodes/CSS Modules.md",
     "nodes/Loops and Iterations.md",
     "nodes/Redux Selector.md",
@@ -221,7 +236,6 @@
     "nodes/Useful functions.md",
     "nodes/Ubuntu setup.md",
     "nodes/Typescript shits.md",
-    "nodes/Type coercion.md",
     "4913"
   ]
 }

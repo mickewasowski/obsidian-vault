@@ -4,7 +4,6 @@ context:
 - "[[CSS]]"
 ---
 
-#wip
 
 # CSS Modules
 
