@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"3050f7448a3e9830","x":-1100,"y":-100,"width":161,"height":60,"color":"#fef967","type":"text","text":"RGS"},
+		{"id":"34a800515295e1f5","x":-580,"y":-460,"width":380,"height":140,"color":"#ee00ff","type":"text","text":"Relay => Storage.ts => dispatchEvent() => add if for the event you want to listen ('lobby_update') => update the relay state"},
+		{"id":"ed5ea45837132b42","x":-1280,"y":400,"width":297,"height":79,"color":"1","type":"text","text":"Relay => App.ts => callbackHandler()"},
+		{"id":"b78c8fdf92f9fa51","x":-620,"y":560,"width":482,"height":210,"color":"1","type":"text","text":"callbackHandler() => add case with the same event as the one you sent =>\n1. call store dispatch to update relay store\n2. emit RelayEvent.YourEvent (slot/lobby listens for this event to update the local state)"},
+		{"id":"091499c22a90ea9a","x":640,"y":240,"width":280,"height":80,"color":"4","type":"text","text":"Lobby => button click (or any kind of other trigger)"},
+		{"id":"5b75d0f9429cb526","x":500,"y":-100,"width":300,"height":100,"color":"5","type":"text","text":"Slot => button click (or any kind of other trigger)"},
+		{"id":"f8244dfcaff758ef","x":-480,"y":-120,"width":258,"height":94,"color":"#e90bf9","type":"text","text":"Relay.ts => postMessage function"}
+	],
+	"edges":[
+		{"id":"56a97ff2f79508f7","fromNode":"3050f7448a3e9830","fromSide":"top","toNode":"34a800515295e1f5","toSide":"left","color":"3","label":"emitted event"},
+		{"id":"f53f2a1606cbaa2a","fromNode":"f8244dfcaff758ef","fromSide":"bottom","toNode":"3050f7448a3e9830","toSide":"bottom","color":"5","label":"sends event w/ data"},
+		{"id":"39ad0f04a5aa9996","fromNode":"3050f7448a3e9830","fromSide":"left","toNode":"ed5ea45837132b42","toSide":"top","color":"5","label":"returns response w/ data"},
+		{"id":"bf05a1a2873f60df","fromNode":"091499c22a90ea9a","fromSide":"left","toNode":"f8244dfcaff758ef","toSide":"right","color":"4"},
+		{"id":"8738288f4eb4557d","fromNode":"ed5ea45837132b42","fromSide":"right","toNode":"b78c8fdf92f9fa51","toSide":"left","color":"5"},
+		{"id":"b2b3aa4eacdb944e","fromNode":"b78c8fdf92f9fa51","fromSide":"right","toNode":"091499c22a90ea9a","toSide":"bottom","color":"4","label":"receive response data"},
+		{"id":"1f554f87aa27864d","fromNode":"b78c8fdf92f9fa51","fromSide":"right","toNode":"5b75d0f9429cb526","toSide":"bottom","color":"5","label":"receive response data"},
+		{"id":"c20779c28526f20b","fromNode":"5b75d0f9429cb526","fromSide":"left","toNode":"f8244dfcaff758ef","toSide":"top","color":"5"},
+		{"id":"08be78885cc12e40","fromNode":"f8244dfcaff758ef","fromSide":"left","toNode":"3050f7448a3e9830","toSide":"right","color":"4","label":"sends event w/ data"},
+		{"id":"fd3fc769847626b0","fromNode":"3050f7448a3e9830","fromSide":"left","toNode":"ed5ea45837132b42","toSide":"left","color":"4","label":"returns response w/ data"},
+		{"id":"09f32af4c9e30eeb","fromNode":"ed5ea45837132b42","fromSide":"bottom","toNode":"b78c8fdf92f9fa51","toSide":"bottom","color":"4"}
+	]
+}
