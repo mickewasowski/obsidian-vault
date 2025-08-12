@@ -4,7 +4,7 @@ context:
 - "[[Linux]]"
 ---
 
-# Linux commands
+# Linux commands mix
 
 Here you can find the commands I have needed and didn't know.
 
