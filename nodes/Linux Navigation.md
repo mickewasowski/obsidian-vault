@@ -66,3 +66,59 @@ Tells you where you are currently.
 > Wildcards
 - `mv *.txt /path/to/destination/` - you can use wildcards to move multiple files
 
+## Creating and deleting files
+
+### touch command
+`touch` command is the simplest way to create an empty file - `touch example.txt`
+This command will also update the timestamp of the file if it already exists.
+
+
+### echo
+`echo` creates a file by redirecting output to it
+`echo "Hello world!" > hello.txt` - this command creates a file with 'Hello world!'
+
+
+### cat
+`cat` creates file interactively
+`cat > newfile.txt` - after executing this command you can type your contents and then save it with `Ctrl + D`
+
+### rm
+`rm` is the primary tool for removing files, it is more versatile and can be used to delete directories with the `-r` flag
+`rm filename.txt`
+
+> `-r` recursively deletes files and directories
+`rm -r folderName`
+
+> `-i` prompts you before each removal, useful when removing multiple files
+`rm -i file.txt`
+
+> `-v` (verbose) shows you what is being deleted
+`rm -v file.txt`
+
+> `-f` forces removal without prompting
+
+> `*.txt` (wildcards)
+`rm *.txt` - removes all text files
+
+
+### rmdir
+`rmdir` is used to remove directories, used specifically to remove *empty* directories (it cannot delete a directory that contains files)
+`rmdir emptyFolder`
+
+> if the directory contains files you need to use `rm` with `-r` flag (recursive)
+`rm -r nonEmptyFolder`
+
+> if you want to be prompted for confirmation use `-i`
+`rm -ri nonEmptyFolder`
+
+
+## Creating directories
+
+### mkdir
+
+> create directory
+`mkdir` used to create a directory
+`mkdir my_directory`
+
+> create nested directory
+`mkdir -p parentFolder/childFolder`
