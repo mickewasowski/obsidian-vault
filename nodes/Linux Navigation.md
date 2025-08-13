@@ -122,3 +122,110 @@ This command will also update the timestamp of the file if it already exists.
 
 > create nested directory
 `mkdir -p parentFolder/childFolder`
+
+
+## Directory hierarchy
+Crucial for efficient navigation and file management.
+Filesystem Hierarchy Standard (FHS) is a defined tree like structure that prevents files from being scattered all over the system.
+
+`/` root directory, top level of the file system
+The base of the entire filesystem hierarchy, all other directories branch from here.
+
+
+`/boot`
+Contains files needed to boot the system.
+Includes kernel images, initramfs, and bootloader files.
+
+
+`/home` user home directories
+Contains personal directories for each user.
+
+
+`/bin` essential binary executables
+Contains essential command binaries needed in single-user mode.
+Common commands: `ls`, `cp`, `mv`, `cat`, `bash`
+Accessible to all users
+
+
+`/sbin` system administration binaries
+Contains essential system administration binaries.
+Typically requires admin privileges.
+Commands: `fdisk`, `ifconfig`, `reboot`, `iptables`
+
+
+`/etc` configuration files
+Contains system-wide configuration files.
+Example:
+- `/etc/passwd` user account information
+- `/etc/group` group information
+- `/etc/fstab` filesystem table
+- `/etc/hosts` hostname to IP mappings
+
+
+`/dev`
+Contains device files that represent hardware components
+Examples:
+- `/dev/sda` first SATA/SCSI disk
+- `/dev/tty` terminal devices
+- `/dev/null` null device (discards all data)
+
+
+`/proc`
+Virtual filesystem providing process and kernel information.
+Files don't exist on disk, generated on the fly by the kernel.
+Examples:
+- `/proc/cpuinfo` CPU information
+- `/proc/meminfo` memory information
+- `/proc/[pid]` directory for each running process
+
+
+`/var` variable data (log, spool files)
+Contains files that change frequently.
+Subdirectories:
+- `/var/log` system log files
+- `/var/spool` spool directories (print queues, mail)
+- `/var/cache` application cache data
+- `/var/www` web server root (common location)
+
+
+`/usr` user programs and data
+Contains the majority of user utilities and applications.
+Subdirectories:
+- `/usr/bin` non-essential user binaries
+- `/usr/sbin` non-essential system binaries
+- `/usr/lib` libraries for binaries `/usr/bin` and `/usr/sbin`
+- `/usr/local` locally installed software
+- `/usr/share` architecture-independent data
+
+
+`/lib` shared libraries
+Contains libraries needed by binaries in `/bin` and `/sbin`.
+Similar for `/usr/lib` but for essential system binaries.
+
+
+`/tmp` temporary files
+Temporary files created by the system and user.
+Typically cleared on reboot.
+
+
+`/opt` third-party applications (optional software)
+Contains add-on application software packages. 
+
+
+`/mnt`
+Temporary mount points for filesystem.
+Traditionally used for manually mounted devices.
+
+
+`/media`
+Mount points for removable media (USB drives, CDs, etc.)
+Often automatically mounted.
+
+
+`/srv` Service data
+Contains data for services provided by the filesystem - web server data, FTP filesystem
+
+
+`/run` Runtime data
+Contains system information describing the system since boot.
+Replaces `/var/run` in many modern distributions.
