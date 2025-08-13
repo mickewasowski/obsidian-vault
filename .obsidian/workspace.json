@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/CSS Modules.md",
-                "mode": "source",
+                "file": "nodes/CV-Builder.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "CSS Modules"
+              "title": "CV-Builder"
             }
           },
           {
@@ -202,8 +202,9 @@
   },
   "active": "faa9f19cadbf6001",
   "lastOpenFiles": [
-    "nodes/SCSS Modules.md",
+    "nodes/CV-Builder.md~",
     "nodes/CSS Modules.md",
+    "nodes/SCSS Modules.md",
     "nodes/Loops and Iterations.md",
     "nodes/Redux Selector.md",
     "nodes/Postman.md",
@@ -235,7 +236,6 @@
     "nodes/Vector.md",
     "nodes/Useful functions.md",
     "nodes/Ubuntu setup.md",
-    "nodes/Typescript shits.md",
     "4913"
   ]
 }
