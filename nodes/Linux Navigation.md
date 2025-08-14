@@ -4,8 +4,6 @@ context:
 - "[[Linux]]"
 ---
 
-#wip
-
 # Linux Navigation
 
 Navigation between directories and files.
