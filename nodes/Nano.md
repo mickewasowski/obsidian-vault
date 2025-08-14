@@ -5,8 +5,6 @@ context:
 - "[[Terminal editor]]"
 ---
 
-#wip
-
 # Nano
 
 Nano is a simple, user-friendlly command-line text editor available on Unix/Linux.
