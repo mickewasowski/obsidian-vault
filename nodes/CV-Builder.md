@@ -1,6 +1,7 @@
 ---
 aliases:
 context:
+- "[[Personal Projects]]"
 ---
 
 #wip
@@ -42,3 +43,7 @@ This is a file with thoughts, structure, fyis and etc. about the project.
 1. you can implement your own drag-and-drop functionality (hook) and use it
 2. you can implement it with multiple pages (decide whether you'll separate a section if it doesn't fit entirely on page or move the entire section to another page)
 3. you can implement moving a section from one page to another and/or to main/sidebar and you can use it's area to calculate the new height (you'll know the width of the element based on it's (new) parent)
+
+
+## Required
+1. Disable next button if the user hasn't chosen a template
