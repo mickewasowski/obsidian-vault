@@ -99,6 +99,7 @@ class Queue<T> {
 }
 ```
 
+//TODO: review this and better understand it
 ### Singly Linked List Data Structure Implementation
 ``` js
 class Node<T> {
