@@ -51,3 +51,9 @@ wsl --shutdown          # Shutdown all running WSL instances
 - access Linux files from Windows:  \\wsl$\<distro_name>\
 - access Windows files from Linux: /mnt/c/ , /mnt/d/ , etc.
 - use Visual Studio Code with WSL via the Remote - WSL extension
+
+
+### Check if WSL is active
+1. From Powershell or CMD `wsl --list --running` or shorthand `wsl -l -v`, another one `tasklist | findstr "wsl"`
+2. From inside WSL `uname -a`
+3. Via Windows services `Get-Process | Where-Object { $_.ProcessName -mathc "vmmem" }`
