@@ -147,3 +147,12 @@ context:
 
 ### Folding
 z + c C o O R M
+
+
+### Text objects
+
+> `c i '` => finds the first occurrence of `'`, removes the contents and leaves you in insert mode
+> `d i '` => finds the first occurrence of `'` and deletes the contents
+> `v i '` => finds the first occurrence of `'` and selects the contents
+The above works with any type of quotes, tag braces and braces
+
