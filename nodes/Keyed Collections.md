@@ -28,3 +28,7 @@ Keyed collectios examples:
 
 ### Weak Map
 [Weak Map](nodes/Weak%20Map.md)
+
+
+### Set
+[Set](nodes/Set.md)
