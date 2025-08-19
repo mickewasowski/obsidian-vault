@@ -4,7 +4,6 @@ context:
   - "[[JavaScript]]"
 ---
 
-#wip
 
 # Keyed Collections
 
@@ -32,3 +31,7 @@ Keyed collectios examples:
 
 ### Set
 [Set](nodes/Set.md)
+
+
+### WeakSet
+[WeakSet](nodes/WeakSet.md)
