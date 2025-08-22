@@ -47,7 +47,7 @@ The above creates a local branch from the remote one and tracks it. Any commits 
 
 ### How to setup two separate Git configurations locally
 
-
+#wip
 
 
 
@@ -58,3 +58,22 @@ The above creates a local branch from the remote one and tracks it. Any commits 
 
 ### Using personal token
 > [!Tip] When the token had expired and you want to renew it you need to first copy the token, update it in the `.git-credentials`, then try to push and when it prompts you for username and password, for the password enter the new token.
+
+
+### How to checkout local repo to a tag
+When your remote repo had released a version it creates a tag with that version.
+If you want to checkout locally to that version (tag) the below are the commands you'll need:
+``` bash
+    git fetch --tags // fetch all remote tags
+
+    git tag --list // list available tags
+
+    git checkout tags/v1.2.3 // checkout to a specific tag
+```
+At this point, you'll be in a **detached HEAD state** (meaning you're not on a branch).
+If you want to work from that tag and make changes, create a new branch from it:
+``` bash
+    git checkout -b my-branch-from-v1.2.3 tags/v1.2.3
+```
+
+
