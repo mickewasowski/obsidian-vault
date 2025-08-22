@@ -76,4 +76,11 @@ If you want to work from that tag and make changes, create a new branch from it:
     git checkout -b my-branch-from-v1.2.3 tags/v1.2.3
 ```
 
+### How to create a tag for an old commit
+``` bash
+    git log --oneline // find the commit hash you want
 
+    git tag v1.0.0 <commit-hash> // create a tag pointing to that commit
+
+    git push origin v1.0.0 // push the tag to the remote so others see it
+```
