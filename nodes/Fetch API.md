@@ -5,8 +5,6 @@ context:
 - "[[Web Development]]"
 ---
 
-#wip
-
 # Fetch API
 
 The Fetch API is the new way for JS in browsers to make HTTP requests.

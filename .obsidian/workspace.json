@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Fetch API"
             }
+          },
+          {
+            "id": "8020a15431d5f761",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Package Managers.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Package Managers"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -172,12 +186,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5790c96664751108",
+  "active": "8020a15431d5f761",
   "lastOpenFiles": [
-    "nodes/Untitled.md",
-    "nodes/Untitled 1.md",
     "nodes/Fetch API.md",
     "nodes/DOM Manipulation.md",
+    "nodes/Package Managers.md",
+    "nodes/Untitled 1.md",
     "nodes/Working with files.md",
     "nodes/WeakSet.md",
     "nodes/Weak Map.md",
