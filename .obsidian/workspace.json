@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "DOM Manipulation"
             }
+          },
+          {
+            "id": "5790c96664751108",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Fetch API.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Fetch API"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -157,9 +172,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3aff233f67b9ea50",
+  "active": "5790c96664751108",
   "lastOpenFiles": [
     "nodes/Untitled.md",
+    "nodes/Untitled 1.md",
+    "nodes/Fetch API.md",
+    "nodes/DOM Manipulation.md",
     "nodes/Working with files.md",
     "nodes/WeakSet.md",
     "nodes/Weak Map.md",
@@ -182,9 +200,6 @@
     "nodes/Loops and Iterations.md",
     "nodes/JavaScript Shits.md",
     "nodes/Slice.md",
-    "nodes/CSS Modules.md",
-    "nodes/Redux Selector.md",
-    "nodes/Postman.md",
     "canvas/tournaments.canvas",
     "canvas/RGS-Relay-Slot&Lobby communication.canvas",
     "resources/Pasted image 20250805115552.png",
