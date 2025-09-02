@@ -22,3 +22,5 @@ Some of the basic commands for handling files are:
 - `ls` for listing files and directories
 
 [[File permissions]]
+
+[[Archiving]]
