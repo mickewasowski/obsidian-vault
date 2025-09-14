@@ -29,3 +29,8 @@ Imagine a phone call:
    - Substate: "Talking"
    - Substate: "On Hold"
    Both substates share behaviors like "End Call" (handled by the parent), but have their own specific rules too.
+
+
+### Custom implementation
+[[useRotatingFace]]
+[[useTournamentFace]]
