@@ -2,7 +2,6 @@
 aliases:
 context:
 - "[[Expressions and Operators]]"
-- "[[JavaScript]]"
 ---
 
 
