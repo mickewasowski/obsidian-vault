@@ -25,3 +25,4 @@ Operators define the type of operation performed, such as arithmetic, comparison
 [[Comma operators]]
 [[Unary operators]]
 [[Assignment operators]]
+[[Comparison operators]]
