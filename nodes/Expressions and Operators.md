@@ -26,3 +26,4 @@ Operators define the type of operation performed, such as arithmetic, comparison
 [[Unary operators]]
 [[Assignment operators]]
 [[Comparison operators]]
+[[Arithmetic operators]]
