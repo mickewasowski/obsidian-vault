@@ -30,3 +30,4 @@ Operators define the type of operation performed, such as arithmetic, comparison
 [[Bitwise operators]]
 [[Logical operators]]
 [[BigInt operators]]
+[[String operators]]
