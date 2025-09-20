@@ -20,3 +20,5 @@ Operators define the type of operation performed, such as arithmetic, comparison
 - arithmetic
 - comparison
 - logical evaluation
+
+[[Conditional operators]]
