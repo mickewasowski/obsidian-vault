@@ -27,3 +27,4 @@ Operators define the type of operation performed, such as arithmetic, comparison
 [[Assignment operators]]
 [[Comparison operators]]
 [[Arithmetic operators]]
+[[Bitwise operators]]
