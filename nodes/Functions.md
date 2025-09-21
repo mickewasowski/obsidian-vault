@@ -33,6 +33,7 @@ var someName = function funcName(param1, param2, ...args) { // here funcName is 
 
 1. Default parameters - typically in JS function parameters default to `undefined`.
 However, you can set a different default value depending on your needs.
+Default function parameters allow named parameters to be initialized with default values if no value or `undefined` is passed.
 
 ```js
 function multiply(a, b = 1) {
@@ -49,3 +50,7 @@ function multiply(a, ...args) {
 const arr = multiply(2, 1, 2, 3);
 console.log(arr); // [2, 4, 6]
 ```
+
+
+### Types of Functions
+[[Arrow functions|Arrow Functions]]
