@@ -54,3 +54,4 @@ console.log(arr); // [2, 4, 6]
 
 ### Types of Functions
 [[Arrow functions|Arrow Functions]]
+[[IIFE]]
