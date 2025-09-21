@@ -77,3 +77,7 @@ function func1(a, b, c) {
 Key points:
 - non-strict mode: `arguments[i]` is linked to the corresponding named parameter, so updating one updates the other
 - strict mode: this link is broken; reassigning `arguments[i]` does **not** affect the named parameter
+
+
+[[Scope and function stack]]
+[[Built-in functions]]
