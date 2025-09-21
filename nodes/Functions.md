@@ -55,3 +55,25 @@ console.log(arr); // [2, 4, 6]
 ### Types of Functions
 [[Arrow functions|Arrow Functions]]
 [[IIFE]]
+
+
+### Arguments object
+Arguments object is an array-like object accessible inside functions that contains the values of the arguments passed to that function.
+It is a local variable available in all non-arrow functions.
+
+```js
+function func1(a, b, c) {
+    console.log(arguments[0]); // value of a
+    console.log(arguments[0]); // value of b
+    console.log(arguments[0]); // value of c
+}
+```
+
+1. Use cases
+- when the function is called with more parameters than they are declared to accept (instead of `...rest`)
+
+
+> Each argument index can also be set or reassigned
+Key points:
+- non-strict mode: `arguments[i]` is linked to the corresponding named parameter, so updating one updates the other
+- strict mode: this link is broken; reassigning `arguments[i]` does **not** affect the named parameter
