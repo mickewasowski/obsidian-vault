@@ -82,6 +82,7 @@ Value:   64  32   0   0   4   0   1
 ```
 
 // converts a binary to decimal
+// this is not optimal, very inefficient, however you get the idea on what actually happens
 ```js
 const number = 1100011010101;
 const arr = number.toString().split('').map(x => Number(x)).reverse();
@@ -91,4 +92,10 @@ for (let i = 0; i < arr.length; i++) {
     res += (2 ** i) * arr[i];
 }
 console.log(res);
+```
+
+// actual built-in function
+```js
+const binaryNum = "110010101";
+const binaryToDecimal = parseInt(binaryNum, 2);
 ```
