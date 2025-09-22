@@ -19,6 +19,12 @@ In Javascript we have the following kinds of scopes:
 - Function scope: the scope created with a function
 - Block scope: the scope created with a pair of curly braces (a block)
 
+### Lexical scoping
+Lexical environment for a function `f` is the environment enclosing the function's definition in the source code.
+The term "lexical" simply means "source code", or in other words, "relating to the text of a program".
+
+Javascript is "statically scoped" because the lexical environment for a function is determined once and for the entire execution of the program.
+
 
 ### Function stack (Call stack)
 The function stack is how the interpreter keeps track of its place in a script that calls multiple functions, like which function is currently executing and which functions within that function are being called.
