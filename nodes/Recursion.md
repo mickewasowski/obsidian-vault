@@ -45,3 +45,23 @@ function fibonacci(a) {
     return fibonacci(a - 1) + fibonacci(a - 2);
 }
 ```
+
+Number to the power:
+```js
+function pow(x, n) {
+    return (n === 1) ? x : (x * pow(x, n));
+}
+```
+
+In terms of function execution no matter how many times a function calls itself,
+each call is added to the *execution context stack* (or simply call stack).
+``` js
+Context: { x: 2, n: 1, at line 1 } pow(2, 1)
+Context: { x: 2, n: 2, at line 5 } pow(2, 2)
+Context: { x: 2, n: 3, at line 5 } pow(2, 3)
+```
+
+> Recursion, however, is memory costly because for the case of `pow(x, n)` we'd need memory for all n contexts.
+In this case a loop-based algorithm is more memory-saving.
+
+**Any recursion can be rewritten as a loop. The loop variant can usually be made more effective.**

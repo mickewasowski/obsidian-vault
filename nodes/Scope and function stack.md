@@ -27,3 +27,11 @@ The function stack is how the interpreter keeps track of its place in a script t
 - any functions that are called by that function are also added to the call stack
 - when a function is finished the interpreter removes it from the call stack and resumes execution where it left off
 - if the stack takes up more space that it was assigned, a "stack overflow" error is thrown
+
+OR in other words:
+When a function makes a nested call, the following happens:
+
+- The current function is paused.
+- The execution context associated with it is remembered in a special data structure called execution context stack.
+- The nested call executes.
+- After it ends, the old execution context is retrieved from the stack, and the outer function is resumed from where it stopped.
