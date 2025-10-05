@@ -50,45 +50,21 @@
             }
           },
           {
-            "id": "a7ab90fb47876788",
+            "id": "68318b3bff8658e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Symlink.md",
+                "file": "nodes/Figma.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Symlink"
-            }
-          },
-          {
-            "id": "55d61b17d2f4f4c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Roasted Potatoes.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Roasted Potatoes"
-            }
-          },
-          {
-            "id": "208e6b887ab669f9",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Figma"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -225,42 +201,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "208e6b887ab669f9",
+  "active": "68318b3bff8658e7",
   "lastOpenFiles": [
-    "nodes/Roasted Potatoes.md",
-    "nodes/Meal Prep.md",
-    "nodes/Symlink.md",
+    "resources/Pasted image 20251005133854.png",
+    "resources/Pasted image 20251005112039.png",
+    "resources/Pasted image 20251005105732.png",
+    "resources/Pasted image 20251005105329.png",
+    "resources/Pasted image 20251005105014.png",
+    "resources/Pasted image 20251005104925.png",
     "nodes/Package Managers.md",
-    "nodes/Fetch API.md",
-    "nodes/DOM Manipulation.md",
-    "nodes/Untitled 1.md",
-    "nodes/Working with files.md",
-    "nodes/WeakSet.md",
-    "nodes/Weak Map.md",
-    "nodes/Shell basics.md",
-    "nodes/Set.md",
-    "nodes/Scroll position.md",
-    "nodes/Obsidian plugin.md",
-    "nodes/Nano.md",
-    "nodes/Linux commands mix.md",
-    "nodes/Linux Navigation.md",
-    "nodes/Keyed Collections.md",
-    "nodes/Editing files.md",
-    "nodes/DnD Kit.md",
-    "nodes/DOM element properties.md",
-    "nodes/Bash Git pull script.md",
-    "Tournaments.md",
-    "nodes/Shallow copy.md",
-    "nodes/map.md",
-    "nodes/SCSS Modules.md",
-    "canvas/tournaments.canvas",
-    "canvas/RGS-Relay-Slot&Lobby communication.canvas",
+    "nodes/Figma.md",
     "resources/Pasted image 20250805115552.png",
     "resources/Pasted image 20250712122143.png",
     "resources/Pasted image 20250712120712.png",
     "resources/Pasted image 20250712120657.png",
     "resources/Pasted image 20250604214441.png",
-    "resources/Pasted image 20250429160835.png",
+    "README.md",
+    "Tournaments.md",
+    "nodes/Symlink.md",
+    "nodes/useTournamentFace.md",
+    "nodes/useRotatingFace.md",
+    "nodes/Widget component.md",
+    "nodes/Unary operators.md",
+    "nodes/Test android.md",
+    "nodes/Structured data.md",
+    "nodes/String operators.md",
+    "nodes/Strict mode.md",
+    "nodes/State machine.md",
+    "nodes/Soft and Hard links.md",
+    "nodes/Screen command.md",
+    "nodes/Scope and function stack.md",
+    "nodes/Recursion.md",
+    "nodes/NeuroGum to Drink.md",
+    "nodes/Logical operators.md",
+    "nodes/Linters formatters.md",
+    "nodes/JSON.md",
+    "nodes/IIFE.md",
+    "nodes/Hierarchical state machine.md",
+    "nodes/Hard Link.md",
+    "canvas/tournaments.canvas",
+    "canvas/RGS-Relay-Slot&Lobby communication.canvas",
     "4913"
   ]
 }
