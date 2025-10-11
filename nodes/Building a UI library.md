@@ -60,3 +60,30 @@ That would lead to errors such as `Invalid hook call`.
 `main`, `module`, `types`, `exports` - tell bundlers and Node how to import the library
 `scripts` - automate your tasks while developing
 
+
+### How to test your library locally
+
+- run `npm run build` in you library to create `/dist`
+
+1. With `npm link`:
+- in your library's directory run `npm link` [[npm link]]
+- in the project where you want to use it run `npm link your-library-name`
+
+Now after the above steps you will be able to import components from the library inside your project.
+If you need to make change to the library simply rebuild the library and the changes will be applied immediately.
+
+
+2. With `npm pack` - this is closer to the *real publish flow*
+- inside your library run `npm pack` - this creates a `.tgz` file
+- then install it in your project `npm install ../path-to/my-lib-1.0.0.tgz`
+
+
+2. If you're actively developing
+- in your project add the library to your dev dependencies
+``` json
+"dependencies": {
+  "your-design-system": "file:../your-design-system"
+}
+```
+- then run `npm install`
+- this symlinks the local package - fast and consistent
