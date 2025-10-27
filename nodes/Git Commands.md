@@ -59,6 +59,11 @@ The above creates a local branch from the remote one and tracks it. Any commits 
 ### Using personal token
 > [!Tip] When the token had expired and you want to renew it you need to first copy the token, update it in the `.git-credentials`, then try to push and when it prompts you for username and password, for the password enter the new token.
 
+Example structure:
+```bash
+https://<username>:<personal-access-token>@<host>
+```
+
 
 ### How to checkout local repo to a tag
 When your remote repo had released a version it creates a tag with that version.

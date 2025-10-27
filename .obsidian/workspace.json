@@ -8,91 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3aff233f67b9ea50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/DOM Manipulation.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "DOM Manipulation"
-            }
-          },
-          {
-            "id": "5790c96664751108",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Fetch API.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Fetch API"
-            }
-          },
-          {
             "id": "8020a15431d5f761",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Package Managers.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Package Managers"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
-            "id": "a7ab90fb47876788",
+            "id": "79e5de492d248266",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "nodes/Symlink.md",
-                "mode": "source",
-                "source": true
+                "file": "canvas/RGS-Relay-Slot&Lobby communication.canvas",
+                "viewState": {
+                  "x": -488.77319067012525,
+                  "y": 194.65431344626018,
+                  "zoom": -0.7189994766012087
+                }
               },
-              "icon": "lucide-file",
-              "title": "Symlink"
-            }
-          },
-          {
-            "id": "55d61b17d2f4f4c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Roasted Potatoes.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Roasted Potatoes"
-            }
-          },
-          {
-            "id": "208e6b887ab669f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nodes/Meal Prep.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Meal Prep"
+              "icon": "lucide-layout-dashboard",
+              "title": "RGS-Relay-Slot&Lobby communication"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,15 +172,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "208e6b887ab669f9",
+  "active": "79e5de492d248266",
   "lastOpenFiles": [
+    "nodes/Untitled 1.md",
+    "canvas/RGS-Relay-Slot&Lobby communication.canvas",
+    "nodes/Untitled.md",
+    "nodes/Closures.md",
+    "nodes/Package Managers.md",
+    "nodes/JavaScript.md",
+    "nodes/Symlink.md",
     "nodes/Roasted Potatoes.md",
     "nodes/Meal Prep.md",
-    "nodes/Symlink.md",
-    "nodes/Package Managers.md",
     "nodes/Fetch API.md",
     "nodes/DOM Manipulation.md",
-    "nodes/Untitled 1.md",
     "nodes/Working with files.md",
     "nodes/WeakSet.md",
     "nodes/Weak Map.md",
@@ -253,12 +200,7 @@
     "nodes/DnD Kit.md",
     "nodes/DOM element properties.md",
     "nodes/Bash Git pull script.md",
-    "Tournaments.md",
-    "nodes/Shallow copy.md",
-    "nodes/map.md",
-    "nodes/SCSS Modules.md",
     "canvas/tournaments.canvas",
-    "canvas/RGS-Relay-Slot&Lobby communication.canvas",
     "resources/Pasted image 20250805115552.png",
     "resources/Pasted image 20250712122143.png",
     "resources/Pasted image 20250712120712.png",
