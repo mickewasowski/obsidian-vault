@@ -36,6 +36,29 @@
           }
         ],
         "currentTab": 1
+                "file": "nodes/Building a UI library.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Building a UI library"
+            }
+          },
+          {
+            "id": "72ee66c8bb0af834",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/npm link.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "npm link"
+            }
+          }
+        ],
       }
     ],
     "direction": "vertical"
@@ -172,6 +195,7 @@
       "command-palette:Open command palette": false
     }
   },
+<<<<<<< HEAD
   "active": "79e5de492d248266",
   "lastOpenFiles": [
     "nodes/Untitled 1.md",
@@ -201,12 +225,48 @@
     "nodes/DOM element properties.md",
     "nodes/Bash Git pull script.md",
     "canvas/tournaments.canvas",
+=======
+  "active": "72ee66c8bb0af834",
+  "lastOpenFiles": [
+    "nodes/Building a UI library.md",
+    "nodes/Untitled.md",
+    "nodes/npm link.md",
+    "nodes/Figma.md",
+    "resources/Pasted image 20251005133854.png",
+    "resources/Pasted image 20251005112039.png",
+    "resources/Pasted image 20251005105732.png",
+    "resources/Pasted image 20251005105329.png",
+    "resources/Pasted image 20251005105014.png",
+    "resources/Pasted image 20251005104925.png",
+    "nodes/Package Managers.md",
+>>>>>>> 847ffc7f27da022c83cd7a399856f7aa7c19552b
     "resources/Pasted image 20250805115552.png",
     "resources/Pasted image 20250712122143.png",
     "resources/Pasted image 20250712120712.png",
     "resources/Pasted image 20250712120657.png",
-    "resources/Pasted image 20250604214441.png",
-    "resources/Pasted image 20250429160835.png",
+    "README.md",
+    "Tournaments.md",
+    "nodes/Symlink.md",
+    "nodes/useTournamentFace.md",
+    "nodes/useRotatingFace.md",
+    "nodes/Widget component.md",
+    "nodes/Unary operators.md",
+    "nodes/Test android.md",
+    "nodes/Structured data.md",
+    "nodes/String operators.md",
+    "nodes/Strict mode.md",
+    "nodes/State machine.md",
+    "nodes/Soft and Hard links.md",
+    "nodes/Screen command.md",
+    "nodes/Scope and function stack.md",
+    "nodes/Recursion.md",
+    "nodes/NeuroGum to Drink.md",
+    "nodes/Logical operators.md",
+    "nodes/Linters formatters.md",
+    "nodes/JSON.md",
+    "nodes/IIFE.md",
+    "canvas/tournaments.canvas",
+    "canvas/RGS-Relay-Slot&Lobby communication.canvas",
     "4913"
   ]
 }

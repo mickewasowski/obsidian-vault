@@ -35,7 +35,7 @@ Here's what happens:
 - that's the closure at work - the variable `counter` is kept alive inside `inner`s "backpack"
 
 
-### Why are closure useful?
+### Why are closures useful?
 
 1. Data privacy / encapsulation
 ```js
@@ -71,8 +71,8 @@ Here's what happens:
 > [!tip] Closures keep variable alive because the **inner function still has a reference to them**, so the garbage collector cannot free them.
 
 - in most languages with closures (js, python, etc.), variables normally "die" when the function that created them finishes execution
-- but if a function defined *inside* that scope isreturned (or passed somewhere else), the runtime must preserve the environment so that inner function can still work
-- this preserved environment is oftern called a *closure object* or *environmental record*
+- but if a function defined *inside* that scope is returned (or passed somewhere else), the runtime must preserve the environment so that inner function can still work
+- this preserved environment is often called a *closure object* or *environmental record*
 
 ```js
     function outer() {

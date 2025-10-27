@@ -47,3 +47,86 @@ This is a file with thoughts, structure, fyis and etc. about the project.
 
 ## Required
 1. Disable next button if the user hasn't chosen a template
+
+
+
+
+---------------------
+## New approach
+
+1. Project structure:
+                 ┌─────────────────────┐
+                 │        User         │
+                 └─────────┬───────────┘
+                           │
+                           ▼
+              ┌─────────────────────────────┐
+              │         Frontend            │
+              │(React/Next.js + Tailwind/Sass) 
+              └───────────┬─────────────────┘
+                          │
+         ┌────────────────┴───────────────────┐
+         ▼                                    ▼
+ ┌──────────────────┐                  ┌───────────────────┐
+ │  Section Data    │                  │   Templates       │
+ │(Summary, Edu,    │   props/state    │ (Template.tsx +   │
+ │Exp, Skills...)   ├────────────────▶ │ Template.scss)    │
+ └──────────────────┘                  └───────────────────┘
+         ▲                                    │
+         │                                    ▼
+ ┌──────────────────┐                  ┌───────────────────┐
+ │ Drag & Drop      │                  │   Theme System    │
+ │ (reorder state)  │                  │ (colors, fonts)   │
+ └──────────────────┘                  └───────────────────┘
+                          │
+                          ▼
+              ┌──────────────────────────────┐
+              │    PDF Export (client-side)  │
+              │ (html2pdf, react-pdf, etc.)  │
+              └──────────────────────────────┘
+
+OPTIONAL BACKEND
+───────────────────────────────────────────────────────────
+   ┌───────────────────┐       ┌───────────────────────────┐
+   │  Auth (JWT)       │◀─────▶│   API (Node/Express)      │
+   │  Firebase/Supabase│       │   CRUD CVs, Generate PDFs │
+   └───────────────────┘       └───────────────────────────┘
+                                     │
+                                     ▼
+                             ┌───────────────┐
+                             │ Database      │
+                             │ (Postgres/    │
+                             │ Firestore)    │
+                             └───────────────┘
+
+
+2. Frontend structure
+src/
+ └── templates/
+      ├── modern/
+      │    └── template1
+      │         ├── template.tsx
+      │         ├── template.scss
+      │         └── preview.png   (optional: for gallery)
+      ├── minimalist/
+      │    └── template2
+      │         ├── template.tsx
+      │         ├── template.scss
+      │         └── preview.png
+      └── ...
+ └── sections/
+      ├── Summary.tsx
+      ├── Education.tsx
+      ├── Experience.tsx
+      └── ...
+ └── utils/
+      ├── pdf.ts
+      ├── theme.ts (color/font switching)
+      └── dragDrop.ts
+
+
+Chatgpt discussion link: [[https://chatgpt.com/share/68dbc045-c840-8013-95fe-9ebcc3ab8d0f]]
+here we've covered:
+1. project structure
+2. dynamic change of accent color
+3. dynamic change of font familly
