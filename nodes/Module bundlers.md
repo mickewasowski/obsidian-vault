@@ -50,6 +50,8 @@ Examples:
 - `DefinePlugin` -> defines global constants
 
 5. Tree Shaking - removes unsused code from your final bundle. Works with ES modules (`import/export`) but not CommonJS (`require`)
+More in-depth information: [[Tree shaking]]
+
 
 6. Hot Modules Replacement (HMR) - lets you see code changes instantly without full page reloads, improving development speed.
 
