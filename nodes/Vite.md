@@ -153,7 +153,6 @@ src/
 │   └── index.ts
 ├─ react-native/
 │   └── index.ts
-└─ index.ts
 ```
 In the above example it is best to omit exporting everything from `src/index.ts` because:
 - it may bundle everything together unless your bundler is smart enout to tree shake unused modules
