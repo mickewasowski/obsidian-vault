@@ -58,26 +58,28 @@ So:
    | **Static assets** | Put in `/public` folder (copied as-is to build) | `/public/logo.png` → `/logo.png` |
    | **Hot Module Replacement (HMR)** | Automatically updates changed modules without page reload | Built-in |
 
-
 4. Environment variables
-Vite automatically loads `.env` files.
-Only variables prefixed with `VITE_` are exposed to the frontend.
+   Vite automatically loads `.env` files.
+   Only variables prefixed with `VITE_` are exposed to the frontend.
+
 ```bash
 # .env
 VITE_API_URL=https://api.example.com
 ```
+
 Then access it in code like:
+
 ```ts
 console.log(import.meta.env.VITE_API_URL);
 ```
 
 5. Common plugins you'll use
+
 - `@vitejs/plugin-react` - enables JSX, Fast Refresh, and React-specific optimizations
 - `vite-plugin-svgr` - import SVGs as React components
 - `vite-plugin-pwa` - add PWA support
 - `vite-plugin-eslint` - runs ESlint automatically during dev
 - `vite-tsconfig-paths` - auto-resolve TS path aliases
-
 
 ### Gotchas
 
@@ -85,35 +87,60 @@ console.log(import.meta.env.VITE_API_URL);
 - Some older libraries that use CommonJS may need `optimizeDeps.include`
 - Not ideal if you rely on non-ESM third-party packages heavily
 
-
 ### Setup for UI library supporting multiple frameworks (code splitting)
 
-In `package.json` the files you provide in `exports` define the bundled files, meaning this is the way you manually create chunks of files.
+In `package.json` the files you provide in `exports` define the **public entry points** for consumers of your package.
+
+- It tells bundlers or Node which file to load for a given import path
+- It does **not** control how Vite or Rollup split or bundle files
+- The actual "chunking" or code splitting happens during your build step, based on **Rollup config** and **import graph**
+
 ```json
 {
   "exports": {
-    "react": "./src/path_to_index_file.ts",
-    "react-native": "./src/path.ts"
+    "./react": "./dist/react/index.js",
+    "./react-native": "./dist/react-native/index.js"
   }
 }
 ```
 
-Then in the Vite config you can name these chunks in a way you'd like:
+The above means consumers can do:
+
+```js
+import { Button } from "my-ui-lib/react";
+import { Button } from "my-ui-lib/react-native";
+```
+
+But you still need to configure your bundler to build those files (e.g. separate Rollup/Vite entries)
+
+If you want to create multiple bundles (like one for React and one for React Native), you need to declare **multiple entry files** in your `vite.config.ts`
 
 ```js
 export default defineConfig({
+  plugins: [react()],
   build: {
+    lib: {
+      entry: {
+        react: "src/react/index.ts",
+        "react-native": "src/react-native/index.ts",
+      },
+      formats: ["es", "cjs"],
+    },
     rollupOptions: {
       output: {
-        entryFileName: (chunkInfo) => {
-          if (process.env.MY_CUSTOM_ENV) {
-            return `my-custom-bundle.[format].js`;
-          }
-
-          return `[format]/[name].js`;
-        },
+        entryFileNames: `[name]/index.[format].js`, // here name is the key from the entry object
+                // format is only necessary if you plan on building multiple formats
       },
     },
   },
 });
 ```
+That tells Vite/Rollup:
+- build both `react` and `react-native` bundles
+- output them under folders like:
+```bash
+dist/react/index.es.js
+dist/react-native/index.es.js
+```
+Then your `"exports"` in `package.json` points to these bundles
+
