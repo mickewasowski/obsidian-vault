@@ -144,3 +144,40 @@ dist/react-native/index.es.js
 ```
 Then your `"exports"` in `package.json` points to these bundles
 
+
+> Example project structure for multi framework library:
+
+```js
+src/
+├── react/
+│   └── index.ts
+├─ react-native/
+│   └── index.ts
+└─ index.ts
+```
+In the above example it is best to omit exporting everything from `src/index.ts` because:
+- it may bundle everything together unless your bundler is smart enout to tree shake unused modules
+- could be confusing if someone only wants React or React Native
+
+> [!tip] Separate exports via `package.json`
+> If you omit exports from `src/index.ts`, and instead map your `package.json` exports:
+```json
+{
+  "exports": {
+    "./react": "./dist/react/index.js",
+    "./react-native": "./dist/react-native/index.js"
+  }
+}
+```
+- consumers import only what they need:
+```js
+import { Button } from 'my-ui-lib/react';
+import { Button } from 'my-ui-lib/react-native';
+```
+*Clean separation, smaller bundles per framework*
+
+> Tree shaking considerations
+- if you re-export everything in `src/index.ts`, treek shaking can remove unused code, but only if:
+    1. you use ES modules (`import/export`)
+    2. your bundler supports tree shaking
+- some bundlers (e.g. Webpack, Rollup, Vite) will still include unused modules if they have side effects, so the safest way to guarantee minimal bundles is keep framework-specific entry points separate
