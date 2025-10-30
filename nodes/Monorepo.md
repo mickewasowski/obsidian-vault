@@ -215,14 +215,3 @@ Two main models:
 - independent - each package has its own version
 > Changesets lets you automate and mix both approaches
 
-
-
-
-
-
-
-
-
-
-
-
