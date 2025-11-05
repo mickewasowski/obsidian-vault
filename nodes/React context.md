@@ -25,16 +25,13 @@ Example context:
 ```js
 import { createContext, useContext, useState, ReactNode } from "react";
 
-// 1️⃣ Define the context type
 type ThemeContextType = {
   theme: "light" | "dark";
   toggleTheme: () => void;
 };
 
-// 2️⃣ Create the context with a default (optional)
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-// 3️⃣ Create the Provider component
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
@@ -47,7 +44,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 };
 
-// 4️⃣ Create a custom hook for easier access
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {
