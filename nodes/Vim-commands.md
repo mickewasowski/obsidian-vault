@@ -156,3 +156,12 @@ z + c C o O R M
 > `v i '` => finds the first occurrence of `'` and selects the contents
 The above works with any type of quotes, tag braces and braces
 
+
+### Visual Block
+
+Append text on multiple lines
+1. `Ctrl V` - enter visual block
+2. `j k` - select rows
+3. `A` (append after), `I` (append before), `c` (change the selected block), `r` (replace with a single character)
+4. type the text you want to append
+5. `Esc` - to apply
