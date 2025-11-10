@@ -69,3 +69,17 @@ Example:
 	  alert(code); // 1, 41, 44, 49
 	}
 ```
+
+### Reset an array (the hacky way)
+
+``` js
+const array = [1, 2, 3];
+array.length = 0; // this reset the array
+```
+- turns out `array.length` is also a setter
+- you can also do the below which will fill the indices after the ones with actual value with `undefined`
+
+```js
+const array = [1, 2, 3];
+array.length = 10;
+```
