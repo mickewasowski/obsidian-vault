@@ -41,6 +41,12 @@ myFunction.apply(obj, [param1, param2])    // {someKey: 1}
 ```
 
 - `bind` - you create a new function with a fixed `this`. These types of functions are commonly known as **bound functions**
+> The `bind()` method in JS allows you to create a **new function** with a specific context and optionally preset arguments.
+> Unlike `call()` or `apply()`, `bind()` does NOT immediately invoke the function. Instead, it returns a new function that can be called later, either as a regular function or with additional arguments.
+
+> [tip] This is the answer to the question "How would you copy a function?". It creates a new reference that's a "copy" of the original one, but with a fixed `this` context.
+
+
 ```js
 function myFunction() {
     console.log(this)     
