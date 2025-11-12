@@ -61,3 +61,6 @@ user.sayHi(); // this refers to user
 3. `this` using it alone - refers to the global object
 
 4. `this` in event handlers - refers to the HTML element that the event handler is attached to. This allows you to directly access and manipulate the element from within the event handler function.
+
+
+[[Function Borrowing]] - call, bind, apply
