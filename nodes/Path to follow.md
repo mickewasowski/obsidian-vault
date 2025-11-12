@@ -32,6 +32,31 @@ Stuff to learn to become better engineer
 + JS/TS/React roadmaps
 
 
+#### C with Doni
+
+1. Mason -> `clangd`
+
+
+```c
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Second chapter
 
 1. How the Internet works

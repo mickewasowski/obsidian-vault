@@ -23,3 +23,5 @@ Tags (the additional data the _Interpreter_ sets) must be initialized, read, com
 All of these tasks add time (CPU time), which means that most of the time the _Interpreter_ is executing those tasks instead of actually executing your code.
 
 This is why **Statically typed** languages (C, Rust) are faster in executing than **Dynamically typed** languages (JS, Python).
+
+
