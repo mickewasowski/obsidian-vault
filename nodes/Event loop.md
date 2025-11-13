@@ -2,6 +2,7 @@
 aliases:
 context:
 - "[[JavaScript]]"
+- "[[Asynchronous Javascript]]"
 ---
 
 # Event loop
@@ -24,8 +25,8 @@ However, it handles many tasks efficiently using the *event loop*, which enables
 ### How the Event loop works
 
 1. Execute all synchronous code directly on the call stack
-2. After synchronous code, process all microtasks (Promises, `process.nextTick` in Node.js) before handling other tasks
-3. Take the next callback from the callback queue (like those from `setTimeout`) and push it onto the call stack
+2. After synchronous code, process all Microtasks (Promises, `process.nextTick` in Node.js) before handling other tasks
+3. Take the next callback from the Callback queue (Task queue) (like those from `setTimeout`) and push it onto the call stack
 4. Repeat this cycle continuosly
 
 > This allows JS to perform non-blocking operations such as I/O, timers, and user interactions efficiently despite having a single thread.
