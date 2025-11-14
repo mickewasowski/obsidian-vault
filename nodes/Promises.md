@@ -77,7 +77,33 @@ Returns the *first fulfilled* Promise -> rejects only if all fail
 
 > async/await is a syntactic sugar, a friendlier way to work with Promises.
 
-> [!warning] Promises prevent callback hell.
+> [!tip] Promises prevent callback hell.
 > They are eager - start running immediately.
 > They always operate *asynchronously*, even when resolved instantly.
 > Errors bubble through `.catch()` or `try/catch` with async/await.
+
+
+> [!warning] The main difference between Promises with callbacks (`.then().catch()`) and async/await syntax is that await *pauses the execution* only inside the async function, where the Promise callback gets executed whenever the Promise resolves.
+
+Example:
+```js
+console.log("Start");
+
+// Example with .then()
+fetch("/data1")
+  .then(res => {
+    console.log("Promise then: Data1 received");
+  });
+
+// Example with async/await
+async function getData2() {
+  console.log("Before await");
+  const res = await fetch("/data2");
+  console.log("After await: Data2 received");
+}
+
+getData2();
+
+console.log("End");
+```
+When you call an async function with await, the calling function itself pauses until the inner async function resolves. But if you call an async function without await, it just returns a Promise immediately and the function keeps running.
