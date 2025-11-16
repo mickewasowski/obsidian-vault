@@ -10,6 +10,12 @@ A Promise is an object representing the eventual *completion* or *failure* of an
 It acts as a placeholder for a value that will be available in the future.
 
 ---
+### Quick summary
+
+`async/await` makes asynchronous code look synchronous, using Promises under the hood, while `then/catch` handles async flow with chained callbacks.
+The behavior is the same (in most cases); the syntax and mental model are different.
+
+
 ### Promise states
 
 A Promise has three states:
@@ -107,3 +113,37 @@ getData2();
 console.log("End");
 ```
 When you call an async function with await, the calling function itself pauses until the inner async function resolves. But if you call an async function without await, it just returns a Promise immediately and the function keeps running.
+
+
+### Difference between then/catch and async/await syntax
+
+1. With async/await the code "looks" synchronous due to it's syntax. With multiple async steps the code remains easy to read.
+With then chained callbacks the code becomes harder to read.
+2. Under the hood `await` pauses the function until the Promise settles. Event loop is NOT blocked - only the async function gets paused.
+3. Parallel vs. Sequential execution
+    - using `async/await` incorrectly forces sequential execution
+```js
+const a = await doA();
+const b = await doB();
+```
+    - promise.then chains can run in parallel as follows:
+```js
+Promise.all([doA(), doB()]);
+```
+    - you can use parallelism with async/await as follows:
+```js
+const promiseA = doA();
+const promiseB = doB();
+
+const [a, b] = await Promise.all([promiseA, promiseB]);
+```
+
+### Use cases
+
+- Use `then` when:
+    - you need to attach handlers dynamically
+    - you're working with streams, event-style APIs, or simple one-liners
+- Use `async/await` when:
+    - you have complex async logic
+    - you want clean control follow
+    - you care about readability and maintainability
