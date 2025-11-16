@@ -12,7 +12,7 @@ Fetch uses Promises, making code that waits for data cleaner.
 It handles different data types and request methods (e.g. GET, POST, etc.)
 
 ---
-- Replaces `HMLHttpRequest`
+- Replaces `XMLHttpRequest`
 - Returns a **Promise** that resolves to a `Response` object
 
 #### Syntax
@@ -32,6 +32,7 @@ fetch("https://jsonplaceholder.typicode.com/posts/1")
 - `response.json()` also returns a **Promise**, so you need another  `.then()`
 - common alternatives: `.text()`, `.blob()`, `.arrayBuffer()`
 
+
 #### Async/Await style (cleaner)
 ``` js
 async function getPost() {
@@ -46,6 +47,7 @@ async function getPost() {
 }
 ```
 - Always check `res.ok` (status 200-299), because fetch **only rejects on network errors**, not on HTTP errors like `404`
+
 
 #### POST requests (sending data)
 ``` js
@@ -67,6 +69,7 @@ async function createPost() {
 }
 ```
 
+
 #### Common options
 ``` js
 fetch(url, {
@@ -87,6 +90,7 @@ if (!response.ok) {
 }
 ```
 
+
 #### Aborting requests
 ``` js
 const controller = new AbortController();
@@ -101,6 +105,7 @@ controller.abort();
 #### Streaming & advanced usage
 - `response.body` is a **ReadableStream** (for progressive data, large files)
 - Useful for file downloads or chat-like streaming API
+
 
 #### Best practices
 - always `try/catch` or check `.ok`
