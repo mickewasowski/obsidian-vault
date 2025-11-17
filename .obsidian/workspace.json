@@ -1,78 +1,41 @@
 {
   "main": {
-    "id": "f943851b71126f2e",
+    "id": "2f81cc72d25a618d",
     "type": "split",
     "children": [
       {
-        "id": "6e23ce675e655142",
+        "id": "9527d9da96090b3a",
         "type": "tabs",
         "children": [
           {
-            "id": "8020a15431d5f761",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "79e5de492d248266",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "canvas/RGS-Relay-Slot&Lobby communication.canvas",
-                "viewState": {
-                  "x": -488.77319067012525,
-                  "y": 194.65431344626018,
-                  "zoom": -0.7189994766012087
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "RGS-Relay-Slot&Lobby communication"
-            }
-          }
-        ],
-        "currentTab": 1
-                "file": "nodes/Building a UI library.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Building a UI library"
-            }
-          },
-          {
-            "id": "72ee66c8bb0af834",
+            "id": "4886eb0be50407c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/npm link.md",
-                "mode": "source",
+                "file": "nodes/RxJS.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "npm link"
+              "title": "RxJS"
             }
           }
-        ],
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "dbdba3dfab85c862",
+    "id": "c03fc1c78217d5fc",
     "type": "split",
     "children": [
       {
-        "id": "e44fd2cebc2368db",
+        "id": "5381f18c3368b7db",
         "type": "tabs",
         "children": [
           {
-            "id": "237841f633fb7f18",
+            "id": "23ddad3e401b3d46",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -85,7 +48,7 @@
             }
           },
           {
-            "id": "9239e63e2a947027",
+            "id": "03deae0a7ae82afa",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -105,23 +68,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 211.5041847229004
   },
   "right": {
-    "id": "26db3a05cfafe382",
+    "id": "751c86bf3d25414c",
     "type": "split",
     "children": [
       {
-        "id": "88458a0f51bdbdd7",
+        "id": "e5a83a425373b978",
         "type": "tabs",
         "children": [
           {
-            "id": "f2195767612777c5",
+            "id": "2a2b6d080380330e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodes/Vim.md",
+                "file": "nodes/RxJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,25 +94,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Vim"
+              "title": "Backlinks for RxJS"
             }
           },
           {
-            "id": "a9cb17994c51b2e2",
+            "id": "015117b1259c5bf6",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodes/Vim.md",
+                "file": "nodes/RxJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Vim"
+              "title": "Outgoing links from RxJS"
             }
           },
           {
-            "id": "2ded1282464422c9",
+            "id": "cd623e1295e0d6ee",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -164,18 +127,18 @@
             }
           },
           {
-            "id": "f1e5fd96e8ed3346",
+            "id": "2e0d9621c9e58005",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodes/Vim.md",
+                "file": "nodes/RxJS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Vim"
+              "title": "Outline of RxJS"
             }
           }
         ]
@@ -187,86 +150,16 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-<<<<<<< HEAD
-  "active": "79e5de492d248266",
+  "active": "4886eb0be50407c9",
   "lastOpenFiles": [
-    "nodes/Untitled 1.md",
-    "canvas/RGS-Relay-Slot&Lobby communication.canvas",
-    "nodes/Untitled.md",
-    "nodes/Closures.md",
-    "nodes/Package Managers.md",
-    "nodes/JavaScript.md",
-    "nodes/Symlink.md",
-    "nodes/Roasted Potatoes.md",
-    "nodes/Meal Prep.md",
-    "nodes/Fetch API.md",
-    "nodes/DOM Manipulation.md",
-    "nodes/Working with files.md",
-    "nodes/WeakSet.md",
-    "nodes/Weak Map.md",
-    "nodes/Shell basics.md",
-    "nodes/Set.md",
-    "nodes/Scroll position.md",
-    "nodes/Obsidian plugin.md",
-    "nodes/Nano.md",
-    "nodes/Linux commands mix.md",
-    "nodes/Linux Navigation.md",
-    "nodes/Keyed Collections.md",
-    "nodes/Editing files.md",
-    "nodes/DnD Kit.md",
-    "nodes/DOM element properties.md",
-    "nodes/Bash Git pull script.md",
-    "canvas/tournaments.canvas",
-=======
-  "active": "72ee66c8bb0af834",
-  "lastOpenFiles": [
-    "nodes/Building a UI library.md",
-    "nodes/Untitled.md",
-    "nodes/npm link.md",
-    "nodes/Figma.md",
-    "resources/Pasted image 20251005133854.png",
-    "resources/Pasted image 20251005112039.png",
-    "resources/Pasted image 20251005105732.png",
-    "resources/Pasted image 20251005105329.png",
-    "resources/Pasted image 20251005105014.png",
-    "resources/Pasted image 20251005104925.png",
-    "nodes/Package Managers.md",
->>>>>>> 847ffc7f27da022c83cd7a399856f7aa7c19552b
-    "resources/Pasted image 20250805115552.png",
-    "resources/Pasted image 20250712122143.png",
-    "resources/Pasted image 20250712120712.png",
-    "resources/Pasted image 20250712120657.png",
-    "README.md",
-    "Tournaments.md",
-    "nodes/Symlink.md",
-    "nodes/useTournamentFace.md",
-    "nodes/useRotatingFace.md",
-    "nodes/Widget component.md",
-    "nodes/Unary operators.md",
-    "nodes/Test android.md",
-    "nodes/Structured data.md",
-    "nodes/String operators.md",
-    "nodes/Strict mode.md",
-    "nodes/State machine.md",
-    "nodes/Soft and Hard links.md",
-    "nodes/Screen command.md",
-    "nodes/Scope and function stack.md",
-    "nodes/Recursion.md",
-    "nodes/NeuroGum to Drink.md",
-    "nodes/Logical operators.md",
-    "nodes/Linters formatters.md",
-    "nodes/JSON.md",
-    "nodes/IIFE.md",
-    "canvas/tournaments.canvas",
-    "canvas/RGS-Relay-Slot&Lobby communication.canvas",
-    "4913"
+    "nodes/Promises.md"
   ]
 }
