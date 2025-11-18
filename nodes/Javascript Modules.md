@@ -12,8 +12,9 @@ A module is just a file. One script is one module.
 ---
 ### Types of Modules
 - AMD - one of the most ancient module systems, developed by `require.js`
-- CommonJS - developed for Node.js server
+- [[CommonJS]] - developed for Node.js server
 - UMD - suggested as a universal module system, compatible with AMD and CommonJS
+- [[ES Modules]]
 
 
 Modules can load each other using `export` and `import` to interchange functionality.
@@ -173,18 +174,3 @@ say();
 ```
 
 > [!warning] Even thought `import()` uses parenthesis it is not a function call. You cannot assign it to a variable, nor use call/apply.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
