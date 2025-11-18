@@ -93,7 +93,7 @@ Bundlers work as follows:
 
 
 ====================
-Import/Export
+Import/Export (static)
 ====================
 
 ### Types of imports
@@ -141,4 +141,50 @@ export {default as User} from "./user.js"
 
 export {default} from "./user.js" // re-export the default export
 ```
+
+
+=================
+Dynamic imports
+=================
+
+`import(module)` expression loads the module and returns a promise that resolves into a module object that contains all its exports. It can be called from any place in the code.
+
+```js
+let modulePath = prompt("Which module to load?");
+
+import(modulePath)
+  .then(obj => <module object>)
+  .catch(err => <loading error, e.g. if no such module>)
+```
+
+We can also use `await` if we're in an async function:
+```js
+// access named exports
+let {hi, bye} = await import('./say.js');
+
+hi();
+bye();
+
+// access default export
+let obj = await import('./say.js');
+let say = obj.default;
+
+say();
+```
+
+> [!warning] Even thought `import()` uses parenthesis it is not a function call. You cannot assign it to a variable, nor use call/apply.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
