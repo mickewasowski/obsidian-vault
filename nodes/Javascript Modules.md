@@ -90,3 +90,55 @@ Bundlers work as follows:
 
 > [!tip] If we use a bundler tool the `import/export` statements are removed and replaced with bundler functions.
 > This way the resulting script does not require `type="module"` and we can put it into a regular script.
+
+
+====================
+Import/Export
+====================
+
+### Types of imports
+
+```js
+import { something } from "./something.js" // named imports
+import { something as test } from "./something.js" // rename a named import
+import * as everything from "./something.js" // import everything from the file as everything object
+import ThatThing from "./something.js" // default import
+```
+
+
+### Types of exports
+
+```js
+export const var1 = 'test';
+
+export function func1() {
+    //do something
+}
+
+export class MyClass {
+    // something
+}
+
+export {var1, func1, MyClass}
+
+export {var1 as myVar1}
+
+export {MyClass as default}
+
+export default function testFunc() {
+    // test func
+}
+```
+
+### Re-exporting
+
+```js
+export * from "./user.js" // re-export all named exports
+
+export {sayHi} from "./user.js"
+
+export {default as User} from "./user.js"
+
+export {default} from "./user.js" // re-export the default export
+```
+
