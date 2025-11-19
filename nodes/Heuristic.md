@@ -11,6 +11,9 @@ A practical rule or method used to solve problems or make decisions when a perfe
 ### In simple terms:
 A heuristic is like a rule of thumb - it may not always give the best result, but it works well enough most of the time, and it's fast and efficient.
 
+A heuristic is a strategy or shortcut used to make decisions or solve problems quickly when perfect or complete information is unavailable or too expensive to compute.
+Heuristics are often explicitly defined, but they rely on intuition, estimation, or simplification rather than guaranteed correctness.
+
 ### Key characteristics:
 1. Efficient - fast and lightweight to compute
 2. Imperfect - may not always be optimal or correct
