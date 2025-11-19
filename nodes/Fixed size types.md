@@ -10,8 +10,7 @@ context:
 _Memory is limited._
 The purpose of variable types is to tell the system precisely how much memory you're program will use.
 
-Computers work with groups of 8 bits called bytes.
-The minimum number of bits you can use to represent something is 8.
+> [!note] Computers work with groups of `8 bits called bytes`. The minimum number of bits you can use to represent something is 8.
 
 In scripting languages the _Interpreter_ decides where and how much space in memory your variables require.
 In most cases you end up using a lot more memory than necesarry.
@@ -23,5 +22,3 @@ Tags (the additional data the _Interpreter_ sets) must be initialized, read, com
 All of these tasks add time (CPU time), which means that most of the time the _Interpreter_ is executing those tasks instead of actually executing your code.
 
 This is why **Statically typed** languages (C, Rust) are faster in executing than **Dynamically typed** languages (JS, Python).
-
-
