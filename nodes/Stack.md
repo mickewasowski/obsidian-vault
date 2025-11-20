@@ -11,7 +11,13 @@ context:
 Follows the LIFO (last in first out) principle.
 
 ---
+### Why the Stack is fast
+
+All it's memory is preallocated at the beginning of our program's execution so there's no need to request memory from the OS on the fly.
+
+
 The Stack's space is limited, so if we push too many elements and run out of space we say the "Stack has overflowed".
+
 
 ### Execution stack (a.k.a. Program stack, a.k.a. Hardware stack)
 
