@@ -47,3 +47,6 @@ The solution to the problem with fragmentation without additional system call (r
 - dynamic size
 - large memory allocations
 - fast accessing times if used correctly
+
+
+> In the Heap the slow thing is the actual memory allocation. If you're smart about the memory management and avoid system calls the Heap is actually very fast.
