@@ -7,10 +7,68 @@ context:
 # Transistors
 
 ---
+Transistors are the building blocks of modern computers.
+
 ### Transistors in Computing
 
-A Transistor with three primary terminals (Collector, Emitter, Base), acts as a gatekeeper (switch) for electrical current, which flows when a small current is applied to the Base. This electrical behavior is crucial for operations in digital circuits.
-By applying a small current to the base, the transistor transitions from an insulating state to a conducting state, allowing electricity to flow between the collector and emitter. This switch-like function of transistors is crucial for electronic computation without relying on mechanical movements, purely through electrical signals.
+1. Transistor basics
+- a transistor has three terminals - *collector*, *emitter*, and *base*
+- it operates as a switch controlled by electrical signals: no current to the base means no conduction between collector and emitter (acting as an insulator), and current to the base allows conduction (acting as a conductor)
+- this switching behavior enables transistors to represent binary states (0 and 1)
+2. Logic Gates from Transistors
+- a single transistor can implement a simple *gate* where the output equals the input
+- by changing circuit arrangements, transistors can form logic gates like:
+    - *NOT gate (inverter)* - output is the opposite of input
+    - *AND gate* - outputs 1 only if both inputs are 1 (series connection of transistors)
+    - *OR gate* - outputs 1 if at least one input is 1 (parallel connection of transistors)
+- these gates are abstracted into symbols to simplify circuit design
+- *XOR gate* (exclusive or) outputs 1 when inputs differ and is key in arithmetic operations
+3. Combining Logic Gates
+- outputs of logic gates can feed into inputs of others to build complex circuits
+- XOR gate is an example of combining simpler gates for more sophisticated behavior
+
+
+### Arithmetic with Logic Gates
+
+1. Binary addition
+- binary addition rules mirror decimal addition but overflow occurs when 1 + 1 = 10 (binary two)
+- to handle this, circuits output both *sum* and *carry* bits
+- a *half adder* circuit uses an XOR gate for sum and an AND gate for carry but cannot handle carry input from previous additions
+- a *full adder* solves this by accepting three inputs: two bits plus a carry-in, producing sum and carry-out
+- multi-bit addition requires chaining full adders, passing carry-outs to the next adder's carry-in
+2. Multi-bit adders
+- for n-bit binary numbers, n full adders are needed
+- example: an 8-bit adder sums two 8-bit inputs and outputs an 8-bit result plus an overflow (carry-out) signal
+- *overflow signal* indicates if the result exceeds the storage capacity and requires extra bits
+3. Speed and Practicality
+- transistors are preferred for logic gates over mechanical or other alternatives due to their *speed and compactness*, enabling near-instantaneours output changes
+
+
+### Instruction Interpretations: Binary decoders and CPU logic
+
+1. Binary decoders
+- these circuits take binary inputs and activate exactly one output line corresponding to that input number, deactivationg all others
+- number of outputs = 2^(number of inputs). For example:
+    - 3 inputs -> 8 outputs
+    - 4 inputs -> 16 outputs
+- decoders are essential for selecting among multiple circuit operations
+2. Instruc decoding in CPUs
+- instructions are binary codes (machine code), often represented by assembly language for humans
+- a simple architecture example: first two bits classify instruction type (e.g. arithmetic operations), next bits specify the exact operation (opcode)
+- logic gates (like NOR gates) can identify instruction categories
+- the opcode is fed into a decoder inside a CPU component (referred to as "Our Mysterious Component") that enables only the relevant arithmetic logic circuit's output to pass through
+- this component is simplified model of an Arithmetic Logic Unit (ALU), which performs arithmetic and logical operations based on input values and opcode
+
+
+### Important insights
+
+- Abstraction is key: moving from individual transistors to logic gates, then to adders and decoders, illustrates how complexity is managed through abstraction
+- Overflow handling is critical: ignoring overflow can cause sever errors (e.g. a historical rocket accident)
+- Logic gates are the foundation of all computational operations inside CPUs
+- Arithmetic Logic Unit (ALU) is the central CPU component responsible for arithmetic and logic operations, controlled by opcodes decoded from instructions
+
+
+
 
 ### Simple Circuits
 
@@ -87,3 +145,5 @@ Introducing components like binary decoders enables the controlled activation of
 ### Arithmetic Logic Unit (ALU)
 
 These principles coalesce into the design of Arithmetic Logic Units (ALUs) within CPUs. The ALU manages various operations determined by opcode (operation code), routing calculations and controlling logical functions efficiently.
+
+
