@@ -4,8 +4,6 @@ context:
 - "[[Computer science]]"
 ---
 
-#wip
-
 # Stack
 
 Follows the LIFO (last in first out) principle.
