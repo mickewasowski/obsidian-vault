@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Transistors.md",
+                "file": "nodes/Computer Memory from Transistors.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Transistors"
+              "title": "Computer Memory from Transistors"
             }
           }
         ]
@@ -161,10 +161,18 @@
   },
   "active": "343379a43c207fbd",
   "lastOpenFiles": [
+    "resources/Pasted image 20251123181304.png",
+    "resources/Pasted image 20251123181056.png",
+    "resources/Pasted image 20251123180928.png",
+    "resources/Pasted image 20251123180255.png",
+    "resources/Pasted image 20251123175712.png",
+    "resources/Pasted image 20251123172817.png",
+    "resources/Pasted image 20251123172343.png",
+    "resources/Pasted image 20251123165046.png",
+    "nodes/Transistors.md",
     "resources/Pasted image 20251123142725.png",
     "resources/Pasted image 20251123140905.png",
     "nodes/Core dumped.md",
-    "nodes/Transistors.md",
     "nodes/Fixed size types.md",
     "nodes/RxJS.md",
     "nodes/Promises.md"
