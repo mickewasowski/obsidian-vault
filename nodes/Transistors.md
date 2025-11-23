@@ -36,18 +36,23 @@ Transistors are the building blocks of modern computers.
 - a *half adder* circuit uses an XOR gate for sum and an AND gate for carry but cannot handle carry input from previous additions
 - a *full adder* solves this by accepting three inputs: two bits plus a carry-in, producing sum and carry-out
 - multi-bit addition requires chaining full adders, passing carry-outs to the next adder's carry-in
-2. Multi-bit adders
+
+![[Pasted image 20251123140905.png]]
+
+![[Pasted image 20251123142725.png]]
+
+1. Multi-bit adders
 - for n-bit binary numbers, n full adders are needed
 - example: an 8-bit adder sums two 8-bit inputs and outputs an 8-bit result plus an overflow (carry-out) signal
 - *overflow signal* indicates if the result exceeds the storage capacity and requires extra bits
 3. Speed and Practicality
-- transistors are preferred for logic gates over mechanical or other alternatives due to their *speed and compactness*, enabling near-instantaneours output changes
+- transistors are preferred for logic gates over mechanical or other alternatives due to their *speed and compactness*, enabling near-instantaneous output changes
 
 
 ### Instruction Interpretations: Binary decoders and CPU logic
 
 1. Binary decoders
-- these circuits take binary inputs and activate exactly one output line corresponding to that input number, deactivationg all others
+- these circuits take binary inputs and activate exactly one output line corresponding to that input number, deactivation all others
 - number of outputs = 2^(number of inputs). For example:
     - 3 inputs -> 8 outputs
     - 4 inputs -> 16 outputs
