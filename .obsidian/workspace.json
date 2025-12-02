@@ -76,9 +76,23 @@
               "icon": "lucide-file",
               "title": "Study plan - December 2025"
             }
+          },
+          {
+            "id": "4efca34a4e642199",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Computer science plan.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Computer science plan"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -216,8 +230,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72ee66c8bb0af834",
+  "active": "4efca34a4e642199",
   "lastOpenFiles": [
+    "nodes/Study plan - December 2025.md",
+    "nodes/Computer science plan.md",
     "nodes/npm link.md",
     "test/test.c",
     "test/a.out",
@@ -248,8 +264,6 @@
     "nodes/Asynchronous Javascript.md",
     "nodes/Array List vs Linked List.md",
     "a.out",
-    "README.md",
-    "nodes/Building a UI library.md",
     "resources/Pasted image 20251005133854.png",
     "resources/Pasted image 20251005112039.png",
     "resources/Pasted image 20251005105732.png",
