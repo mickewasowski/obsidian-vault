@@ -17,3 +17,4 @@ Youtube channel with loads of information about Computer science.
 [[Concurrency]]
 [[Transistors]]
 [[Computer Memory from Transistors]]
+[[Casting string to number]]
