@@ -19,3 +19,4 @@ Youtube channel with loads of information about Computer science.
 [[Computer Memory from Transistors]]
 [[Casting string to number]]
 [[Dynamic RAM]]
+[[How CPUs run conditions and loops]]
