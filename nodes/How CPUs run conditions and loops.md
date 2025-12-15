@@ -1,6 +1,7 @@
 ---
 aliases:
 context:
+- "[[Computer science]]"
 ---
 
 # How CPUs run conditions and loops
