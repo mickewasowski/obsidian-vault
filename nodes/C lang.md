@@ -62,3 +62,75 @@ Imperative means that it is organized around statements and variables (explain w
 - the current standard is commonly referred to as C11
     - some elements of the language as defined by C11 are optional
     - also possible that a C11 compiler may not implement all of the language features madated by the C11 standard
+
+
+### Essential features - Efficiency, Portability, Power
+
+
+The main features of C are the following:
+- Efficient
+- Portable
+- Powerful and Flexible
+- Programmer Oriented
+
+
+1. Efficiency and Portability
+- C is an efficient language
+    - takes advantage of the capabilities of current computers
+    - C programs are compact and fast (similar to assembly language programs)
+    - programmers can fine-tune their programs for maximum speed or most efficient use of memory
+- C is a portable language
+    - C programs written on one system can be run on other systems with little or no modification
+    - compilers are available for many computer architectures
+- Linux/UNIX systems typically come with a C compiler as part of the package
+    - compilers are available for personal computers
+
+
+2. Power and Flexibility
+- the Unix/Linux kernel is written in C
+- many compilers and interpreters for other languages (FORTRAN, Perl, Python, Pascal, LISP, Logo, and BASIC) have been written in C
+- C programs have been used for solving physics and engineering problems and even for animation special effects for movies
+- C is flexible
+    - used for developing just about everything you can imagine by way of a computer program
+    - accounting applications to word processing and from games to OS
+    - it is the basis for more advanced languages, such as C++
+- It is also used for developing mobile phone apps in the form of Objective C (this is what iOS used, essentially it is C with objects)
+- C is easy to learn because of its compactness
+    - is an ideal first language to learn if you want to be a programmer
+    - you will acquire sufficient knowledge for practical application development quickly and easily
+
+
+3. Programmer Oriented
+- C fulfills the needs of programmers
+    - gives you access to hardware
+    - enables you to manipulate individual bits in memory
+- C contains a large selection of operators which allows you to express yourself succinctly (in a brief and clearly expressed manner)
+- C is less strict than most languages in limiting what you can do
+    - can be both an advantage and a danger
+    - advantage is that many tasks (such as converting forms of data) are easier in C
+    - danger is that you can make mistakes (pointers) that are impossible in some languages
+    - C gives you more freedom, but it also puts more resposibility on you
+- C implementations have a large library of useful C functions
+    - deal with common needs of most programmers
+
+
+4. Other features
+- provides low level features that are generally provided by the Lower level languages
+- programs can be manipulated using bits
+    - ability to manage memory representation at bit level
+    - provides wide variaty of bit manipulation operators
+- pointers play a big role in C
+    - direct access to memory
+    - supports efficient use of pointers
+
+
+5. Disadvantages
+- flexibility and freedom also requires added resposibility
+    - use of pointers is problematic and abused
+    - you can make programming errors that are difficult to trace
+- sometimes because of its wealth of operators and its conciseness, it makes the language difficult to read and follow
+    - there is an opportunity to write obscure code
+
+
+
+
