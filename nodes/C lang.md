@@ -206,3 +206,42 @@ If the program does not perform the intended functionality then it will be neces
     - will need to make changes to the original source program
     - the entire process of compiling, linking, and executing the program must be repeated until the desired results are obtained
 
+
+### Setup for Ubuntu
+
+The below is the bare minimum for compiling and running C code:
+gcc -> compiler
+libc6-dev -> C standard library headers (stdio.h, stdlib.h)
+
+```bash
+sudo apt update
+sudo apt install gcc libc6-dev
+```
+
+Compile:
+```bash
+gcc main.c -o main
+```
+
+Run:
+```bash
+./main
+```
+
+For Neovim:
+Mason ->
+- clang-format - code formatter
+command:
+```bash
+clang-format -i main.c
+```
+- clangd -> LSP
+
+
+OR go to `codelite.org` -> Docs -> Getting started -> Linux
+```bash
+sudo apt install build-essential            \
+                 git cmake                  \
+                 libssh-dev libsqlite3-dev  \
+                 libpcre2-dev bison flex
+```
