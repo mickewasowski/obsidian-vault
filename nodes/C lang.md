@@ -245,3 +245,37 @@ sudo apt install build-essential            \
                  libssh-dev libsqlite3-dev  \
                  libpcre2-dev bison flex
 ```
+
+
+### Compiler errors
+
+1. Syntax errors - something wrong with the structure
+    - missing semicolon (int x = 5)
+    - printf("I am here);
+2. Semantic errors - something wrong with the meaning
+    - a + b // when it doesn't make sense to add a and be
+
+
+### Compiler warnings
+
+- the compiler has recognized an issue with your code that could lead to a potential problem
+- it is only a warning because the compiler is still able to generate correct machine code
+```c
+int total;
+printf("Total is: %d\n", total); // warning: total is used uninitialized
+```
+
+
+### Linker errors
+
+- the linker is having trouble linking all the object files together to create an executable
+- usually there is a library or object file that is missing
+
+
+### Runtime errors
+
+- occur when the program is executing
+- some typical runtime errors:
+    - divide by zero
+    - file not found
+    - out of memory
