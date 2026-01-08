@@ -13,10 +13,16 @@ C Language - Basics - Data Types - Pointers - Arrays - Structs - Memory Allocati
 
 > 1.1. C Basics
 
-Compilation (gcc, clang)
+Compilation (gcc - compiler, clang)
 Structure of a C program
 Header files, include guards
 main function, return codes
+
+> [!tip] The main difference between C and C++ is that C++ supports classes and objects, while C does not.
+> C ignores white space but we use it to make the code more readable.
+> Every C statement ends with a semicolon ;
+> When you are working with text it must be wrapped in double quotes ""
+> `printf` does not insert a new line. To add a new line add `\n` (escape sequence) to your string.
 
 
 > 1.2. Data Types & Memory Layout
