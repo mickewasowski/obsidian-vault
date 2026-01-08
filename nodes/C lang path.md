@@ -24,6 +24,59 @@ main function, return codes
 > When you are working with text it must be wrapped in double quotes ""
 > `printf` does not insert a new line. To add a new line add `\n` (escape sequence) to your string.
 
+- commments - `//` for single line comments (everything after them will be ignored), `/**/` multiline in between the asterics will be ignored
+- declaring variables:
+```c
+    type variableName = value;
+    
+    int myNum = 15;
+
+    // declare variable without assigning a value
+    int test;
+
+    // assign a value later
+    test = 21;
+```
+- printing variable values - *format specifiers*
+```c
+// a format specifier is used with printf, it is a placeholder for the type of data
+// it starts with % and followed by a character
+
+// int -> %d
+// char -> %c
+// float -> %f
+
+int myNum = 15;
+char myLetter = 'D';
+
+printf("My number is %d and my letter is %c.", myNum, myLetter);
+```
+
+- changing values
+```c
+int test = 15;
+
+test = 20;
+
+int copy = test;
+
+int test2;
+
+test2 = copy;
+```
+- declare multiple variables in one line
+```c
+int x = 5, y = 6, z = 50;
+printf("%d", x, y, z);
+
+// assign the same value to multiple variables in one line
+int x, y, z;
+
+x = y = z = 50;
+```
+- variable names must begin with a letter or an underscore, cannot contain whitespaces or special characters
+
+
 
 > 1.2. Data Types & Memory Layout
 
