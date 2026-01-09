@@ -80,9 +80,73 @@ x = y = z = 50;
 
 > 1.2. Data Types & Memory Layout
 
-Primitive types (int, char, float, double)
-signed vs unsigned
+Primitive types (int, char, float, double):
+- int - 2 or 4 bytes (1 byte is 8 bits)
+- float - 4 bytes
+- double - 8 bytes
+- char - 1 byte
+
+Basic format specifiers:
+- `%d` or `%i` - int
+- `%f` or `%F` - float
+- `%lf` - double
+- `%c` - char
+- `%s` - used for strings (text)
+
+```c
+// store multiple characters in a variable
+char myText[] = "Hello";
+printf("%s", myText);
+```
+
+> [!tip] *float* vs *double* - The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of *float* is six or seven decimal digits, while *double* variables have a precision of about 15 digits. Therefore, it is often safer to use *double* for most calculations - but note that it takes pup twice as much memory as *float* (8 bytes vs 4 bytes)
+
+- scientific numbers - you can write very large numbers or very small floating-point numbers using scientific numbers. The syntax is:
+```c
+float f1 = 35e3; // 35 * 10^3 = 35_000
+double d1 = 12E4; // 12 * 10^4 = 120_000;
+
+// e or E means times 10 to the power of
+
+printf("%f", f1);
+printf("%lf", d1);
+```
+
+- decimal precision
+```c
+float myFloatNum = 3.5;
+
+printf("%f", myFloatNum); //default shows 6 digits after the decimal point
+printf("%.1f", myFloatNum); // only 1 digit
+printf("%.2f", myFloatNum); // only 2 digits
+printf("%.4f", myFloatNum); // only 4 digits
+```
+
 sizeof operator
+- unsigned interger variable size check
+```c
+int myInt;
+
+printf("%zu", sizeof(myInt)); // %zu is the format specifier for size_t which is the type of unsigned integer
+```
+
+signed vs unsigned
+- more data types
+
+| type | size | range | format specifier |
+| --------------- | --------------- | --------------- | --------------- |
+| short int | 2 bytes  | -32_768 to 32_767 | %hd |
+| unsigned int | 2 or 4 bytes  | 0 - 65_535 (2bytes) or  0 - 4_294_967_295 (4 bytes) | %u |
+| long int | 4 or 8 bytes  | -2,147,483,648 to 2,147,483,647 (4 bytes) -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (8 bytes) | %ld |
+| long long int | 8 bytes  | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | %lld |
+| unsigned long int | 4 or 8 bytes  | 0 to 4,294,967,295 (4 bytes) or 0 to 18,446,744,073,709,551,615 (8 bytes) | %lu |
+| unsigned long long int | 8 bytes  | 0 to 18,446,744,073,709,551,615 | %llu |
+| long double | 8, 12 or 16 bytes  | Implementation-dependent, but more precision than double | %Lf |
+
+> [!tip] *unsigned* means the type can only store non-negative values (0 and up).
+> These extended types are mostly used when you need very specific control over memory usage or number ranges.
+> For everyday programming, `int, float, double, char` are usually enough.
+
 stack vs heap memory
 endianness (optional, useful later)
 
