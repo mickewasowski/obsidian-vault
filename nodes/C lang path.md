@@ -11,6 +11,8 @@ C Language - Basics - Data Types - Pointers - Arrays - Structs - Memory Allocati
 
 1. ## C LANGUAGE (for DSA + Systems)
 
+### C Basics
+
 > 1.1. C Basics
 
 Compilation (gcc - compiler, clang)
@@ -24,7 +26,12 @@ main function, return codes
 > When you are working with text it must be wrapped in double quotes ""
 > `printf` does not insert a new line. To add a new line add `\n` (escape sequence) to your string.
 
+#### Comments
+
 - commments - `//` for single line comments (everything after them will be ignored), `/**/` multiline in between the asterics will be ignored
+
+#### Variables
+
 - declaring variables:
 ```c
     type variableName = value;
@@ -79,6 +86,8 @@ x = y = z = 50;
 
 
 > 1.2. Data Types & Memory Layout
+
+#### Data types
 
 Primitive types (int, char, float, double):
 - int - 2 or 4 bytes (1 byte is 8 bits)
@@ -146,6 +155,41 @@ signed vs unsigned
 > [!tip] *unsigned* means the type can only store non-negative values (0 and up).
 > These extended types are mostly used when you need very specific control over memory usage or number ranges.
 > For everyday programming, `int, float, double, char` are usually enough.
+
+
+#### Type Conversion
+
+Convert a value from one type to another.
+
+Type of conversion in C:
+- *Implicit Conversion* (automatically) - done automatically by the compiler when you assign a value of one type to another
+Example:
+```c
+// automatic conversion: int to float
+float myFloat = 9;
+
+printf("%f", myFloat); // 9.000000
+```
+- *Explicit Conversion* (manually) - done manually by placing the type in parenthesis () in front of the value.
+```c
+float sum = 5 / 2;
+printf("%f", sum); // 2.000000 -> this is because 5 and 2 are integers
+
+// manual conversion int to float
+float sum = (float) 5 / 2;
+printf("%f", sum); // 2.500000
+
+int num1 = 5;
+int num2 = 2;
+float sum = (float) num1 / num2;
+printf("%f", sum); // 2.500000
+```
+
+
+
+
+
+
 
 stack vs heap memory
 endianness (optional, useful later)
