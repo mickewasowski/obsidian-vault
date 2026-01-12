@@ -185,7 +185,48 @@ float sum = (float) num1 / num2;
 printf("%f", sum); // 2.500000
 ```
 
+#### Constants
 
+- constants in C make the variable *unchangeable* and *read-only*
+- when you declare a variable it *must* be assigned with a value
+- it is not mandatory but it is a good practice to name your constants with uppercase
+
+```c
+const int myNum = 15;
+```
+
+#### Operators
+
+Types:
+- Arithmetic - common mathematical operations
+
+> [!warning] When dividing two integers in C, the result will also be an integers. (10 / 3 gives 3). If you want a decimal result, use *float* or *double* values like 10.0 / 3
+
+- Assignment - most assignment operators are just shorter ways of writing code.
+```c
+int x = 5;
+x += 10;
+
+// others: -= *= /= %= ...etc
+```
+
+- Comparison - the return value of a comparison operator is either 1 or 0 (true or false)
+- Logical - used to determine the logic between variables or values, by combining multiple conditions
+- Precedence - C follows order of operations rules to decide which part to calculate first
+
+> [!warning] Always use () if you want to make sure the calculation is done in the order you expect.
+
+Order highest to lowest
+```c
+() - parenthesis
+* / %
++ -
+> < >= <=
+== !=
+&&
+||
+=
+```
 
 
 
