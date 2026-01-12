@@ -245,6 +245,34 @@ printf("%d", test2); // 0
 ```
 
 
+#### If...Else
+
+```c
+if (condition) {
+
+} else if (condition2) {
+
+} else {
+
+}
+```
+
+> Ternary operator
+```c
+variable = (condition) ? expressionTrue : expressionFalse;
+
+// instead of:
+int time = 20;
+if (time < 18) {
+    // 1
+} else {
+    // 2
+}
+
+// you can:
+int time = 20;
+(time < 18) ? // 1 : //2;
+```
 
 
 
