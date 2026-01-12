@@ -228,6 +228,22 @@ Order highest to lowest
 =
 ```
 
+#### Booleans
+
+- in C the *bool* type is not a built-in data type, it was introduced in C99 and you need to import it:
+```c
+#include <stdbool.h>
+
+bool test = true;
+bool test2 = false;
+
+// use the %d format specifier to print bool
+// this is because 0 represents false and 1 (or any other number that is not 0) represents true
+
+printf("%d", test); // 1
+printf("%d", test2); // 0
+```
+
 
 
 
