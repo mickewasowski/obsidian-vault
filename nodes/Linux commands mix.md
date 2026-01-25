@@ -60,3 +60,20 @@ Common use cases:
 - change only the group
 - change recursive (for directories and contents)
 Only the **root** can use this command.
+
+
+#### check for process running on port
+
+1. identify what process is running on the port
+```bash
+sudo lsof -i :3000
+
+//or
+
+sudo ss -lptn 'sport = :3000'
+```
+
+2. stop/kill the process
+```bash
+sudo kill -9 <PID>
+```
