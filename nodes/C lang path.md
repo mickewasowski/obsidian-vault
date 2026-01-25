@@ -274,6 +274,42 @@ int time = 20;
 (time < 18) ? // 1 : //2;
 ```
 
+#### Switch statement
+
+```c
+switch (expression) {
+    case x: 
+        // code block
+    break;
+    case y: 
+        // code block
+    break;
+    default:
+        // code block
+}
+```
+
+### While, Do/While
+
+```c
+while (condition) {
+    // code
+}
+
+do {
+    // code
+} while (condition);
+```
+
+- the difference between while and do/while is the code execution. In while first the condition is being evaluated and then the code is executed.
+In do/while the code is executed first and then the condition is being evaluated, the code always runs at least once.
+
+
+
+
+
+
+
 
 
 stack vs heap memory
