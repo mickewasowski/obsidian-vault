@@ -41,3 +41,18 @@ then you'd build it like:
 docker build -t my-app .
 docker run -p 3000:3000 my-app
 ```
+
+### Installing Docker on linux
+
+> if `docker ps` command gives you permission error do the following:
+```bash
+// add your user to the docker group
+sudo usermod -aG docker $USER
+
+// reload group membership by either closing the terminal, logging out of ubuntu and logging back in
+// or run the below command to apply imediately (temporary shell)
+newgrp docker
+
+// verify socker permission
+ls -l /var/run/docker.sock
+```
