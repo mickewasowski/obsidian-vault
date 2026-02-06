@@ -49,3 +49,5 @@ brew install --cask alacritty
 ```bash
 alacritty --version
 ```
+
+
