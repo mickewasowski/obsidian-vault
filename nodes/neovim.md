@@ -15,3 +15,5 @@ Followed this Giga Chad's tutorial:
 https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
 
 You can customize it however you like with different plugins, such as LSPs, theme plugins, custom keybindings, etc. The world is you oyster.
+
+

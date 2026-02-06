@@ -16,3 +16,8 @@ context:
 4. `dotnet ef migrations add InitialCreate` - run this in the terminal in order to create the database. This generates a migrations folder with a snapshot and a timestamped file describing what was created/modified.
 5. `dotnet ef database update` - it will execute the last migration file. It also generates a `.db` file.
 
+
+### Configure Controller files
+
+1. Create a Controllers folder. Create a Controller file for each DB table you'd like to access/modify.
+2. Create all the endpoints in each Controller file.
