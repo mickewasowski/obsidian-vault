@@ -8,6 +8,20 @@ context:
 
 ---
 
+### How to create an app
+
+*`dotnet new list`* will list all the templates in the cli
+
+For a Backend API:
+```bash
+dotnet new webapi -> scafolds a basic api project with one endpoint
+
+dotnet run -> starts the server
+
+dotnet add package Newtonsoft.Json -> adds package
+```
+
+
 ### Configuring database
 
 1. Create a Models folder - here we create a class for each table we want to create in the database. In this class we describe all the columns and their types and restrictions. Think of this like a template.
