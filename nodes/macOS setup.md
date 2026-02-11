@@ -101,3 +101,45 @@ In Rectangle settings, bind these to:
 - `Maximize`, `Center` (or `Restore`)
 - `Larger`, `Smaller`
 
+
+#### Virtual desktops (Workspaces)
+
+MacOS equivalent is *Spaces* (on Mission Control).
+
+**1) Turn on and use Spaces (virtual desktops)**
+- Open **System Settings** → **Desktop & Dock**.
+- Scroll to **Mission Control**.
+- Keep **Displays have separate Spaces** = ON (good default).
+- Open **Mission Control** (`Control + Up`) and click `+` top-right to add desktops.
+- Put related windows/apps in each Space (drag windows in Mission Control).
+
+**2) Make app switching less “global”**
+- In **Desktop & Dock** → **Mission Control**, set:
+- **When switching to an application, switch to a Space with open windows for the application** = **OFF**
+  (this prevents macOS from constantly jumping to other Spaces when app-switching)
+
+**3) Install AltTab (best Linux-like window switcher)**
+- Download from: `https://alt-tab-macos.netlify.app`
+  (or Homebrew: `brew install --cask alt-tab`)
+- Launch AltTab and allow permissions when prompted.
+
+**4) Grant required permissions**
+- **System Settings** → **Privacy & Security** → **Accessibility** → enable **AltTab**.
+- Also enable **Screen Recording** for AltTab if requested (needed for live window previews).
+
+**5) Configure AltTab to current Space only**
+In AltTab Preferences:
+- **Controls / Shortcut**: set main switcher shortcut to `Option + Tab` (recommended), keep macOS `Cmd + Tab` unchanged.
+- **Policy / Scope** (wording may vary by version):
+  - Show windows from: **Current Space** (not all spaces)
+  - Exclude minimized/hidden windows if you want cleaner cycling
+- Optional: set appearance to list style if you prefer a lighter, Linux-like switcher.
+
+**6) Set your workspace navigation shortcuts**
+- Space switching: `Control + Left/Right`
+- Mission Control overview: `Control + Up`
+- Window switch in current Space: your AltTab shortcut (e.g. `Option + Tab`)
+
+That gives you the closest macOS equivalent to your GNOME workflow: **Spaces + Space-local window switching**.
+
+If you want, I can give you a **final keybind map** (Linux-to-mac translation table) so muscle memory is easier for the first week.
