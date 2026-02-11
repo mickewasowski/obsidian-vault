@@ -51,3 +51,53 @@ alacritty --version
 ```
 
 
+#### Tiling assistant
+
+1. Rectangle setup - installation guide
+> Download Rectangle - Go to `https://rectangleapp.com`
+> Launch it
+
+> Grant required macOS permission
+- When prompted, allow **Accessibility** access
+- Or manually: **System Settings** → **Privacy & Security** → **Accessibility** → enable **Rectangle**
+- This is required for window movement/resizing shortcuts to work
+
+> Set it to start automatically
+- In Rectangle preferences, enable **Launch on login**
+- Optional but recommended so shortcuts always work
+
+> Apply the Linux-like keybind scheme
+- Open Rectangle preferences → **Shortcuts**
+- Set your chosen modifier (for example `Control + Option + Command`) and map:
+  - Left Half / Right Half
+  - Top Left / Top Right / Bottom Left / Bottom Right
+  - Maximize
+  - Center or Restore
+  - Larger / Smaller
+
+2. Rectangle setup - keybinds
+Use this modifier combo for all window actions:  
+`Control + Option + Command` (so shortcuts don’t clash much with macOS defaults)
+
+- `⌃⌥⌘ + ←` → Left half  
+- `⌃⌥⌘ + →` → Right half  
+- `⌃⌥⌘ + U` → Top-left corner  
+- `⌃⌥⌘ + I` → Top-right corner  
+- `⌃⌥⌘ + J` → Bottom-left corner  
+- `⌃⌥⌘ + K` → Bottom-right corner  
+- `⌃⌥⌘ + ↑` → Maximize  
+- `⌃⌥⌘ + ↓` → Restore/Center (pick whichever you use more)
+
+For the “adjust width/height” feel (grow/shrink while anchored):
+
+- `⌃⌥⌘ + =` → Larger  
+- `⌃⌥⌘ + -` → Smaller  
+- `⌃⌥⌘ + [` → Almost maximize height / taller  
+- `⌃⌥⌘ + ]` → Smaller height / shorter
+
+In Rectangle settings, bind these to:
+- `Left Half`, `Right Half`
+- `Top Left`, `Top Right`, `Bottom Left`, `Bottom Right`
+- `Maximize`, `Center` (or `Restore`)
+- `Larger`, `Smaller`
+
