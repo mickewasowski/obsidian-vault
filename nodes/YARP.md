@@ -169,3 +169,8 @@ Important caveat:
 - Response/body rewriting is harder because YARP is stream-oriented for performance.
 - Header/path/query/status interception is straightforward.
 - If you need heavy request/response body mutation, do it carefully (buffering/custom logic), or move that concern into the backend service when possible.
+
+
+#### Routes interception with BFF setup - YARP transforms
+
+

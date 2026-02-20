@@ -33,3 +33,10 @@ It parses your code *before* it runs and:
 4. Config file (`.eslintrc.*`): where you define your setup - parser, environment, rules, and plugins
 
 
+
+### Format
+
+- can be used both for a file or directory
+```
+npx eslint path-to-file-directory --fix
+```

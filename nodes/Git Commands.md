@@ -43,6 +43,7 @@ If you want to work on that branch you need to:
 git checkout -b branch_name origin/branch_name
 ```
 The above creates a local branch from the remote one and tracks it. Any commits you make are tied to it.
+Create a local branch from a remote branch.
 
 
 ### How to setup two separate Git configurations locally

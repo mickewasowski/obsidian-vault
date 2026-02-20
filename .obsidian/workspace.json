@@ -83,30 +83,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Plan.md",
+                "file": "nodes/ESLint.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Plan"
+              "title": "ESLint"
             }
           },
           {
-            "id": "a4d0d5c3abaf2eea",
+            "id": "d4492847be52f526",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/SCSS @forward.md",
+                "file": "nodes/Aspire .NET.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "SCSS @forward"
+              "title": "Aspire .NET"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "eslint",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -244,14 +244,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a4d0d5c3abaf2eea",
+  "active": "dcbf4dd60cba9e94",
   "lastOpenFiles": [
-    "nodes/SCSS @forward.md",
+    "nodes/Git Commands.md",
     "nodes/Plan.md",
-    "nodes/SCSS Modules.md",
-    "nodes/Hammer.md",
+    "nodes/Aspire .NET.md",
     "nodes/YARP.md",
     "nodes/Duende.md",
+    "nodes/SCSS @forward.md",
+    "nodes/SCSS Modules.md",
+    "nodes/Hammer.md",
     "nodes/BFF.md",
     "nodes/Proxy.md",
     "nodes/Accessibility.md",
@@ -277,8 +279,6 @@
     "nodes/Function Borrowing.md",
     "nodes/Fixed size types.md",
     "nodes/Event loop.md",
-    "nodes/ESLint.md",
-    "nodes/ESLint - Core concepts.md",
     "a.out",
     "resources/Pasted image 20251005133854.png",
     "resources/Pasted image 20251005112039.png",
