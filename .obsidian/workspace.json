@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/ESLint.md",
+                "file": "nodes/Git Stash Commands.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ESLint"
+              "title": "Git Stash Commands"
             }
           },
           {
@@ -138,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "eslint",
+                "query": "stash",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodes/Vim.md",
+                "file": "nodes/Git Stash Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +180,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Vim"
+              "title": "Backlinks for Git Stash Commands"
             }
           },
           {
@@ -244,8 +244,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9239e63e2a947027",
+  "active": "dcbf4dd60cba9e94",
   "lastOpenFiles": [
+    "nodes/ESLint.md",
     "nodes/Git Commands.md",
     "nodes/Plan.md",
     "nodes/Aspire .NET.md",
@@ -278,7 +279,6 @@
     "nodes/Graphics & Rendering math.md",
     "nodes/Function Borrowing.md",
     "nodes/Fixed size types.md",
-    "nodes/Event loop.md",
     "a.out",
     "resources/Pasted image 20251005133854.png",
     "resources/Pasted image 20251005112039.png",

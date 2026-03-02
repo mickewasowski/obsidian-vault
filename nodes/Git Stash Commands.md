@@ -55,3 +55,13 @@ git stash drop stash@{0}
 ``` bash
 git stash clear
 ```
+
+> Named stash
+``` bash
+git stash push -m "some_stash_name"
+```
+
+> Named stash with untracked files included
+``` bash
+git stash push -u -m "some_stash_name"
+```
