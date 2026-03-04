@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Git Stash Commands.md",
+                "file": "nodes/ESLint.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Git Stash Commands"
+              "title": "ESLint"
             }
           },
           {
@@ -138,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stash",
+                "query": "eslint",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodes/Git Stash Commands.md",
+                "file": "nodes/ESLint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +180,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git Stash Commands"
+              "title": "Backlinks for ESLint"
             }
           },
           {
@@ -246,6 +246,9 @@
   },
   "active": "dcbf4dd60cba9e94",
   "lastOpenFiles": [
+    "nodes/Git submodule.md",
+    "nodes/Prettier.md",
+    "nodes/Git Stash Commands.md",
     "nodes/ESLint.md",
     "nodes/Git Commands.md",
     "nodes/Plan.md",
@@ -276,9 +279,6 @@
     "nodes/Iterators and Generators.md",
     "nodes/Heap.md",
     "nodes/HTML sample.md",
-    "nodes/Graphics & Rendering math.md",
-    "nodes/Function Borrowing.md",
-    "nodes/Fixed size types.md",
     "a.out",
     "resources/Pasted image 20251005133854.png",
     "resources/Pasted image 20251005112039.png",
