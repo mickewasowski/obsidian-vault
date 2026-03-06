@@ -7,7 +7,16 @@ context:
 
 ---
 
-C Language - Basics - Data Types - Pointers - Arrays - Structs - Memory Allocation - Strings - Function Pointers
+> [!tip]
+> C Language
+> - Basics
+> - Data Types
+> - Pointers
+> - Arrays
+> - Structs
+> - Memory Allocation
+> - Strings
+> - Function Pointers
 
 1. ## C LANGUAGE (for DSA + Systems)
 
