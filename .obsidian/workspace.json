@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/https localhost.md",
+                "file": "nodes/Git submodule.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "https localhost"
+              "title": "Git submodule"
             }
           },
           {
@@ -152,7 +152,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "eslint",
+                "query": "git submo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,

@@ -60,3 +60,10 @@ git submodule update --init --recursive
 - CI pipelines sometimes fail if submodules aren't initialized
 - merge conflicts can happen on submodule SHAs
 
+
+### Check hash
+
+The below command returns the current hash strings for each submodule in your repo:
+``` bash
+git submodule status
+```
