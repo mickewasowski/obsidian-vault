@@ -5,15 +5,29 @@ context:
 - "[[File Systems]]"
 ---
 
-#wip
-
 # Symlink
 
 Symbolic link (Symlink) is a special file that points to another file or folder, like a shortcut.
 It doesn't copy the data - just references the original location.
 
 ---
-#### Create a symlink
+### Overview
+
+A soft link is like a shortcut.
+    - it stores a *path (string)* pointing to another file
+    - it does NOT point directly to the file data
+
+### Key properties
+
+- if the target file is deleted -> the symlik becomes **broken** (dangling)
+- can link:
+    - across different filesystems
+    - to directories
+- has its **own inode**, separate from the target
+
+
+
+### Create a symlink
 (the below use case was tested with dist folder from one project and the node_modules of another project)
 ``` bash
 ln -sfn pathA(target) pathB(source)
