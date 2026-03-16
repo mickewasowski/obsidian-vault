@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Git submodule.md",
+                "file": "nodes/Git Stash Commands.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Git submodule"
+              "title": "Git Stash Commands"
             }
           },
           {
@@ -152,7 +152,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git submo",
+                "query": "git stash",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -260,9 +260,9 @@
   },
   "active": "f8014d9cd5f21e23",
   "lastOpenFiles": [
+    "nodes/Git submodule.md",
     "nodes/ESLint.md",
     "nodes/https localhost.md",
-    "nodes/Git submodule.md",
     "nodes/Prettier.md",
     "nodes/Git Stash Commands.md",
     "nodes/Git Commands.md",
