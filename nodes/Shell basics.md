@@ -2,6 +2,7 @@
 aliases:
 context:
 - "[[Linux]]"
+- "[[Shell]]"
 ---
 
 # Shell basics
