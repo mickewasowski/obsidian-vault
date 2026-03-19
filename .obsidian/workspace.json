@@ -161,6 +161,7 @@
   },
   "active": "9ecef41dc21f513b",
   "lastOpenFiles": [
+    "nodes/plugin-basic-ssl.md",
     "nodes/Scripting.md",
     "nodes/ShellN.md",
     "nodes/Graphical User Interface.md",
@@ -188,7 +189,6 @@
     "nodes/Package Managers.md",
     "nodes/Building a UI library.md",
     "nodes/Study plan - December 2025.md",
-    "nodes/Computer science plan.md",
     "test/test.c",
     "test/a.out",
     "test",
