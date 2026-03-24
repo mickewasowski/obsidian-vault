@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/npm.md",
+                "file": "nodes/The C programmin language - 2nd edition.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "npm"
+              "title": "The C programmin language - 2nd edition"
             }
           }
         ]
@@ -161,6 +161,7 @@
   },
   "active": "9ecef41dc21f513b",
   "lastOpenFiles": [
+    "nodes/npm.md",
     "nodes/Command-Line Interpreter.md",
     "nodes/Shell Fundamentals.md",
     "nodes/plugin-basic-ssl.md",
@@ -188,7 +189,6 @@
     "nodes/Untitled.base",
     "nodes/DOM Manipulation.md",
     "nodes/Fetch API.md",
-    "nodes/Package Managers.md",
     "test/test.c",
     "test/a.out",
     "test",
