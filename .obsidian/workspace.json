@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git stash",
+                "query": "push ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,7 +159,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ecef41dc21f513b",
+  "active": "9239e63e2a947027",
   "lastOpenFiles": [
     "nodes/Shell Fundamentals.md",
     "nodes/plugin-basic-ssl.md",
