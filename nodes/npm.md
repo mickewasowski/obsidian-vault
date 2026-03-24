@@ -20,6 +20,16 @@ npm ci
 ```
 The above can be applied if the package.json and package-lock.json *are* in sync.
 
+``` bash
+npm install --force
+```
+The above command tells `npm` to install dependencies *even if it detects problems or conflicts* that would normally stop the installation.
+What `--force`  actually does:
+- ignores dependency conflicts
+- overrides protections
+- reinstalls packages aggressively
+- ignores certain warnings/errors
+
 
 ### Difference between npm i and npm ci:
 

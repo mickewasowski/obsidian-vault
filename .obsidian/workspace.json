@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/Command-Line Interpreter.md",
-                "mode": "preview",
+                "file": "nodes/npm.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Command-Line Interpreter"
+              "title": "npm"
             }
           }
         ]
@@ -53,8 +53,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "push ",
-                "matchingCase": false,
+                "query": "npm install",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -159,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9239e63e2a947027",
+  "active": "9ecef41dc21f513b",
   "lastOpenFiles": [
+    "nodes/Command-Line Interpreter.md",
     "nodes/Shell Fundamentals.md",
     "nodes/plugin-basic-ssl.md",
     "nodes/Scripting.md",
@@ -188,7 +189,6 @@
     "nodes/DOM Manipulation.md",
     "nodes/Fetch API.md",
     "nodes/Package Managers.md",
-    "nodes/Building a UI library.md",
     "test/test.c",
     "test/a.out",
     "test",
