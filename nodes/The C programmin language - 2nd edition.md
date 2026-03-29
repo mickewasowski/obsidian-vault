@@ -15,7 +15,7 @@ Written by Brian W. Kernighan and Dennis M. Ritchie.
 
 ### Chapter 1
 
-1.1. Getting started
+> 1.1. Getting started
 
 - print `hello world`
 
@@ -45,7 +45,7 @@ int main()
 
 > [!tip] if you want a nicer output file name run this: `gcc test.c -o myprogram`
 
-1.2. Variables and Arithmetic Expressions
+> 1.2. Variables and Arithmetic Expressions
 
 - leaving comments (ignored by the compiler):
 
@@ -131,4 +131,21 @@ printf("%d\t%d\n", fahr, celsius);
 | %%     | % itself                                                           |
 
 
+> 1.3. The for statement
 
+- newer syntax
+```c
+for (int i = 0; i < 10; i++)
+{
+    /* some code */
+}
+```
+
+- older syntax (before in C90) - you were not allowed to declare a variable in the for loop initializer
+```c
+int i;
+for (i = 0; i < 10; i++)
+{
+    /* some code */
+}
+```
