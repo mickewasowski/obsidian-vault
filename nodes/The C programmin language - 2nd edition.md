@@ -149,3 +149,23 @@ for (i = 0; i < 10; i++)
     /* some code */
 }
 ```
+
+> 1.4. Symbolic constants
+
+#define *name* *replacement text* - name occurrence will be replaced with replacement text. The name has the form as a variable name. The replacement text can be any sequence of characters, doesn't have to be numbers.
+
+```c
+/* Notice there is NO semicolon at the end of the line */
+#define LOWER 0 /* lower limit of table */
+#define UPPER 300 /* lower limit of table */
+#define STEP 20 /* lower limit of table */
+```
+- the LOWER, UPPER AND STEP are symbolic constants, they are not variables and do not appear in declarations.
+
+> [!warning] Symbolic constants are created with the preprocessor:
+> `#define PI 3.14`
+> - handled by the preprocessor before compilation
+> - it's just text substitution - the compiler never sees `PI`, only `3.14`
+> - no type checking
+> - no memory is allocated for the name itself
+> - can also be created with `const`, but that's a different concept: `const int x = 10;` (this *does* have a type and memory)
