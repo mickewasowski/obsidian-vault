@@ -192,6 +192,17 @@ int putchar(int char);
 - takes a character (passed as an int)
 - returns the character written, or EOF on error
 
-> *text stream* is a sequence of characters divided into lines; each line consists of zero or more characters followed by a newline character.
+> [info] *text stream* is a sequence of characters divided into lines; each line consists of zero or more characters followed by a newline character.
 
 
+> 1.5.1. File Copying
+
+*EOF* (end of file):
+- in a file is done automatically
+- in the terminal on a mac its `ctrl + d`
+- we run the function for char reading like so: `./program.out < file.{extension}`
+
+```c
+/* print the value of EOF*/
+printf("EOF = %d\n", EOF);
+```
