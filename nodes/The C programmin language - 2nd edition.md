@@ -169,3 +169,29 @@ for (i = 0; i < 10; i++)
 > - no type checking
 > - no memory is allocated for the name itself
 > - can also be created with `const`, but that's a different concept: `const int x = 10;` (this *does* have a type and memory)
+
+
+> 1.5. Character Input and Output
+
+```c
+int getchar(void);
+```
+- reads one character from standard input (usually the keyboard)
+- returns the character read as an int 
+- returns EOF (end of file) if input fails or reaches the end
+- you often store the result in an int (not in char) to properly detect EOF
+
+Typical usecase:
+- reading input character-by-character (e.g. parsing text)
+
+
+```c
+int putchar(int char);
+```
+- writes one character to standard output (usually screen)
+- takes a character (passed as an int)
+- returns the character written, or EOF on error
+
+> *text stream* is a sequence of characters divided into lines; each line consists of zero or more characters followed by a newline character.
+
+

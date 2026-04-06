@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nodes/The C programmin language - 2nd edition.md",
+                "file": "nodes/Git Stash Commands.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "The C programmin language - 2nd edition"
+              "title": "Git Stash Commands"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "npm install",
+                "query": "stash pop",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,6 +161,7 @@
   },
   "active": "9ecef41dc21f513b",
   "lastOpenFiles": [
+    "nodes/The C programmin language - 2nd edition.md",
     "nodes/npm.md",
     "nodes/Command-Line Interpreter.md",
     "nodes/Shell Fundamentals.md",
@@ -188,7 +189,6 @@
     "nodes/Untitled 1.base",
     "nodes/Untitled.base",
     "nodes/DOM Manipulation.md",
-    "nodes/Fetch API.md",
     "test/test.c",
     "test/a.out",
     "test",
