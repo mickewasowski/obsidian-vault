@@ -206,3 +206,17 @@ int putchar(int char);
 /* print the value of EOF*/
 printf("EOF = %d\n", EOF);
 ```
+
+
+> 1.5.2. Character counting
+
+>[!tip] On some machines `int` and `long` are the same size, on others `int` is 16bit with max value 32767.
+
+- `%ld` - tells `printf` function the argument is of type long
+- `%f` is used for both `float` and `double`
+
+```c
+for (nc = 0; gechar() != EOF; ++nc)
+ ;
+```
+C requires that a for loop has a body, the isolated `;` is called a *null* statement and satisfies that rule
