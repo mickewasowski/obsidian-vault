@@ -228,3 +228,8 @@ C requires that a for loop has a body, the isolated `;` is called a *null* state
 
 `=` - used for assignment
 `==` - used for equality check
+
+
+> 1.5.4. Word counting
+
+- expression evaluation happens from left to right
