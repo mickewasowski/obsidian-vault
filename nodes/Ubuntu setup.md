@@ -41,3 +41,32 @@ Install these
 2. Custom Shortcuts
     - flameshot (name) - flameshot gui (command) - Print (button)
     - terminal (name) - alacritty (command) - Super + T (button)
+    - theme toggle:
+``` bash
+bash -c 'v=$(gsettings get org.gnome.desktop.interface color-scheme); if [ "$v" = "'\''prefer-dark'\''" ]; then gsettings set org.gnome.desktop.interface color-scheme default; else gsettings set org.gnome.desktop.interface color-scheme prefer-dark; fi'
+```
+3. Custom services (simply place the service files in `~/.config/systemd/user/` and then run `systemctl --user daemon-reload` to reload them):
+    - alacritty theme sync
+    - github repo update
+
+> Reload services
+``` bash
+    systemctl --user daemon-reload
+```
+
+> Enable service at start
+``` bash
+    systemctl --user enable alacritty-theme-sync.service
+```
+
+> Start service now
+``` bash
+    systemctl --user start alacritty-theme-sync.service
+```
+
+# Alacritty theme sync with GNOME setup
+
+1. run this command to make the script executable
+``` bash
+    chmod +x ~/.config/alacritty/sync-alacritty-theme.sh
+```
