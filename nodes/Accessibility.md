@@ -24,3 +24,6 @@ Some of the key features a website should have when implementing accessibility a
 
 ### Polyfill
 A **polyfill** is a piece of code (usually JavaScript) that implements a web platform feature in browsers that don’t natively support it. It “fills in” missing APIs—acting as a shim—so you can use modern HTML, CSS, or JavaScript features without breaking compatibility for older environments. When a browser already implements the feature, the polyfill steps aside and defers to the native behavior.
+
+
+

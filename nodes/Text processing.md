@@ -17,3 +17,5 @@ Manipulate, search, filter and format text files.
 [[echo]]
 
 [[Piping and Redirection]]
+
+[[stdout, stdin, and stderr]]
