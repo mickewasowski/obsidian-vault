@@ -233,3 +233,30 @@ C requires that a for loop has a body, the isolated `;` is called a *null* state
 > 1.5.4. Word counting
 
 When working with variables and arrays **do not** forget to initialize the variales!
+
+
+> 1.5.5. Arrays
+
+There is no built-in method to get the array's length.
+There are a few ways to get the length:
+
+- divide the total bytes of the array by the bytes of one element (for int arrays)
+``` c
+int arr[] = {1,2,3,4,5};
+int length = sizeof(arr) / sizeof(arr[0]);
+```
+> [!warning] This does not work with pointer! If you pass the array as an argument of a function you won't be able to perform this operation.
+
+- for string arrays
+``` c
+char str[] = "hello";
+int length = strlen(str); // 5 => requires <string.h> import
+```
+
+- for dynamically allocated arrays - you must track the length yourself
+```c
+int *arr = malloc(5 * sizeof(int));
+int length = 5;  // You need to remember this!
+// Use length throughout your code
+free(arr);
+```
