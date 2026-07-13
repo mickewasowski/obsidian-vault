@@ -237,6 +237,8 @@ When working with variables and arrays **do not** forget to initialize the varia
 
 > 1.5.5. Arrays
 
+Make sure you initialize the array!
+
 There is no built-in method to get the array's length.
 There are a few ways to get the length:
 
@@ -260,3 +262,26 @@ int length = 5;  // You need to remember this!
 // Use length throughout your code
 free(arr);
 ```
+
+
+> 1.5.6. Functions
+
+Typically a return value of zero implies normal termination of the program.
+Non-zero values signal unusual or erroneos termination conditions.
+
+```c
+
+int power(int m, int n); // function prototype
+// or the above could also be written as
+int power(int, int);
+
+void main() {
+    // some code
+}
+
+int power(int m, int n) { // actual implementation
+    // some code
+}
+```
+It is an error if the definition or any uses of the function do not agree with the function prototype.
+The parameter names need not agree.
