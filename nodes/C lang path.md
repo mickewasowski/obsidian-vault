@@ -201,6 +201,7 @@ float sum = (float) num1 / num2;
 printf("%f", sum); // 2.500000
 ```
 
+- characters
 ```c
 // converting characters to integers (ASCII code)
 char my_char = 'A';
@@ -222,6 +223,21 @@ char explicitly_converted_a = (char) letter_a_code; // explicit cast
 printf("Explicitly typecasted: %c\n", explicitly_converted_a);
 ```
 
+- integers - positive or negative whole numbers
+- integer types:
+    - short - 2 bytes long
+    - int - usually 4 bytes long
+    - long - often 4 bytes, on 64-bit systems can be 8 bytes
+    - long long - always 8 bytes in size
+- integer type qualifiers
+    - signed - can be negative or positive
+    - unsigned - always positive
+```c
+// get the byte size of an int type
+int size_of_short = sizeof(short);
+```
+
+> [!warning] Going from larger data type to a smaller data type (e.g. long to short) might cause some data loss. Avoid this!
 
 
 #### Constants
