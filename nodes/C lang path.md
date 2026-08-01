@@ -98,6 +98,13 @@ x = y = z = 50;
 
 #### Data types
 
+Base data types:
+- integers
+- floating points
+- characters
+- booleans
+- the void type - this is the C way of representing the absence of data
+
 Primitive types (int, char, float, double):
 - int - 2 or 4 bytes (1 byte is 8 bits)
 - float - 4 bytes
@@ -193,6 +200,29 @@ int num2 = 2;
 float sum = (float) num1 / num2;
 printf("%f", sum); // 2.500000
 ```
+
+```c
+// converting characters to integers (ASCII code)
+char my_char = 'A';
+
+int letter_a_code = my_char;
+printf("The ASCII code for the letter A is: %d\n", letter_a_code);
+
+
+// get the integer value of a numerical character
+char my_num_char = '7';
+int my_num = my_num_char - '0';
+printf("My converted number is: %d\n", my_num);
+
+// converting integers to characters
+char converted_a = letter_a_code; // implicit cast
+printf("The letter corresponding to code %d is: %c\n", letter_a_code, converted_a);
+
+char explicitly_converted_a = (char) letter_a_code; // explicit cast
+printf("Explicitly typecasted: %c\n", explicitly_converted_a);
+```
+
+
 
 #### Constants
 
