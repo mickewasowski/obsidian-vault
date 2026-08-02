@@ -398,7 +398,22 @@ switch (expression) {
 }
 ```
 
-### While, Do/While
+#### Debugging a C program
+
+1. Common bugs
+    - syntax errors and compilation errors
+    - logical bugs - these you have to debug manually
+    - memory management errors - harder to debug
+    - off-by-one errors
+    - using uninitialized variables
+2. Debugging methods
+    - print statements / logging
+    - debugger
+
+
+### Control flow and functions
+
+#### While, Do/While
 
 ```c
 while (condition) {
