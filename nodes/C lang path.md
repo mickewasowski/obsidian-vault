@@ -41,6 +41,8 @@ main function, return codes
 
 #### Variables
 
+> [!tip] You can declare variables without initilizing them.
+
 - declaring variables:
 ```c
     type variableName = value;
@@ -52,6 +54,12 @@ main function, return codes
 
     // assign a value later
     test = 21;
+
+    // declare multiple variables at once
+    int a, b, c;
+
+    // initialize multiple variables in one line
+    a = 10; b = 20; c = 30;
 ```
 - printing variable values - *format specifiers*
 ```c
@@ -80,6 +88,19 @@ int test2;
 
 test2 = copy;
 ```
+
+- reassigning a constant
+```c
+const int x = 5;
+x = 10;
+
+// GCC typically reports:
+// error: assignment of read-only variable 'x'
+
+// Clang typically reports:
+// error: cannot assign to variable 'x' with const-qualified type 'const int'
+```
+
 - declare multiple variables in one line
 ```c
 int x = 5, y = 6, z = 50;
@@ -91,6 +112,12 @@ int x, y, z;
 x = y = z = 50;
 ```
 - variable names must begin with a letter or an underscore, cannot contain whitespaces or special characters
+```c
+// invalid variable names
+int 1invalid = 6;
+int invalid-name = 7;
+int invalid&name = 8;
+```
 
 
 
@@ -306,6 +333,25 @@ bool test2 = false;
 printf("%d", test); // 1
 printf("%d", test2); // 0
 ```
+
+
+#### Understanding identifiers
+
+> [!tip] Variables are memory locations used for storing data!
+
+1. Memory allocation basics
+    - stack
+    - heap
+2. Stack-allocated memory - happens implicitly, C handles that for us
+    - simple - automatic allocation and deallocation
+    - determined at compile time
+    - local to scope / fast access
+
+```c
+const int PI = 3.14f; // *const* type qualifier can be used to ensure that a variable cannot be reassigned
+```
+
+> [!tip] Use *const* as much as you can for variables that are not meant to change in value in order to be as explicit as possible!
 
 
 #### If...Else
