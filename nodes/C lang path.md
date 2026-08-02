@@ -240,6 +240,14 @@ int size_of_short = sizeof(short);
 > [!warning] Going from larger data type to a smaller data type (e.g. long to short) might cause some data loss. Avoid this!
 
 
+- floating points
+- floating point types:
+    - floats - smaller, floats can be created via the "f" suffix and are 4 bytes in length
+    - doubles - doubles are 8 bytes in length
+    - long double - not often used, 16 bytes in length, suffix with "L"
+
+> [!warning] C doesnt support unsigned floating points! Everything is signed.
+
 #### Constants
 
 - constants in C make the variable *unchangeable* and *read-only*
