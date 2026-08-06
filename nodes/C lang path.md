@@ -409,6 +409,28 @@ switch (expression) {
 2. Debugging methods
     - print statements / logging
     - debugger
+3. Input and output
+    Standard IO Streams:
+        - standard input (stdin): keyboard command line input
+        - standard output (stdout): command line output
+        - standard error (stderr): special error stream
+
+> [!warning] Format specifiers help the compiler to know what data type you are trying to send to standard output or receive from standard input!
+    - %c - characters
+    - %d - signed integers
+    - %f - floats
+    - %lf - doubles
+    - %p - pointer
+    - %u - unsigned integer
+
+4. Standard Input/Output Buffering
+    - line buffering - default, reads/writes only after a new line
+    - full buffering - streams will read/write from the terminal only when the stream is full, you can set the stream size
+    - unbuffered - every character you read/write will be immediately transmitted to/from the stream, this can be slow
+5. Standard Output
+    - can be used with the import header `<stdio.h>`
+    - function we use from this header - printf, putchar, fflush
+
 
 
 ### Control flow and functions
