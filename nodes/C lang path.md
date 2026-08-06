@@ -430,6 +430,19 @@ switch (expression) {
 5. Standard Output
     - can be used with the import header `<stdio.h>`
     - function we use from this header - printf, putchar, fflush
+6. Standard Input
+```c
+    char name[50];
+    scanf("%49s", name); // limit to 49 chars to avoid buffer overflow
+
+    int selection;
+    scanf("%d", &selection); // &selection gives us the memory address of the variable
+
+
+    scanf("%d", selection); // this would be wrong because you're giving scanf the *current value of selection*, not the address where that variable lives
+```
+    - scanf function accepts two parameters - a format specifier and variable in which the input can be stored
+    - scanf needs the address because it needs to *modify the variable*, `&` is the address-of operator
 
 
 
