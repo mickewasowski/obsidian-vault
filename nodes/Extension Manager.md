@@ -5,8 +5,6 @@ context:
 - "[[Ubuntu setup]]"
 ---
 
-#wip
-
 # Extension Manager
 
 Used in Ubuntu for advanced keymaps.
