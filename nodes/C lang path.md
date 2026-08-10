@@ -41,6 +41,8 @@ main function, return codes
 
 #### Variables
 
+> [!tip] You can declare variables without initilizing them.
+
 - declaring variables:
 ```c
     type variableName = value;
@@ -52,6 +54,12 @@ main function, return codes
 
     // assign a value later
     test = 21;
+
+    // declare multiple variables at once
+    int a, b, c;
+
+    // initialize multiple variables in one line
+    a = 10; b = 20; c = 30;
 ```
 - printing variable values - *format specifiers*
 ```c
@@ -80,6 +88,19 @@ int test2;
 
 test2 = copy;
 ```
+
+- reassigning a constant
+```c
+const int x = 5;
+x = 10;
+
+// GCC typically reports:
+// error: assignment of read-only variable 'x'
+
+// Clang typically reports:
+// error: cannot assign to variable 'x' with const-qualified type 'const int'
+```
+
 - declare multiple variables in one line
 ```c
 int x = 5, y = 6, z = 50;
@@ -91,12 +112,25 @@ int x, y, z;
 x = y = z = 50;
 ```
 - variable names must begin with a letter or an underscore, cannot contain whitespaces or special characters
+```c
+// invalid variable names
+int 1invalid = 6;
+int invalid-name = 7;
+int invalid&name = 8;
+```
 
 
 
 > 1.2. Data Types & Memory Layout
 
 #### Data types
+
+Base data types:
+- integers
+- floating points
+- characters
+- booleans
+- the void type - this is the C way of representing the absence of data
 
 Primitive types (int, char, float, double):
 - int - 2 or 4 bytes (1 byte is 8 bits)
@@ -194,6 +228,53 @@ float sum = (float) num1 / num2;
 printf("%f", sum); // 2.500000
 ```
 
+- characters
+```c
+// converting characters to integers (ASCII code)
+char my_char = 'A';
+
+int letter_a_code = my_char;
+printf("The ASCII code for the letter A is: %d\n", letter_a_code);
+
+
+// get the integer value of a numerical character
+char my_num_char = '7';
+int my_num = my_num_char - '0';
+printf("My converted number is: %d\n", my_num);
+
+// converting integers to characters
+char converted_a = letter_a_code; // implicit cast
+printf("The letter corresponding to code %d is: %c\n", letter_a_code, converted_a);
+
+char explicitly_converted_a = (char) letter_a_code; // explicit cast
+printf("Explicitly typecasted: %c\n", explicitly_converted_a);
+```
+
+- integers - positive or negative whole numbers
+- integer types:
+    - short - 2 bytes long
+    - int - usually 4 bytes long
+    - long - often 4 bytes, on 64-bit systems can be 8 bytes
+    - long long - always 8 bytes in size
+- integer type qualifiers
+    - signed - can be negative or positive
+    - unsigned - always positive
+```c
+// get the byte size of an int type
+int size_of_short = sizeof(short);
+```
+
+> [!warning] Going from larger data type to a smaller data type (e.g. long to short) might cause some data loss. Avoid this!
+
+
+- floating points
+- floating point types:
+    - floats - smaller, floats can be created via the "f" suffix and are 4 bytes in length
+    - doubles - doubles are 8 bytes in length
+    - long double - not often used, 16 bytes in length, suffix with "L"
+
+> [!warning] C doesnt support unsigned floating points! Everything is signed.
+
 #### Constants
 
 - constants in C make the variable *unchangeable* and *read-only*
@@ -254,6 +335,25 @@ printf("%d", test2); // 0
 ```
 
 
+#### Understanding identifiers
+
+> [!tip] Variables are memory locations used for storing data!
+
+1. Memory allocation basics
+    - stack
+    - heap
+2. Stack-allocated memory - happens implicitly, C handles that for us
+    - simple - automatic allocation and deallocation
+    - determined at compile time
+    - local to scope / fast access
+
+```c
+const int PI = 3.14f; // *const* type qualifier can be used to ensure that a variable cannot be reassigned
+```
+
+> [!tip] Use *const* as much as you can for variables that are not meant to change in value in order to be as explicit as possible!
+
+
 #### If...Else
 
 ```c
@@ -298,7 +398,57 @@ switch (expression) {
 }
 ```
 
-### While, Do/While
+#### Debugging a C program
+
+1. Common bugs
+    - syntax errors and compilation errors
+    - logical bugs - these you have to debug manually
+    - memory management errors - harder to debug
+    - off-by-one errors
+    - using uninitialized variables
+2. Debugging methods
+    - print statements / logging
+    - debugger
+3. Input and output
+    Standard IO Streams:
+        - standard input (stdin): keyboard command line input
+        - standard output (stdout): command line output
+        - standard error (stderr): special error stream
+
+> [!warning] Format specifiers help the compiler to know what data type you are trying to send to standard output or receive from standard input!
+    - %c - characters
+    - %d - signed integers
+    - %f - floats
+    - %lf - doubles
+    - %p - pointer
+    - %u - unsigned integer
+
+4. Standard Input/Output Buffering
+    - line buffering - default, reads/writes only after a new line
+    - full buffering - streams will read/write from the terminal only when the stream is full, you can set the stream size
+    - unbuffered - every character you read/write will be immediately transmitted to/from the stream, this can be slow
+5. Standard Output
+    - can be used with the import header `<stdio.h>`
+    - function we use from this header - printf, putchar, fflush
+6. Standard Input
+```c
+    char name[50];
+    scanf("%49s", name); // limit to 49 chars to avoid buffer overflow
+
+    int selection;
+    scanf("%d", &selection); // &selection gives us the memory address of the variable
+
+
+    scanf("%d", selection); // this would be wrong because you're giving scanf the *current value of selection*, not the address where that variable lives
+```
+    - scanf function accepts two parameters - a format specifier and variable in which the input can be stored
+    - scanf needs the address because it needs to *modify the variable*, `&` is the address-of operator
+
+
+
+### Control flow and functions
+
+#### While, Do/While
 
 ```c
 while (condition) {

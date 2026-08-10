@@ -279,3 +279,26 @@ printf("Total is: %d\n", total); // warning: total is used uninitialized
     - divide by zero
     - file not found
     - out of memory
+
+
+### Importing files
+
+```c
+#include "car.h" // where car.h is a file we've created
+```
+
+```c
+//car.h
+
+// .. functions, constants, etc.
+```
+
+
+### Standard library key aspects
+
+- string.h - string manipulation
+- stdio - input/output functions
+- stdlib.h - memory allocation, mathematical conversion functions
+- math.h - common math functons
+- ctype.h - character manipulation functions
+

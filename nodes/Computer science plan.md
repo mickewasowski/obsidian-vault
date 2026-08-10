@@ -98,7 +98,7 @@ Session 1 (CPU Fundamentals):
 
 Session 2 (C Setup & Basics):
 - Install:
-  - GCC/Clang
+  - GCC/Clang (clang is the default C compiler on mac, and mac is a bit weird, it appears as if gcc creates a symlink to clang)
   - Your preferred editor/Neovim flow
 - Write simple programs:
   - `hello.c`
