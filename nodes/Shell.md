@@ -84,8 +84,25 @@ So:
     5 = 4 + 0 + 1 = r-x
 ```
 
+3. `mv` - used to move or rename files and directories
+- flags:
+    - `-i` - ask before replacing files
+    - `-u` - move only if the source is newer (moves only if the source file is newer than the destination file)
+    - `-v` - verbose mode, show files being moved
 
+```bash
+mv source destination
 
+Example:
+mv file.txt /path/to/destination/
+mv -i file.txt /path/to/destination/
+    => asks you if there is a file with the same name if you want to overwrite it
+
+mv old_name.txt new_name.txt
+
+mv -u file.txt outer2/
+    => here the -u flag compares if there is a file.txt in outer2 and if its timestamp is older, its not comparing the directory timestamp if the file is not present
+```
 
 
 
