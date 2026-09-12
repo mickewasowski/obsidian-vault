@@ -105,8 +105,25 @@ mv -u file.txt outer2/
 ```
 
 
+4. `ls` - used to list files and directories within a specified directory.
+You can control the output with flags:
+    - `-l` - long listing format (displays file permissions, number of links, owner name, owner group, file size, time of last modification, file or directory name)
+    - `-a` - show hidden files
+    - `-h` - human-readable sizes (4mb, 4k, 1gb, etc.)
+    - `-t` - sort by modification time (most recently modified first)
+    - `-r` - reverse order while sorting (when combined with `-t` it can show the oldest first)
+    - `-R` - list sub-directories recursively (useful for viewing the entire directory tree)
+    - `-S` - sort by size (largest first)
+    - `-1` - list one file per line
+    - `-d` - list directories themselves, not their contents
+    - `-F` - append indicator (one of */=@|) to entries (e.g. / for directories, * for executables)
 
-
+You can even use multiple flags at the same time:
+```bash
+    ls -lh
+    ls -la
+    ls -Sh
+```
 
 
 
