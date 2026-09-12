@@ -126,8 +126,29 @@ You can even use multiple flags at the same time:
 ```
 
 
+5. `touch` - mainly used to create new empty files, or to update file timestamps without changing their contents
+    Flags:
+        - `-a` - update only when the file was last read
+        - `-m` - update only when the file was last changed
+        - `-t` - set the timestamp to a specific time
+        - `-c` - do not create any files
+
+```bash
+    touch *.txt => wildcards allow you to update multiple files at the same time
+
+    touch file1.txt file2.txt file3.txt => create multiple files at the same time
+
+    touch -t 202007250000 *.txt  => set the timestamp for all files
+```
 
 
+6. `cp` - used to copy files and directories from one location to the other. Creates an exact copy in the destination leaving the original in tact.
+Can be used to copy single file, multiple files, or entire directories.
+    Flags:
+        - `-r` - copy all files and directories inside a directory
+        - `-i` - ask before replacing
+        - `-u` - only copy if the source is newer
+        - `-v` -verbose mode, show files being copied
 
 
 
