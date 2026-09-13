@@ -151,4 +151,36 @@ Can be used to copy single file, multiple files, or entire directories.
         - `-v` -verbose mode, show files being copied
 
 
+7. `cd` - allows you to navigate in the shell environment, by specifying a target directory as an argument
+``` bash
+cd ..  => move one directory up
+cd ~  => change to the home directory (your user's folder in the home directory)
+cd -  => switch to the previous directory
+cd /  => change to the root directory
+```
 
+8. `rm` - used to remove files or directories **permanently**. Specific options are needed to remove directories and their contents recursively.
+```bash
+    rm file_name.txt  => removes a file
+```
+Flags:
+    - `-r` - delete a folder and everything inside it
+    - `-i` - ask before deleting
+    - `-f` - force delete without asking
+    - `-v` - verbose mode, show files being removed
+
+
+9. `cat` - name is short for concatenate, it is used to display the contents of one or more files on the standard output (usually your terminal screen). It can also be used to concatenate files, meaning to combine them into a single output stream.
+
+Flags:
+    - `-n` - add numbers to each line of the output
+    - `-b` - add numbers only to lines with text (ignoring blank lines)
+    - `-s` - remove extra empty lines (a line containing spaces or tabs is *not blank*), squeezes multiple consecutive completely blank lines into one blank line
+    - `-v` - show non-printing characters (except for tabs and end of line)
+    - `-T` - shows tabs (in neovim pressing the tab button simply creates spaces) `printf 'hello\tworld\n' > text.txt` then cat that
+
+```bash
+// concatenate two files into one (it creates a new file)
+
+cat file1.txt file2.txt > combined.txt
+```

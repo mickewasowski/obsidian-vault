@@ -165,3 +165,6 @@ Append text on multiple lines
 3. `A` (append after), `I` (append before), `c` (change the selected block), `r` (replace with a single character)
 4. type the text you want to append
 5. `Esc` - to apply
+
+Increment multiple numbers:
+- `g<C-a>` (g + ctrl + a) - it increments all the selected numbers with one in regards to the previous number (1, 2, 3, 4, etc.)
