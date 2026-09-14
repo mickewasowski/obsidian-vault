@@ -57,6 +57,25 @@ git branch --remotes --list "*login*"
 ```
 
 
+##### List only changed files against branch
+
+Lists only the changed files names:
+```bash
+git diff --name-only master...HEAD
+```
+
+Lists status + files names:
+```bash
+git diff --name-status master...HEAD
+```
+
+Lists detailed changes:
+```bash
+git diff master...HEAD
+```
+
+
+
 
 ### How to setup two separate Git configurations locally
 
