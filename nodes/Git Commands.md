@@ -46,6 +46,18 @@ The above creates a local branch from the remote one and tracks it. Any commits 
 Create a local branch from a remote branch.
 
 
+##### Seach by branch name
+
+```bash
+git branch --all | grep "search-term"  => exact branch name
+
+// search by pattern (git's built-in pattern matching)
+git branch --list "*login*"
+git branch --remotes --list "*login*"
+```
+
+
+
 ### How to setup two separate Git configurations locally
 
 #wip
@@ -57,13 +69,6 @@ Create a local branch from a remote branch.
 
 
 
-### Using personal token
-> [!Tip] When the token had expired and you want to renew it you need to first copy the token, update it in the `.git-credentials`, then try to push and when it prompts you for username and password, for the password enter the new token.
-
-Example structure:
-```bash
-https://<username>:<personal-access-token>@<host>
-```
 
 
 ### How to checkout local repo to a tag
