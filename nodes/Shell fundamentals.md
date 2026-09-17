@@ -9,9 +9,9 @@ context:
 ---
 ### Commands for navigating, creating files and directories, and listing contents
 
-1. `pwd` (print working directory) - displays the absolute path of the current directory you are working in, tells you where exactly you are located within the file system from the *root* directory
+#### `pwd` (print working directory) - displays the absolute path of the current directory you are working in, tells you where exactly you are located within the file system from the *root* directory
 
-2. `mkdir` - used to create new directory/ies, you can list multiple names or parent/child couples separated by space and each will be created individually. You can also chain multiple commands with `&&` for example if you want to set different permissions to different directories
+#### `mkdir` - used to create new directory/ies, you can list multiple names or parent/child couples separated by space and each will be created individually. You can also chain multiple commands with `&&` for example if you want to set different permissions to different directories
 - flags:
     - `-p` - creates parent directories as needed (if the parent directory already exists, it only creates the child directory)
     - `-v` - show a message for each created directory
@@ -43,7 +43,7 @@ So:
     5 = 4 + 0 + 1 = r-x
 ```
 
-3. `mv` - used to move or rename files and directories
+#### `mv` - used to move or rename files and directories
 - flags:
     - `-i` - ask before replacing files
     - `-u` - move only if the source is newer (moves only if the source file is newer than the destination file)
@@ -64,7 +64,7 @@ mv -u file.txt outer2/
 ```
 
 
-4. `ls` - used to list files and directories within a specified directory.
+#### `ls` - used to list files and directories within a specified directory.
 You can control the output with flags:
     - `-l` - long listing format (displays file permissions, number of links, owner name, owner group, file size, time of last modification, file or directory name)
     - `-a` - show hidden files
@@ -85,7 +85,7 @@ You can even use multiple flags at the same time:
 ```
 
 
-5. `touch` - mainly used to create new empty files, or to update file timestamps without changing their contents
+#### `touch` - mainly used to create new empty files, or to update file timestamps without changing their contents
     Flags:
         - `-a` - update only when the file was last read
         - `-m` - update only when the file was last changed
@@ -101,7 +101,7 @@ You can even use multiple flags at the same time:
 ```
 
 
-6. `cp` - used to copy files and directories from one location to the other. Creates an exact copy in the destination leaving the original in tact.
+#### `cp` - used to copy files and directories from one location to the other. Creates an exact copy in the destination leaving the original in tact.
 Can be used to copy single file, multiple files, or entire directories.
     Flags:
         - `-r` - copy all files and directories inside a directory
@@ -110,7 +110,7 @@ Can be used to copy single file, multiple files, or entire directories.
         - `-v` -verbose mode, show files being copied
 
 
-7. `cd` - allows you to navigate in the shell environment, by specifying a target directory as an argument
+#### `cd` - allows you to navigate in the shell environment, by specifying a target directory as an argument
 ``` bash
 cd ..  => move one directory up
 cd ~  => change to the home directory (your user's folder in the home directory)
@@ -118,7 +118,7 @@ cd -  => switch to the previous directory
 cd /  => change to the root directory (the very beggining of your harddrive)
 ```
 
-8. `rm` - used to remove files or directories **permanently**. Specific options are needed to remove directories and their contents recursively.
+#### `rm` - used to remove files or directories **permanently**. Specific options are needed to remove directories and their contents recursively.
 ```bash
     rm file_name.txt  => removes a file
 ```
@@ -129,7 +129,7 @@ Flags:
     - `-v` - verbose mode, show files being removed
 
 
-9. `cat` - name is short for concatenate, it is used to display the contents of one or more files on the standard output (usually your terminal screen). It can also be used to concatenate files, meaning to combine them into a single output stream.
+#### `cat` - name is short for concatenate, it is used to display the contents of one or more files on the standard output (usually your terminal screen). It can also be used to concatenate files, meaning to combine them into a single output stream.
 
 Flags:
     - `-n` - add numbers to each line of the output
@@ -145,7 +145,7 @@ cat file1.txt file2.txt > combined.txt
 ```
 
 
-10. `echo` - used to show a line of text or a variable's vlue in the terminal.
+#### `echo` - used to show a line of text or a variable's vlue in the terminal.
 
 Basic usage:
 ```bash
@@ -167,15 +167,97 @@ Flags:
 ```
 
 
-11. `rmdir` - used to remove empty directories.
+#### `rmdir` - used to remove empty directories.
 
 
-12. `find` - used to locate files and directories within a file system hierarchy. Allos you to search based on different criteria such as name, size, modification time, permissions, and file type. Recursively traverses directories, making it suitable for locating files across an entire file system or within specific subdirectories.
+#### `find` - used to locate files and directories within a file system hierarchy. Allos you to search based on different criteria such as name, size, modification time, permissions, and file type. Recursively traverses directories, making it suitable for locating files across an entire file system or within specific subdirectories.
 
 [[find]]
 
 
-13. Navigating the file system
+### Navigating the file system
 
 - absolute path - *always* begins from the absolute start of your hard drive
 - relative path - relative to your current location
+
+
+### Tab completion
+
+Single tab will autocomplete a command or text if it is the only thing with that name.
+If there are multiple options double tab will list all available options.
+
+
+### Repeat commands
+
+- `history` - command that lists all previously executed commands
+- `!n` - where n is the command's number, executes that specific command
+- `!!` - executes the last command
+- `!string` - execute the most recent command that starts with "string"
+
+```bash
+    history
+
+    !1980
+
+    !!
+
+    !git
+```
+
+
+### Help commands
+- `man [command]` - lists the user manual of that command
+
+```bash
+    man ls  => lists the user manual for the ls command with all the arguments it could take
+```
+
+
+### Bash alias - it is a shortcut or a custom name you assign to a command or a sequence of commands instead of typing a long command every time
+
+```bash
+    alias ll='ls -la'
+    alias gs='git status'
+```
+
+- `alias` - this command lists all aliases
+- `unalias name` - removes an alias, deletes it from the .bashrc file
+
+
+### Stop execution
+
+- `kill` - command is used to terminate  processes in a unix-like OS. Powerful tool for managing system resources and ensuring thtatprocesses do not consume more resources than necessary
+
+Common Uses:
+    - terminate unresponsive processes
+    - manage system resources by stopping unnecessary processes
+    - send specific signals to processes for custom handling
+
+Options:
+- `-9` - forcefully terminate a process
+- `-l` - list all signal names
+- `-s [signal]` - specify a signal to send
+- `-p` - print the process ID
+
+```bash
+    kill [option]
+
+    kill -9 1234  => send the SIGKILL signal to a process, which forcefully terminates it
+
+    kill -s SIGTERM 1234
+```
+
+| Signal    | Number | Example           | Meaning                                                                                                     |
+| --------- | -----: | ----------------- | ----------------------------------------------------------------------------------------------------------- |
+| `SIGTERM` | **15** | `kill -TERM 1234` | Politely asks the process to terminate. **Default signal for `kill`.**                                      |
+| `SIGKILL` |  **9** | `kill -KILL 1234` | Immediately kills the process. Cannot be caught, ignored, or handled.                                       |
+| `SIGHUP`  |  **1** | `kill -HUP 1234`  | Originally means terminal disconnected. Commonly used to tell daemons/services to **reload configuration**. |
+| `SIGINT`  |  **2** | `kill -INT 1234`  | Interrupts the process. Usually equivalent to pressing **Ctrl+C**.                                          |
+| `SIGQUIT` |  **3** | `kill -QUIT 1234` | Tells the process to quit, typically producing a **core dump**.                                             |
+| `SIGSTOP` | **19** | `kill -STOP 1234` | Pauses/suspends the process. Cannot be caught or ignored.                                                   |
+| `SIGCONT` | **18** | `kill -CONT 1234` | Resumes a process that was stopped.                                                                         |
+| `SIGUSR1` | **10** | `kill -USR1 1234` | User-defined signal. Meaning depends entirely on the application.                                           |
+| `SIGUSR2` | **12** | `kill -USR2 1234` | Another user-defined signal. Meaning depends on the application.                                            |
+
+
+> **Core dump** is a file containing a snapshot of a program's memory and state at the moment it crashed or terminated unexpectedly. Developers use it to debug the program and determine what went wrong.
