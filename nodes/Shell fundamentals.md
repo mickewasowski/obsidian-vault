@@ -261,3 +261,28 @@ Options:
 
 
 > **Core dump** is a file containing a snapshot of a program's memory and state at the moment it crashed or terminated unexpectedly. Developers use it to debug the program and determine what went wrong.
+
+
+### [[Redirects & Pipelines]]
+
+### Command substitution
+
+Allows you to use the output of one command as an argument to another command.
+
+```bash
+    $(...)
+
+    echo "Today is $(date)"
+```
+In the above example bash:
+    - executes `date`
+    - captures its stdout
+    - replaces `$(date)` with that text
+    - executes the resulting `echo` command
+
+> The difference between pipes and command substitution is that with pipes you use the produced output of the prior command as the input of the next command. Whereas in command substitution you run a command to produce the argument for another command.
+
+
+### Process substitution
+
+
