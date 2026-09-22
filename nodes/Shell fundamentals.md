@@ -344,3 +344,5 @@ Good mental model:
 
     cmd1 | cmd2  → "Connect cmd1's OUTPUT to cmd2's INPUT."
 ```
+
+[[bash fundamentals exercises]]
