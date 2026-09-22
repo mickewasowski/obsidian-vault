@@ -285,4 +285,62 @@ In the above example bash:
 
 ### Process substitution
 
+Process substitution is a feature that lets you run a command and make its output (or input) appear to another command as if it were a file.
 
+Syntax:
+- `<(command)`  => redirects the output of the command as input (means i want to read output from this command through a file-like object)
+- `>(command)`  => this provides a file-like destination whose contents are sent **into** the command (means i want to write data to a file-like object, and have that data become this command's input)
+
+> Comparison:
+```bash
+    # Pipeline
+    command1 | command2  => output of the left command is the input to the right command throught stdin
+
+    # Command substitution
+    command2 "$(command1)"  => the output of command1 is received by command2 as text or argument
+
+    # Process substitution
+    command2 <(command1)  => command2 receives something that behaves like a filename
+```
+
+> Process substitution is useful for example when you want to compare something that are not two files.
+> Here for example you compare the results of two commands that are then presented like a file so that *diff* command can work:
+```bash
+    diff <(ls dir1) <(ls dir2)
+```
+> Bash runs both *ls* commands and provides *diff* with file-like paths representing their output.
+
+```bash
+    ls dir1 ──> temporary file-like stream ──┐
+                                            ├──> diff
+    ls dir2 ──> temporary file-like stream ──┘
+
+        ||
+
+    diff /dev/fd/63 /dev/fd/62
+```
+
+
+> `tr` - means translate characters, it reads text from *stdin* and replaces characters according to rules you give it
+```bash
+    echo "hello" > >(tr 'a-z' 'A-Z')
+
+    // here we redirect echo's output to the next command
+
+    echo "hello"    >    >(tr 'a-z' 'A-Z')
+                    ↑    ↑
+               redirect  process substitution
+```
+=> The above command means - "Take the stdout of `echo "hello"` and redirect it to a file-like destination connected to the stdin of `tr 'a-z' 'A-Z'`"
+(for the above example you'd normally use a pipe, but for the sake of example we use process substitution)
+
+
+
+Good mental model:
+```bash
+    $(command)   → "Give me the OUTPUT as TEXT."
+
+    <(command)   → "Give me the OUTPUT as a FILE-LIKE thing."
+
+    cmd1 | cmd2  → "Connect cmd1's OUTPUT to cmd2's INPUT."
+```
