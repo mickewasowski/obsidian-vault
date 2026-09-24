@@ -18,6 +18,12 @@ Find command used to locate files and directories
     find . -name "*.txt" => wildcards work too, finds all files/directories whose name ends with ".txt"
 ```
 
+```bash
+    find . -name "*linux*"  => find files with names that include linux
+
+    find . -name "linux*"  => find files with names that start with linux
+```
+
 Flags:
     - `-H` - follow symbolic links specified directly on the command line, but not symlinks encountered during traversal
     - `-L` - follow all symlinks

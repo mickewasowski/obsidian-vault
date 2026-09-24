@@ -174,6 +174,8 @@ Flags:
 
 [[find]]
 
+[[sort]]
+
 
 ### Navigating the file system
 
