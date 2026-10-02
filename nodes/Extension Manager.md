@@ -45,3 +45,4 @@ Installed from the App Center.
 
 ### Setup centering of a window
 ![[Pasted image 20250712122143.png]]
+![[Pasted image 20261002233044.png]]
