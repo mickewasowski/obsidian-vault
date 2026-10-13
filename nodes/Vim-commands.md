@@ -128,6 +128,12 @@ context:
 > :e filename => open a file
 > :vs filename => open file in vertical split
 
+### File reference inside a file
+
+> `ctrl + i` - move forward again through your jump history (or go inside the file)
+> `ctrl + o` - return to the previous file
+> `gf` - open the file under the cursor
+
 
 ### Split and tabs
 

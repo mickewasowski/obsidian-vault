@@ -5,10 +5,6 @@ context:
 ---
 
 # Shell Fundamentals
-#wip
-
-# Shell Fundamentals
-
 
 ---
 
