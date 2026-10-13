@@ -5,9 +5,12 @@ context:
 ---
 
 # Shell Fundamentals
+#wip
+
+# Shell Fundamentals
+
 
 ---
-### Commands for navigating, creating files and directories, and listing contents
 
 #### `pwd` (print working directory) - displays the absolute path of the current directory you are working in, tells you where exactly you are located within the file system from the *root* directory
 
