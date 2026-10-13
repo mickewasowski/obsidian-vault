@@ -44,6 +44,9 @@ Allow you to control the flow of data between commands.
     2>&1  => redirect file descriptor 2 to wherever file descriptor 1 is currently going
 
     command > output.txt 2>&1  => combining stdout and stderr
+
+    // Example:
+    ls ./logs > everything.txt 2>&1 
 ```
 
 - redirect stdout and stderr independently

@@ -16,7 +16,9 @@ For a Backend API:
 ```bash
 dotnet new webapi -> scafolds a basic api project with one endpoint
 
-dotnet run -> starts the server
+dotnet run -> starts the server if you're in the project where a file with *.csproj is
+
+dotnet run --project src/SomeProject -> run this from the root of your repo to start a specified project
 
 dotnet add package Newtonsoft.Json -> adds package
 ```
@@ -35,3 +37,21 @@ dotnet add package Newtonsoft.Json -> adds package
 
 1. Create a Controllers folder. Create a Controller file for each DB table you'd like to access/modify.
 2. Create all the endpoints in each Controller file.
+
+
+
+### Objects
+
+```c#
+
+    // in c# like in js we have shorthand for when the property and the variable have the same name
+    return Ok(new { message = "some message", userId });
+```
+
+
+> Questions
+
+1. How does the `builder.AddControllers` and `app.MapControllers` work under the hood, how did they find my controller
+2. the controller level route (`[Route("...")]` above the class name) makes whatever params there available in all methods of this class
+3. if you haven't restarted the server and haven't run it with --watch and you added a new route/method you won't be able to call it
+4. `dotnet sln list` - lists all projects within a solution

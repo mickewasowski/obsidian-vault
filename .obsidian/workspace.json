@@ -11,10 +11,14 @@
             "id": "74a0e8cf0963ebee",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "nodes/Extension Manager.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Extension Manager"
             }
           }
         ]
@@ -37,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -156,6 +162,7 @@
   },
   "active": "74a0e8cf0963ebee",
   "lastOpenFiles": [
+    "resources/Pasted image 20261002233044.png",
     "nodes/test.md~",
     "nodes/test.md",
     "nodes/stdout, stdin, and stderr.md",

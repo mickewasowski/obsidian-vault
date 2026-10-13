@@ -4,7 +4,7 @@ context:
 - "[[Shell]]"
 ---
 
-# Shell fundamentals
+# Shell Fundamentals
 
 ---
 ### Commands for navigating, creating files and directories, and listing contents
@@ -345,6 +345,4 @@ Good mental model:
     <(command)   → "Give me the OUTPUT as a FILE-LIKE thing."
 
     cmd1 | cmd2  → "Connect cmd1's OUTPUT to cmd2's INPUT."
-```
-
-[[bash fundamentals exercises]]
+`
