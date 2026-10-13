@@ -95,125 +95,97 @@ context:
 
    Use a pipeline involving `sort` and `uniq`. You'll need to figure out the appropriate `uniq` option.
 
-9. **Search through command output**
-   Use `ps` to display running processes and pipe its output into `grep` to find processes containing a particular word, such as:
+9. **Practice output redirection**
+
+   Inside `shell-practice/`, use `echo` and redirection to create three files:
 
    ```text
-   bash
+   report.txt
+   notes.txt
+   summary.txt
    ```
 
-   Then redirect the matches into `bash-processes.txt`.
+   Then:
+   - Write some text into `report.txt`.
+   - Append another line without overwriting the existing contents.
+   - Redirect the output of `cat report.txt` into `summary.txt`.
+   - Display `summary.txt` and verify that the contents match.
 
-10. **Command substitution**
-    Create a file whose filename contains today's date.
+10. **Combine stdout and stderr**
 
-    The result should be something like:
+    Run an `ls` command with one valid path and one nonexistent path.
+
+    Redirect:
+    - Standard output to `success.txt`.
+    - Standard error to `errors.txt`.
+
+    Then use `2>&1` to redirect both streams into `all-output.txt`.
+
+    Inspect all three files using `cat` and explain which output each file contains.
+
+11. **Command substitution**
+
+    Use command substitution to create a directory whose name includes your current directory's name.
+
+    For example, if `pwd` prints `/Users/you/shell-practice`, create a directory named:
 
     ```text
-    backup-2026-09-22.txt
+    shell-practice-backup
     ```
 
-    You should use `date` and command substitution:
-
-    ```bash
-    $(...)
-    ```
-
-    rather than manually typing the date.
-
-11. **Command substitution with variables**
-    Without manually counting anything, make this:
-
-    ```bash
-    echo "There are _____ items in this directory"
-    ```
-
-    print the number of entries in your current directory.
-
-    Hint: you'll need a command substitution containing a pipeline.
+    Use `basename` inside `$(...)` to extract the final directory name, and `mkdir` to create the new directory.
 
 12. **Process substitution**
-    Create:
 
-    ```text
-    file1.txt
-    file2.txt
-    ```
+    Create two files, `file1.txt` and `file2.txt`, with different contents.
 
-    with slightly different contents.
+    Use process substitution with `cat` to provide the contents of both files as inputs to a single command.
 
-    Compare their **sorted contents** without creating temporary sorted files.
+    Your goal is to understand how `<(...)` creates file-like inputs from commands without creating intermediate files.
 
-    In other words, don't do:
+    Hint: Process substitution is a Bash feature. For a meaningful comparison, you would need a comparison utility, which is outside the topics in the screenshot. Focus on understanding the syntax and the generated inputs.
+
+13. **Create and manage Bash aliases**
+
+    Create an alias called `croot` that runs `cd` to your `shell-practice/` directory.
+
+    Then:
+    - Display your current directory with `pwd`.
+    - Define the alias.
+    - Navigate somewhere else using `cd`.
+    - Run `croot` and verify that you return to `shell-practice/`.
+    - Inspect the alias using `alias`.
+    - Remove it using `unalias`.
+
+14. **Explore help commands and repeat commands**
+
+    Practice discovering commands without looking up their usage online.
+
+    - Use `help` to learn about the Bash built-in `cd`.
+    - Use `help` to learn about `echo`.
+    - Use `man` or `--help` to explore `ls` and `mkdir`, depending on your system.
+    - Run `pwd`, then repeat the command using your shell's command history.
+    - Use Tab completion to complete a directory name and a filename.
+
+    Try to accomplish each task without manually typing the full command whenever completion is possible.
+
+15. **Mini challenge: stop execution**
+
+    Create a directory named `stop-challenge` and navigate into it.
+
+    Execute these commands one at a time:
 
     ```bash
-    sort file1.txt > sorted1.txt
-    sort file2.txt > sorted2.txt
-    diff sorted1.txt sorted2.txt
+    touch first.txt
+    touch second.txt
+    ls
     ```
 
-    Instead, solve it in one command using:
+    Then:
+    - Use your shell's keyboard interrupt (`Ctrl+C`) while a command is running.
+    - Observe what happens when you interrupt it.
+    - Use `help` to investigate the Bash `exit` built-in.
+    - Exit the current shell session and open a new one.
+    - Navigate back to the challenge directory and use `ls` to verify that your files still exist.
 
-    ```bash
-    <(...)
-    ```
-
-13. **Combine stdout and stderr**
-    Run a command that produces both successful output and an error. Redirect **both stdout and stderr into the same file** called:
-
-    ```text
-    all-output.txt
-    ```
-
-    Try solving it using `2>&1`, not `&>`.
-
-14. **Build a log-processing pipeline**
-    Create `app.log`:
-
-    ```text
-    INFO Server started
-    ERROR Database connection failed
-    INFO User logged in
-    WARNING Disk usage high
-    ERROR Database connection failed
-    ERROR Authentication failed
-    INFO Request completed
-    ERROR Database connection failed
-    ```
-
-    Write **one command** that:
-
-    * reads `app.log`
-    * keeps only lines containing `ERROR`
-    * sorts them
-    * counts identical errors
-    * sorts the result by count
-    * writes the final result to `error-summary.txt`
-
-    Your final file should make it obvious which error occurred most frequently.
-
-15. **Mini challenge: put everything together**
-    Assume you're inside a directory containing many files and subdirectories. Write **one command/pipeline** that:
-
-    * finds all `.txt` files recursively
-    * suppresses any errors from `find`
-    * counts how many `.txt` files were found
-    * stores that number in a shell variable called `count`
-    * then prints:
-
-      ```text
-      Found 17 text files
-      ```
-
-      where `17` is dynamically calculated.
-
-    This combines `find`, stderr redirection, a pipeline, command substitution, a variable, and `echo`.
-
-I would especially focus on **7–15**. Those force you to think in terms of data flowing through commands:
-
-```text
-file → command → stdout → pipe → stdin → command → redirect → file
-```
-
-For practice, send me your solutions **one at a time**. I can check each command, point out mistakes, and explain them without immediately giving you the correct solution.
-
+    Explain the difference between stopping a running command, exiting a shell, and deleting files.
