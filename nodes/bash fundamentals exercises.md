@@ -135,6 +135,11 @@ context:
 
     Use `basename` inside `$(...)` to extract the final directory name, and `mkdir` to create the new directory.
 
+Solution:
+```bash
+    mkdir "$(basename "$(pwd)")-backup"
+```
+
 12. **Process substitution**
 
     Create two files, `file1.txt` and `file2.txt`, with different contents.
@@ -144,6 +149,14 @@ context:
     Your goal is to understand how `<(...)` creates file-like inputs from commands without creating intermediate files.
 
     Hint: Process substitution is a Bash feature. For a meaningful comparison, you would need a comparison utility, which is outside the topics in the screenshot. Focus on understanding the syntax and the generated inputs.
+
+Solution:
+```bash
+echo "first file" > file1.txt
+echo "second file" > file2.txt
+
+cat <(cat file1.txt) <(cat file2.txt)
+```
 
 13. **Create and manage Bash aliases**
 
@@ -156,6 +169,17 @@ context:
     - Run `croot` and verify that you return to `shell-practice/`.
     - Inspect the alias using `alias`.
     - Remove it using `unalias`.
+
+Solution:
+``` bash
+alias  => lists all defined aliases
+
+alias croot="cd ~/Documents/....."  => create an alias
+
+unalias croot  => remove alias
+
+```
+
 
 14. **Explore help commands and repeat commands**
 
