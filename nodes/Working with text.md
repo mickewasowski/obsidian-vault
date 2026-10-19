@@ -154,3 +154,6 @@ Displays the last part of a file
 - `-c` - display the last number of bytes
 - `--pid=[pid]` - terminate after the process with pid dies
 - `--retry` - keep trying to open a file even if its inaccessible
+
+
+### [find](nodes/find.md)

@@ -164,3 +164,77 @@ Searching by ownership:
 
 
 > There are many more options
+
+
+Search for directories excluding the starting directory:
+```bash
+find . -mindepth 1 -type d
+```
+
+
+Search by multiple conditions:
+
+```bash
+find . -name "*.log" -o -name "*.json"
+```
+
+- `-o` - logical or operator
+
+
+Search for file type with excluding a directory:
+```bash
+find . -name "*.txt" ! -path ./backup
+```
+> `-path ./backup` excludes the directory but NOT the files inside it
+the above search for all txt files but excludes backup directory from the search
+
+the below is the correct way to exclude the directory AND its contents
+```bash
+find . -type f -name "*.txt" -not -path "./backup/*"
+
+
+// most efficient way:
+find . -path "./backup" -prune -o -type f -name "*.txt" -print
+```
+
+
+Seach for a regular file with size greater than 1MB:
+```bash
+find . -type f -size +1M
+```
+
+
+Seach for files modified in the last 24 hours:
+```bash
+find . -mtime -1
+```
+
+Find every log file and execute `wc -l` to count the number of matching files:
+```bash
+find . -name "*.log" | wc -l
+```
+
+Find every log file and execute `wc -l` to count the number of lines in those files:
+```bash
+find . -type f -name "*.log" -exec wc -l {} \;
+```
+- `-exec` - executes a command for each matching file
+- `{}` - represents the matching file's path
+- `\;` - terminates the `-exec` command
+> in the above the `wc -l` command is invoked once per file
+> in the below the `+` passes multiple files in batches to `wc`:
+```bash
+find . -type f -name "*.log" -exec wc -l {} +
+```
+
+
+Find every empty txt file:
+```bash
+find . -empty -name "*.txt"
+```
+
+
+Find every empty txt file and delete it:
+```bash
+find . -empty -name "*.txt" -delete
+```
