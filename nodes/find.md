@@ -238,3 +238,28 @@ Find every empty txt file and delete it:
 ```bash
 find . -empty -name "*.txt" -delete
 ```
+
+### additional commands
+
+- `-prune` (meaning trim, cutoff, remove) - the find command combined with `-prune` is used to exclude specific directories from the search and prevent the command from descending into them
+
+Syntax:
+```bash
+find [path] [conditions to prune] -prune -o [actions to perform]
+```
+
+- prune stops find from recursing into the matched directory but does not exclude it from the output by default
+- `-o` (OR) - used to specify what to do with the remaining files
+- `-print` - often required at the end to print the files that were not pruned
+
+Examples:
+```bash
+// exclude a single directory and print files
+find . -name ".git" -prune -o -type f -print
+
+// exclude multiple directories
+find . \( -name ".git" -o -name "node_modules" \) -prune -o -type f -print
+
+// exclude by path pattern
+find . -path "./.svn/*" -prune -o -print
+```
