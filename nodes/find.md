@@ -263,3 +263,17 @@ find . \( -name ".git" -o -name "node_modules" \) -prune -o -type f -print
 // exclude by path pattern
 find . -path "./.svn/*" -prune -o -print
 ```
+
+
+- `-exec` - allows you to execute a specified utility on every file or directory found by the `find` command
+
+Syntax:
+``` bash
+find . -type f -name "*.txt" -exec cat {} \;
+
+find . -type f -name "*.txt" -exec rm {} +
+```
+- `\;` (semicolon) - executes the command *once for each file found* (useful for commands that do not accept multiple arguments or require individual processing)
+- `+` - executes the command *once for all files found* (useful for large number of files); **`{}` must be the last argument before** `+`
+- `{}` - placeholder for the current file's path
+
