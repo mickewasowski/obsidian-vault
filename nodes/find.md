@@ -277,3 +277,29 @@ find . -type f -name "*.txt" -exec rm {} +
 - `+` - executes the command *once for all files found* (useful for large number of files); **`{}` must be the last argument before** `+`
 - `{}` - placeholder for the current file's path
 
+
+### logical operators
+
+- `-o` or `-or` - logical `or`
+```bash
+find /path \( -name "*.txt" -o -name "*.log" \)
+```
+
+- `-a` or `-and` - logical `and` (`and` is implicit and has higher precedence to `or`)
+grouping is important (the parenthesis) because it makes two or more conditions act as a single group
+```bash
+find /path \( -name "*.txt" -o -name "*.log" \) -size +1M
+
+// the above is equivalent to:
+find /path \( -name "*.txt" -o -name "*.log" \) -a -size +1M
+
+
+// without the parenthesis the first expression would be:
+find /path -name "*.txt" -o -name "*.log" -size +1M
+// and it would be interpreted as *(name is *.txt) OR (name is *.log AND size > 1M)*
+```
+
+- `!` or `-not` - logical `not`
+```bash
+find /path ! -name "*.tmp"
+```
