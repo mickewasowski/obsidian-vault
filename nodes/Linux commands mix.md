@@ -64,7 +64,7 @@ Only the **root** can use this command.
 
 #### check for process running on port
 
-1. identify what process is running on the port
+1. find what process is running on port
 ```bash
 sudo lsof -i :3000
 
@@ -75,5 +75,9 @@ sudo ss -lptn 'sport = :3000'
 
 2. stop/kill the process
 ```bash
+kill <PID>
+
+//or
+
 sudo kill -9 <PID>
 ```
