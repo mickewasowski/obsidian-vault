@@ -513,7 +513,7 @@ Syntax:
 sed [options] 'command' filename
 ```
 
-- search and replace (`s`)
+##### search and replace (`s`)
 The substitution syntax is: `s/pattern/replacement/flags`
 
 - `s` - substitution command
@@ -538,7 +538,7 @@ sed 's/Alice/John/' users.txt
 # John is 28
 ```
 
-- `g` - replace **all** occurences
+##### `g` - replace **all** occurences
 ```bash
 # apple banana apple
 
@@ -546,7 +546,7 @@ echo "apple banana apple" | sed 's/apple/mango/g'
 # mango banana mango
 ```
 
-- `I` - ignore case
+##### `I` - ignore case
 ```bash
 # APPLE banana apple
 
@@ -554,7 +554,7 @@ echo "apple banana apple" | sed 's/apple/mango/gI'
 # mango banana mango
 ```
 
-- `p` - print specific lines
+##### `p` - print specific lines
 ```bash
 sed -n '2p' users.txt
 ```
@@ -570,7 +570,7 @@ sed -n '2,3p' users.txt
 > without `-n` matching lines would be printed twice because `sed` automatically prints each processed line
 
 
-- `d` - delete lines
+##### `d` - delete lines
 ```bash
 # delete single line
 sed '2d' users.txt
@@ -583,7 +583,7 @@ sed '/Alice/d' users.txt
 ```
 
 
-- `i` and `a` - insert and append text
+##### `i` and `a` - insert and append text
 > `sed` supports inserting lines before or after a specified line
 ```bash
 # insert before
@@ -593,7 +593,7 @@ sed '2i New user' users.txt
 sed '2a New user' users.txt
 ```
 
-- `-i` - modify files directly
+##### `-i` - modify files directly
 > by default, `sed` does not modify the original file
 ```bash
 # this prints the modified content but leaves users.txt unchanged
@@ -606,7 +606,7 @@ sed -i 's/Alice/John/g' users.txt
 sed -i.bak 's/Alice/John/g' users.txt
 ```
 
-- use `sed` with regular expressions
+##### use `sed` with regular expressions
 ```bash
 # replaces all digits with X
 echo "Alice 25 Bob 30" | sed 's/[0-9]/X/g'
@@ -643,17 +643,17 @@ cat users.txt | sed 's/Alice/John/g'
 grep "Alice" users.txt | sed 's/Alice/John/'
 ```
 
-- combine `sed` commands
+##### combine `sed` commands
 ```bash
 sed -e 's/Alice/John/g' -e 's/Bob/Mike/g' users.txt
 ```
 
-- separate `sed` commands with semicolons
+##### separate `sed` commands with semicolons
 ```bash
 sed 's/Alice/John/g; s/Bob/Mike/g' users.txt
 ```
 
-Commands and Options:
+##### Commands and Options:
 - `s` substitute text
 - `g` replace all matches per line
 - `p` print selected lines
@@ -683,6 +683,7 @@ How `sed` works:
 - `tr` translate or delete individual characters
 - `sed` edit text using patterns and commands
 
+##### Exercises
 
 ```bash
 # replace the Alice occurence on the fifth line
