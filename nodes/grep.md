@@ -14,8 +14,24 @@ grep "error" logfile.txt
 ```
  The above command finds all lines containing "error" in logfile.txt
 
-Common flags:
-- -i => case-insensitive
-- -r => recursive through directories
-- -n => show line numbers
-- -v => invert match (i.e., show lines *not* matching)
+Command-line tool for searching plain-text in files and streams of data by a regular expression.
+
+`grep` - globally search a regular expression and print
+
+Used to search for text patterns within files.
+
+```bash
+grep "pattern" filename
+```
+
+Flags:
+- `-i` - ignore case differences
+- `-r` - search through all files in a directory or subdirectories
+- `-v` - (invert match) find lines that do not match the pattern (*this one works only with files*)
+
+```bash
+grep -flag "pattern" filename
+
+grep '^[A-Za-z]' filename  => line that starts with text
+grep '^[0-9]' filename   => line that starts with numbers
+```
