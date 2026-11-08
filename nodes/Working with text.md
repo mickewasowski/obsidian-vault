@@ -30,3 +30,5 @@ View, search, transform, analyze and wildcards.
 ### [tr](nodes/tr.md)
 
 ### [sed](nodes/sed.md)
+
+### [awk](nodes/awk.md)
