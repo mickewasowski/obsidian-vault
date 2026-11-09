@@ -237,11 +237,24 @@ Mike 28 Developer 4000
 EOF
 ```
 
-1. print only the names and job titles of all employees
-2. print all employees younger than 30
-3. print only the names of employees who are Developers
-4. print each employee's name followed by their salary, separated by a colon (:)
-5. print the total number of employees using NR
-6. calculate the total salary paid to Developers only
-7. print the name of the employee with the highest salary
-8. print employees earning more than 3000, including a line number before each result
+[x] 1. print only the names and job titles of all employees
+```bash
+awk '{print $1,$3}' employees.txt
+```
+[x] 2. print all employees younger than 30
+```bash
+awk '$2 < 30' employees.txt
+```
+[x] 3. print only the names of employees who are Developers
+```bash
+awk '$3 == "Developer" {print $1}' employees.txt
+```
+[] 4. print each employee's name followed by their salary, separated by a colon (:)
+```bash
+# not working
+awk 'BEGIN {OFS=":" {print $1,$4}}' employees.txt
+```
+[] 5. print the total number of employees using NR
+[] 6. calculate the total salary paid to Developers only
+[] 7. print the name of the employee with the highest salary
+[] 8. print employees earning more than 3000, including a line number before each result
