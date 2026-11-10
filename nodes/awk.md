@@ -117,7 +117,6 @@ awk '$3 == "Developer" && $4 > 3000' employees.txt
 ### Built-in variables
 
 `awk` provides several useful variables:
-- `NR` - current record number (across all input files)
 - `FNR` - current record number within the current file
 - `NF` - number of fields in the current record
 - `FS` - input field separator
@@ -146,7 +145,7 @@ For comma-separated data, use `-F` to secify a delimiter
 awk -F ',' '{print $1, $3}' employees.csv
 
 # change the output separator
-awk -F ',' 'BEGIN {OFS=" | " {print $1, $3}}' employees.csv
+awk -F ',' 'BEGIN {OFS=" | "} {print $1, $3}' employees.csv
 ```
 > Note that `-F ','` works for simple CSV files, but it doesn't correctly parse every CSV format, such as quoted fields containing commas
 
@@ -249,12 +248,23 @@ awk '$2 < 30' employees.txt
 ```bash
 awk '$3 == "Developer" {print $1}' employees.txt
 ```
-[] 4. print each employee's name followed by their salary, separated by a colon (:)
+[x] 4. print each employee's name followed by their salary, separated by a colon (:)
 ```bash
-# not working
-awk 'BEGIN {OFS=":" {print $1,$4}}' employees.txt
+awk 'BEGIN {OFS=":"} {print $1,$4}' employees.txt
 ```
-[] 5. print the total number of employees using NR
-[] 6. calculate the total salary paid to Developers only
-[] 7. print the name of the employee with the highest salary
-[] 8. print employees earning more than 3000, including a line number before each result
+[x] 5. print the total number of employees using NR
+```bash
+awk 'END {print NR}' employees.txt
+```
+[x] 6. calculate the total salary paid to Developers only
+```bash
+awk '$3 == "Developer" {sum += $4} END {print sum}' employees.txt
+```
+[x] 7. print the name of the employee with the highest salary
+```bash
+awk 'BEGIN {max = 0} $4 > max { max = $4; name = $1} END {print name}' employees.txt
+```
+[x] 8. print employees earning more than 3000, including a line number before each result
+```bash
+awk '$4 > 3000 {print NR, $0}' employees.txt
+```
