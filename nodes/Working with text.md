@@ -17,9 +17,12 @@ View, search, transform, analyze and wildcards.
 
 ### [less and more](nodes/less%20and%20more.md)
 
+### [head and tail](nodes/head%20and%20tail.md)
+
 ### [find](nodes/find.md)
 
-### [head and tail](nodes/head%20and%20tail.md)
+
+## Text transform
 
 ### [cut](nodes/cut.md)
 
@@ -32,3 +35,8 @@ View, search, transform, analyze and wildcards.
 ### [sed](nodes/sed.md)
 
 ### [awk](nodes/awk.md)
+
+
+## Analysis
+
+### [wc](nodes/wc.md)
